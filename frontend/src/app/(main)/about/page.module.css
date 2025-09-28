@@ -1,0 +1,141 @@
+/* page.module.css */
+
+/* Global styles - ideally in globals.css or layout.js */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Ensure Inter font is applied */
+    background-color: #f8fafc; /* Light blue-gray background */
+    color: #334155; /* Darker text color */
+}
+
+.heroSection {
+    background: url('https://images.unsplash.com/photo-1519309621146-2a47d1f7103a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fCVDMyVBOXF1aXBlfGVufDB8fDB8fHww');
+    border-bottom-left-radius: 3rem; /* Rounded bottom-left corner */
+    border-bottom-right-radius: 3rem; /* Rounded bottom-right corner */
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.2), 0 6px 10px -3px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    padding-top: 5rem; /* More padding */
+    padding-bottom: 5rem; /* More padding */
+}
+
+.ctaSection {
+    background: linear-gradient(to right, #2563eb, #4f46e5); /* Blue-600 to Indigo-700 */
+    border-top-left-radius: 3rem; /* Rounded top-left corner */
+    border-top-right-radius: 3rem; /* Rounded top-right corner */
+    box-shadow: 0 -15px 25px -5px rgba(0, 0, 0, 0.2), 0 -6px 10px -3px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    padding-top: 5rem; /* More padding */
+    padding-bottom: 5rem; /* More padding */
+}
+
+.sectionHeading {
+    font-size: 3rem; /* Larger heading for impact */
+    font-weight: 800; /* Bolder */
+    color: #1e293b; /* Even darker for headings */
+    margin-bottom: 2.5rem; /* More space */
+    text-align: center;
+    position: relative; /* For underline effect */
+    padding-bottom: 0.5rem;
+}
+
+.sectionHeading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #3b82f6; /* Primary blue */
+    border-radius: 2px;
+}
+
+.subHeading {
+    font-size: 1.85rem; /* Slightly larger */
+    font-weight: 700; /* Bolder */
+    color: #1e293b;
+    margin-bottom: 1.25rem; /* More space */
+}
+
+.card {
+    border-radius: 1.25rem; /* More rounded corners */
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.1), 0 6px 10px -3px rgba(0, 0, 0, 0.05); /* Enhanced shadow */
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition */
+    border: none; /* Remove default card border */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+.card:hover {
+    transform: translateY(-8px); /* More pronounced lift on hover */
+    box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.15), 0 8px 12px -4px rgba(0, 0, 0, 0.08); /* Stronger shadow on hover */
+}
+
+.btnPrimaryCustom { /* Custom class for primary button to apply hover effect */
+    background-color: #3b82f6; /* Blue button */
+    color: #ffffff;
+    padding: 1.1rem 2.5rem; /* Larger padding */
+    border-radius: 0.75rem;
+    font-weight: 700; /* Bolder font */
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.btnPrimaryCustom:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    transform: translateY(-3px) scale(1.02); /* Slight lift and scale on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger button shadow on hover */
+}
+
+/* Feature Card Specific Styles (for the icons section) */
+.featureCard {
+    border-radius: 1.25rem;
+    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.08), 0 3px 6px -2px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    height: 100%; /* Ensure cards in a row have equal height */
+}
+
+.featureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.12), 0 5px 8px -3px rgba(0, 0, 0, 0.06);
+}
+
+.iconContainer {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background for icons */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iconContainer svg {
+    width: 48px;
+    height: 48px;
+}
+
+/* Specific color adjustments for feature cards */
+.bg-primary-subtle .iconContainer svg { color: #3b82f6; } /* Primary blue */
+.bg-success-subtle .iconContainer svg { color: #22c55e; } /* Green */
+.bg-info-subtle .iconContainer svg { color: #0ea5e9; } /* Sky blue */
+.bg-warning-subtle .iconContainer svg { color: #f59e0b; } /* Amber */
+
+/* Adjust max-width for text for better readability on large screens */
+.max-w-3xl {
+    max-width: 48rem; /* Equivalent to Tailwind's max-w-3xl */
+}
+.max-w-4xl {
+    max-width: 56rem; /* Equivalent to Tailwind's max-w-4xl */
+}
+.max-w-600px {
+    max-width: 600px;
+}
+.max-w-800px {
+    max-width: 800px;
+}
