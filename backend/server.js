@@ -9,7 +9,11 @@ const fs = require("fs");
 const http = require('http');
 const { Server } = require('socket.io');
 const server = http.createServer(app);
+const { GoogleGenAI } = require('@google/genai');
 require("dotenv").config();
+const {
+  generateChatbotResponse
+} = require("./controllers/ChatbotController");
 const {
   RegisterController,
   LoginController,
@@ -210,6 +214,7 @@ app.get("/api/suggestion", SuggestionCoursesController)
 app.get("/api/suggestion_topic/:id", SuggestionTopicController);
 app.get("/api/topics/:id", GetTopicDetailController)
 app.get("/api/topics_purchased", GetTopicsPurchasedController);
+app.post("/api/chatbot", generateChatbotResponse);
 server.listen(5000, () => {
   console.log("Server is running on port 5000");
 });

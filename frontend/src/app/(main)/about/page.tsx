@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./page.module.css"; // Import the CSS module
-
+import Chatbox from "@/app/components/Chatbox";
 const AboutPage = () => {
 
     
@@ -298,6 +298,7 @@ const AboutPage = () => {
           </a>
         </div>
       </section>
+      <Chatbox />
     </>
   );
 };

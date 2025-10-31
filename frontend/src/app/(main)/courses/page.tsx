@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react"; // Import useState
 import styles from "./page.module.css";
+import Chatbox from "@/app/components/Chatbox";
 import Image from "next/image";
 import Footer from "@/app/components/share/Footer";
 import GetCourse from "@/app/api/GetCourse";
@@ -275,6 +276,7 @@ const CoursePage = () => {
       
       {success && <AlertSuccess message="Thêm Giỏ Hàng Thành Công"/>}
       <Footer />
+      <Chatbox />
     </>
   );
 };

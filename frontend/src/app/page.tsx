@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef, use } from "react";
+import Chatbox from "./components/Chatbox"; // Import the Chatbox component
 import Image from "next/image";
 import NavigationMain from "./components/share/NavigationMain";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -600,6 +601,7 @@ export default function Home() {
 
       {success && <AlertSuccess message="Thêm Giỏ Hàng Thành Công" />}
       <Footer />
+      <Chatbox />
     </div>
   );
 }
