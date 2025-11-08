@@ -29,7 +29,7 @@ interface Courses {
 
 interface TopicPurchases {
   id: string;
-  topic_id:string
+  topic_id: string;
   topic: {
     id: string;
     topic_name: string;
@@ -38,13 +38,23 @@ interface TopicPurchases {
       id: string;
       course_name: string;
       teacher: {
-      id: string;
-      User: {
         id: string;
-        username: string;
+        User: {
+          id: string;
+          username: string;
+        };
       };
     };
-    };
+  };
+}
+
+interface ForumProps {
+  userId: string;
+  forumId: string;
+  forum: {
+    id: string;
+    name: string;
+    description: string;
   };
 }
 
@@ -60,6 +70,7 @@ const ProfilePage = () => {
   const [TopicPurchase, setTopicPurchase] = useState<TopicPurchases[]>([]);
   const imageUrl = "http://localhost:5000/uploads/";
   const [imgSrc, setImgSrc] = useState(`${imageUrl}${user?.avatar}`);
+  const [forums, setForums] = useState<ForumProps[]>([]);
   const bootstrapRef = useRef<any>(null);
   useEffect(() => {
     //@ts-ignore
@@ -154,10 +165,31 @@ const ProfilePage = () => {
     setTopicPurchase(data.message);
   };
 
+  const GetForumJoined = async () => {
+    try {
+      const res = await fetch("http://localhost:5000/api/forum", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setForums(data.message);
+      }
+    } catch (error) {
+      console.error(error);
+      return setForums([]);
+    }
+  };
+
   useEffect(() => {
     GetAuthUser();
     GetCourseBougth();
     GetTopicsPurchases();
+    GetForumJoined();
   }, []);
 
   useEffect(() => {
@@ -169,8 +201,6 @@ const ProfilePage = () => {
       });
     }
   }, [user]);
-
-  console.log("Courses:", courses);
 
   return (
     <>
@@ -289,7 +319,6 @@ const ProfilePage = () => {
             ) : (
               <div className="col-12">
                 {" "}
-                {/* Occupy full width for the message */}
                 <div className="alert alert-info text-center" role="alert">
                   Không có khóa học nào đã mua.
                 </div>
@@ -309,7 +338,10 @@ const ProfilePage = () => {
                         <BookOpen size={20} /> {topic.topic.topic_name}
                       </h5>
                       <p className="card-text text-muted mb-1 d-flex align-items-center gap-2">
-                        <User size={16} /> Giáo viên: <strong>{topic.topic.course.teacher.User.username}</strong>
+                        <User size={16} /> Giáo viên:{" "}
+                        <strong>
+                          {topic.topic.course.teacher.User.username}
+                        </strong>
                       </p>
                       <p className="card-text text-muted d-flex align-items-center gap-2">
                         <Layers size={16} /> Khóa học:{" "}
@@ -329,6 +361,116 @@ const ProfilePage = () => {
               ))
             ) : (
               <p></p>
+            )}
+          </div>
+        </div>
+
+        <div
+          className="container my-5"
+          style={{
+            maxWidth: "1100px",
+            margin: "0 auto",
+            padding: "20px",
+            backgroundColor: "#f8f9fa",
+            borderRadius: "16px",
+            boxShadow: "0 6px 20px rgba(0,0,0,0.08)",
+          }}
+        >
+          <h2
+            style={{
+              textAlign: "left",
+              color: "#0d6efd",
+              marginBottom: "40px",
+              fontWeight: "700",
+              fontSize: "1.8rem",
+            }}
+          >
+            Diễn đàn bạn đã tham gia
+          </h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "24px",
+            }}
+          >
+            {forums.length > 0 ? (
+              forums.map((item) => (
+                <div
+                  key={item.forum.id}
+                  style={{
+                    backgroundColor: "#ffffff",
+                    borderRadius: "14px",
+                    boxShadow: "0 3px 12px rgba(0,0,0,0.1)",
+                    padding: "20px",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.transform = "translateY(-6px)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.transform = "translateY(0)")
+                  }
+                >
+                  <h4
+                    style={{
+                      color: "#0d6efd",
+                      marginBottom: "10px",
+                      fontWeight: "700",
+                    }}
+                  >
+                    {item.forum.name}
+                  </h4>
+
+                  <p
+                    style={{
+                      color: "#6c757d",
+                      fontSize: "0.95rem",
+                      lineHeight: "1.5",
+                      marginBottom: "12px",
+                    }}
+                  >
+                    {item.forum.description}
+                  </p>
+
+                  <Link href={`/forum/${item.forumId}`}>
+                    <button
+                      style={{
+                        border: "2px solid #0d6efd",
+                        color: "#0d6efd",
+                        backgroundColor: "transparent",
+                        borderRadius: "30px",
+                        padding: "8px 16px",
+                        fontWeight: "600",
+                        cursor: "pointer",
+                        transition: "all 0.3s ease",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#0d6efd";
+                        e.currentTarget.style.color = "#fff";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.style.color = "#0d6efd";
+                      }}
+                    >
+                      Vào diễn đàn
+                    </button>
+                  </Link>
+                </div>
+              ))
+            ) : (
+              <div
+                style={{
+                  textAlign: "center",
+                  color: "#6c757d",
+                  fontStyle: "italic",
+                  gridColumn: "1 / -1",
+                }}
+              >
+                Bạn chưa tham gia diễn đàn nào 😢
+              </div>
             )}
           </div>
         </div>

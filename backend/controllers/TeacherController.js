@@ -9,6 +9,7 @@ const {
   Lecture,
   Invoice,
   InvoiceItem,
+  UserTopicProgress
 } = require("../models");
 
 const { Sequelize, Op, where } = require("sequelize");
@@ -548,12 +549,12 @@ const GetStudentsTeacherController = async (req, res) => {
         {
           model: Invoice,
           as: "invoices",
-          required: true, 
+          required: true,
           include: [
             {
               model: InvoiceItem,
               as: "InvoiceItems",
-              required: true, 
+              required: true,
               include: [
                 {
                   model: Course,
@@ -585,6 +586,109 @@ const GetStudentsTeacherController = async (req, res) => {
   }
 };
 
+const GetTopicProgressController = async (req, res) => {
+  try {
+    const token = req.cookies.token;
+    if (!token) {
+      return res.status(401).json({ message: "Không tìm thấy token" });
+    }
+
+    const decoded = jwt.verify(token, process.env.ACCESS_TOKEN);
+    if (!decoded) {
+      return res.status(401).json({ message: "Xác thực thất bại" });
+    }
+
+    const userId = decoded.id;
+
+    // Lấy giáo viên tương ứng
+    const teacher = await Teacher.findOne({
+      where: { user_id: userId },
+    });
+
+    if (!teacher) {
+      return res.status(404).json({ message: "Không tìm thấy giáo viên" });
+    }
+
+    const teacherId = teacher.id;
+
+    // Lấy tất cả khóa học của giáo viên
+    const courses = await Course.findAll({
+      where: { teacher_id: teacherId },
+      attributes: ["id", "course_name", "price", "course_image"],
+    });
+
+    const result = [];
+
+    // Duyệt qua từng khóa học để tính tiến độ
+    for (const course of courses) {
+      const totalTopics = await Topic.count({
+        where: { course_id: course.id },
+      });
+
+      // Lấy danh sách progress đã hoàn thành cho các topic thuộc course hiện tại, kèm thông tin user
+      const completedProgress = await UserTopicProgress.findAll({
+        where: { is_completed: true },
+        include: [
+          {
+            model: Topic,
+            as: "topic",
+            where: { course_id: course.id },
+            attributes: [],
+          },
+          {
+            model: User,
+            as: "user",
+            attributes: ["id", "username", "email", "avatar", "phone"],
+          },
+        ],
+      });
+
+      // Gom tiến trình theo user_id, đồng thời lưu thông tin user
+      const userProgress = {}; // { [userId]: { completed: number, user: {...} } }
+      for (const item of completedProgress) {
+        if (!item.user) continue; // phòng trường hợp join không tìm thấy user
+        const uid = item.user_id;
+        if (!userProgress[uid]) {
+          userProgress[uid] = { completed: 0, user: item.user };
+        }
+        userProgress[uid].completed += 1;
+      }
+
+      // Tính phần trăm hoàn thành cho từng học viên và push vào result
+      for (const [studentId, data] of Object.entries(userProgress)) {
+        const completedCount = data.completed;
+        const percent =
+          totalTopics > 0
+            ? Math.round((completedCount / totalTopics) * 100)
+            : 0;
+
+        result.push({
+          course_id: course.id,
+          course_name: course.course_name,
+          course_image: course.course_image,
+          price: course.price,
+          student_id: data.user.id,
+          student_name: data.user.username,
+          student_email: data.user.email,
+          student_avatar: data.user.avatar,
+          student_phone: data.user.phone || null,
+          completed_count: completedCount,
+          progress_percent: percent,
+        });
+      }
+    }
+
+    return res.status(200).json({
+      message: "Lấy tiến trình học viên thành công",
+      data: result,
+    });
+  } catch (error) {
+    console.error("Lỗi khi lấy tiến trình:", error);
+    return res
+      .status(500)
+      .json({ message: "Internal Server Error", error: error.message });
+  }
+};
 module.exports = {
   RegisterTeacherController,
   GetTeacherByIdController,
@@ -595,4 +699,5 @@ module.exports = {
   GetCourseTeacherRejectController,
   GetCoursesPurchasedByTeacher,
   GetStudentsTeacherController,
+  GetTopicProgressController
 };

@@ -48,6 +48,7 @@ const AddToCartController = async (req, res) => {
 const GetCartController = async (req, res) => {
   try {
     const token = req.cookies.token;
+   
     const decoded = jwt.verify(token, process.env.ACCESS_TOKEN);
     if (!decoded) {
       return res.status(401).json({ message: "Unauthorized" });

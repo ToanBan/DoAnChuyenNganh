@@ -12,6 +12,11 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: "topic_id",
         as: "topic",
       });
+
+      UserTopicProgress.belongsTo(models.User, {
+        foreignKey: "user_id",
+        as: "user",
+      });
     }
   }
   UserTopicProgress.init(

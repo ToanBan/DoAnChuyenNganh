@@ -1306,3 +1306,76 @@ details[open] summary::after {
   height: 3px;
   background-color: cornflowerblue;
 }
+
+.post-card {
+  border-radius: 18px; /* Bo góc mềm mại, lớn hơn */
+  overflow: hidden; /* Đảm bảo nội dung không tràn ra ngoài các góc bo */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Đổ bóng nhẹ và sâu hơn */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt mà khi di chuột */
+  max-width: 650px; /* Giới hạn chiều rộng tối đa của bài đăng */
+  width: 100%; /* Đảm bảo đáp ứng */
+}
+
+.post-card:hover {
+  transform: translateY(-7px); /* Nổi lên một chút khi di chuột */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* Đổ bóng mạnh hơn khi hover */
+}
+
+/* Header của bài đăng */
+.post-header {
+  padding: 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee; /* Đường kẻ phân tách nhẹ */
+}
+
+.user-avatar {
+  width: 55px; /* Kích thước avatar lớn hơn */
+  height: 55px;
+  border: 3px solid #0d6efd; /* Viền xanh Bootstrap primary */
+  padding: 2px; /* Khoảng cách giữa ảnh và viền */
+}
+
+.username {
+  font-weight: 600; /* Tên người dùng đậm hơn */
+  color: #333;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.post-time {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Khu vực nội dung media (hình ảnh/video) */
+.post-media {
+  width: 100%;
+  max-height: 550px; /* Giới hạn chiều cao để không quá dài */
+  object-fit: cover; /* Cắt ảnh/video để vừa khung mà không bị méo */
+  display: block; /* Loại bỏ khoảng trắng dưới ảnh */
+}
+
+/* Khu vực caption */
+.post-caption {
+  padding: 15px;
+  background-color: #ffffff;
+  line-height: 1.6; /* Tăng khoảng cách dòng cho dễ đọc */
+}
+
+.caption-text {
+  color: #444;
+  margin-bottom: 0;
+}
+
+.caption-username {
+  font-weight: 600;
+  color: #333;
+  margin-right: 5px;
+}
+
+/* Footer tương tác (like, comment, share) */
+.post-footer {
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #eee; /* Đường kẻ phân tách nhẹ */
+}

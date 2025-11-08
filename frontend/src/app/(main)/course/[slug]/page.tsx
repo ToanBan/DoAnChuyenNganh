@@ -179,6 +179,7 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
       },
     });
     const data = await res.json();
+    console.log(data);
     setCourse(data.message);
     setTopics(data.message.topics);
     if (data.message && data.message.topics) {

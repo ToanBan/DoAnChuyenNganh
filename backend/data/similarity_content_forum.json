@@ -1,0 +1,6002 @@
+[
+  {
+    "userId": 3,
+    "forumId": 1,
+    "similarity": 0.868692843664444
+  },
+  {
+    "userId": 3,
+    "forumId": 2,
+    "similarity": 0.8701875344689161
+  },
+  {
+    "userId": 3,
+    "forumId": 3,
+    "similarity": 0.8844033727581694
+  },
+  {
+    "userId": 3,
+    "forumId": 4,
+    "similarity": 0.8828824860046247
+  },
+  {
+    "userId": 3,
+    "forumId": 5,
+    "similarity": 0.8828352766188222
+  },
+  {
+    "userId": 3,
+    "forumId": 6,
+    "similarity": 0.8878981196804977
+  },
+  {
+    "userId": 3,
+    "forumId": 7,
+    "similarity": 0.8545015620679939
+  },
+  {
+    "userId": 3,
+    "forumId": 8,
+    "similarity": 0.8713684427143573
+  },
+  {
+    "userId": 3,
+    "forumId": 9,
+    "similarity": 0.8796751154565551
+  },
+  {
+    "userId": 3,
+    "forumId": 10,
+    "similarity": 0.8730841551993951
+  },
+  {
+    "userId": 3,
+    "forumId": 11,
+    "similarity": 0.8866992885902568
+  },
+  {
+    "userId": 3,
+    "forumId": 12,
+    "similarity": 0.8736115025872282
+  },
+  {
+    "userId": 3,
+    "forumId": 13,
+    "similarity": 0.8890413584645287
+  },
+  {
+    "userId": 3,
+    "forumId": 14,
+    "similarity": 0.8801949296702096
+  },
+  {
+    "userId": 3,
+    "forumId": 15,
+    "similarity": 0.8852678449296952
+  },
+  {
+    "userId": 3,
+    "forumId": 16,
+    "similarity": 0.8743359199945193
+  },
+  {
+    "userId": 3,
+    "forumId": 17,
+    "similarity": 0.8767166058748908
+  },
+  {
+    "userId": 3,
+    "forumId": 18,
+    "similarity": 0.8875920059196062
+  },
+  {
+    "userId": 3,
+    "forumId": 19,
+    "similarity": 0.8774672377755899
+  },
+  {
+    "userId": 3,
+    "forumId": 20,
+    "similarity": 0.8911562066042618
+  },
+  {
+    "userId": 3,
+    "forumId": 21,
+    "similarity": 0.8789976669469352
+  },
+  {
+    "userId": 3,
+    "forumId": 22,
+    "similarity": 0.8926902575348289
+  },
+  {
+    "userId": 3,
+    "forumId": 23,
+    "similarity": 0.8843822918670085
+  },
+  {
+    "userId": 3,
+    "forumId": 24,
+    "similarity": 0.8698605866317266
+  },
+  {
+    "userId": 5,
+    "forumId": 1,
+    "similarity": 0.8690749064105208
+  },
+  {
+    "userId": 5,
+    "forumId": 2,
+    "similarity": 0.8786631132207713
+  },
+  {
+    "userId": 5,
+    "forumId": 3,
+    "similarity": 0.8757935122559549
+  },
+  {
+    "userId": 5,
+    "forumId": 4,
+    "similarity": 0.8762689329535578
+  },
+  {
+    "userId": 5,
+    "forumId": 5,
+    "similarity": 0.8767217260056317
+  },
+  {
+    "userId": 5,
+    "forumId": 6,
+    "similarity": 0.8732487618169686
+  },
+  {
+    "userId": 5,
+    "forumId": 7,
+    "similarity": 0.8501324129701892
+  },
+  {
+    "userId": 5,
+    "forumId": 8,
+    "similarity": 0.8749518190766931
+  },
+  {
+    "userId": 5,
+    "forumId": 9,
+    "similarity": 0.8704085661787222
+  },
+  {
+    "userId": 5,
+    "forumId": 10,
+    "similarity": 0.8718255872989265
+  },
+  {
+    "userId": 5,
+    "forumId": 11,
+    "similarity": 0.882584685211361
+  },
+  {
+    "userId": 5,
+    "forumId": 12,
+    "similarity": 0.8714799498328454
+  },
+  {
+    "userId": 5,
+    "forumId": 13,
+    "similarity": 0.8699162857343679
+  },
+  {
+    "userId": 5,
+    "forumId": 14,
+    "similarity": 0.8650980171276262
+  },
+  {
+    "userId": 5,
+    "forumId": 15,
+    "similarity": 0.8697723596962774
+  },
+  {
+    "userId": 5,
+    "forumId": 16,
+    "similarity": 0.8680040910818959
+  },
+  {
+    "userId": 5,
+    "forumId": 17,
+    "similarity": 0.8797041415309755
+  },
+  {
+    "userId": 5,
+    "forumId": 18,
+    "similarity": 0.877562908107058
+  },
+  {
+    "userId": 5,
+    "forumId": 19,
+    "similarity": 0.8746825209188132
+  },
+  {
+    "userId": 5,
+    "forumId": 20,
+    "similarity": 0.8877259761626409
+  },
+  {
+    "userId": 5,
+    "forumId": 21,
+    "similarity": 0.866382604799954
+  },
+  {
+    "userId": 5,
+    "forumId": 22,
+    "similarity": 0.8823434869212586
+  },
+  {
+    "userId": 5,
+    "forumId": 23,
+    "similarity": 0.8632268606589096
+  },
+  {
+    "userId": 5,
+    "forumId": 24,
+    "similarity": 0.8667598469292745
+  },
+  {
+    "userId": 6,
+    "forumId": 1,
+    "similarity": 0.8662339170009422
+  },
+  {
+    "userId": 6,
+    "forumId": 2,
+    "similarity": 0.870201140612502
+  },
+  {
+    "userId": 6,
+    "forumId": 3,
+    "similarity": 0.8802814821450605
+  },
+  {
+    "userId": 6,
+    "forumId": 4,
+    "similarity": 0.8789794518909712
+  },
+  {
+    "userId": 6,
+    "forumId": 5,
+    "similarity": 0.8808703337811697
+  },
+  {
+    "userId": 6,
+    "forumId": 6,
+    "similarity": 0.8740372186487899
+  },
+  {
+    "userId": 6,
+    "forumId": 7,
+    "similarity": 0.8512909558788827
+  },
+  {
+    "userId": 6,
+    "forumId": 8,
+    "similarity": 0.8683393396116139
+  },
+  {
+    "userId": 6,
+    "forumId": 9,
+    "similarity": 0.8763881545822786
+  },
+  {
+    "userId": 6,
+    "forumId": 10,
+    "similarity": 0.8753689184364762
+  },
+  {
+    "userId": 6,
+    "forumId": 11,
+    "similarity": 0.8880569357217302
+  },
+  {
+    "userId": 6,
+    "forumId": 12,
+    "similarity": 0.8704167024172994
+  },
+  {
+    "userId": 6,
+    "forumId": 13,
+    "similarity": 0.8648025121356943
+  },
+  {
+    "userId": 6,
+    "forumId": 14,
+    "similarity": 0.8657826072544539
+  },
+  {
+    "userId": 6,
+    "forumId": 15,
+    "similarity": 0.8786561311369819
+  },
+  {
+    "userId": 6,
+    "forumId": 16,
+    "similarity": 0.8604193221587175
+  },
+  {
+    "userId": 6,
+    "forumId": 17,
+    "similarity": 0.8775633005949208
+  },
+  {
+    "userId": 6,
+    "forumId": 18,
+    "similarity": 0.8725686647806012
+  },
+  {
+    "userId": 6,
+    "forumId": 19,
+    "similarity": 0.8716017732432493
+  },
+  {
+    "userId": 6,
+    "forumId": 20,
+    "similarity": 0.8774540474081182
+  },
+  {
+    "userId": 6,
+    "forumId": 21,
+    "similarity": 0.8587301900928797
+  },
+  {
+    "userId": 6,
+    "forumId": 22,
+    "similarity": 0.8767605314183137
+  },
+  {
+    "userId": 6,
+    "forumId": 23,
+    "similarity": 0.872562904395891
+  },
+  {
+    "userId": 6,
+    "forumId": 24,
+    "similarity": 0.8708587244274621
+  },
+  {
+    "userId": 7,
+    "forumId": 1,
+    "similarity": 0.8702670093874574
+  },
+  {
+    "userId": 7,
+    "forumId": 2,
+    "similarity": 0.8750926618044729
+  },
+  {
+    "userId": 7,
+    "forumId": 3,
+    "similarity": 0.8704710843914418
+  },
+  {
+    "userId": 7,
+    "forumId": 4,
+    "similarity": 0.8756047037657839
+  },
+  {
+    "userId": 7,
+    "forumId": 5,
+    "similarity": 0.8814538870850757
+  },
+  {
+    "userId": 7,
+    "forumId": 6,
+    "similarity": 0.8898322690751547
+  },
+  {
+    "userId": 7,
+    "forumId": 7,
+    "similarity": 0.8684995633172586
+  },
+  {
+    "userId": 7,
+    "forumId": 8,
+    "similarity": 0.8820393731824726
+  },
+  {
+    "userId": 7,
+    "forumId": 9,
+    "similarity": 0.8687791927373532
+  },
+  {
+    "userId": 7,
+    "forumId": 10,
+    "similarity": 0.875620894424629
+  },
+  {
+    "userId": 7,
+    "forumId": 11,
+    "similarity": 0.879022891721886
+  },
+  {
+    "userId": 7,
+    "forumId": 12,
+    "similarity": 0.8721211618898763
+  },
+  {
+    "userId": 7,
+    "forumId": 13,
+    "similarity": 0.8663287796049699
+  },
+  {
+    "userId": 7,
+    "forumId": 14,
+    "similarity": 0.8829284997862453
+  },
+  {
+    "userId": 7,
+    "forumId": 15,
+    "similarity": 0.8688492241625141
+  },
+  {
+    "userId": 7,
+    "forumId": 16,
+    "similarity": 0.8887608392309784
+  },
+  {
+    "userId": 7,
+    "forumId": 17,
+    "similarity": 0.8857802329264924
+  },
+  {
+    "userId": 7,
+    "forumId": 18,
+    "similarity": 0.8779488124220662
+  },
+  {
+    "userId": 7,
+    "forumId": 19,
+    "similarity": 0.870627269817324
+  },
+  {
+    "userId": 7,
+    "forumId": 20,
+    "similarity": 0.8858539972616901
+  },
+  {
+    "userId": 7,
+    "forumId": 21,
+    "similarity": 0.8707792109705479
+  },
+  {
+    "userId": 7,
+    "forumId": 22,
+    "similarity": 0.9039446966463324
+  },
+  {
+    "userId": 7,
+    "forumId": 23,
+    "similarity": 0.8616800841591101
+  },
+  {
+    "userId": 7,
+    "forumId": 24,
+    "similarity": 0.8629027248452528
+  },
+  {
+    "userId": 8,
+    "forumId": 1,
+    "similarity": 0.8736476399621718
+  },
+  {
+    "userId": 8,
+    "forumId": 2,
+    "similarity": 0.8770850050274295
+  },
+  {
+    "userId": 8,
+    "forumId": 3,
+    "similarity": 0.8765927927131809
+  },
+  {
+    "userId": 8,
+    "forumId": 4,
+    "similarity": 0.8722029929170039
+  },
+  {
+    "userId": 8,
+    "forumId": 5,
+    "similarity": 0.8856630482964383
+  },
+  {
+    "userId": 8,
+    "forumId": 6,
+    "similarity": 0.8884394914598384
+  },
+  {
+    "userId": 8,
+    "forumId": 7,
+    "similarity": 0.862795677566904
+  },
+  {
+    "userId": 8,
+    "forumId": 8,
+    "similarity": 0.8793198870471062
+  },
+  {
+    "userId": 8,
+    "forumId": 9,
+    "similarity": 0.8738716932746169
+  },
+  {
+    "userId": 8,
+    "forumId": 10,
+    "similarity": 0.8778423456817737
+  },
+  {
+    "userId": 8,
+    "forumId": 11,
+    "similarity": 0.8828637910613665
+  },
+  {
+    "userId": 8,
+    "forumId": 12,
+    "similarity": 0.8706199373217411
+  },
+  {
+    "userId": 8,
+    "forumId": 13,
+    "similarity": 0.8712882841401064
+  },
+  {
+    "userId": 8,
+    "forumId": 14,
+    "similarity": 0.8806638152004108
+  },
+  {
+    "userId": 8,
+    "forumId": 15,
+    "similarity": 0.8728746506406736
+  },
+  {
+    "userId": 8,
+    "forumId": 16,
+    "similarity": 0.8781849347209608
+  },
+  {
+    "userId": 8,
+    "forumId": 17,
+    "similarity": 0.8849599699324195
+  },
+  {
+    "userId": 8,
+    "forumId": 18,
+    "similarity": 0.8791445248814462
+  },
+  {
+    "userId": 8,
+    "forumId": 19,
+    "similarity": 0.8703406477465013
+  },
+  {
+    "userId": 8,
+    "forumId": 20,
+    "similarity": 0.8845648705267376
+  },
+  {
+    "userId": 8,
+    "forumId": 21,
+    "similarity": 0.8662222937979877
+  },
+  {
+    "userId": 8,
+    "forumId": 22,
+    "similarity": 0.895768073061572
+  },
+  {
+    "userId": 8,
+    "forumId": 23,
+    "similarity": 0.865442908095229
+  },
+  {
+    "userId": 8,
+    "forumId": 24,
+    "similarity": 0.8686606827879858
+  },
+  {
+    "userId": 9,
+    "forumId": 1,
+    "similarity": 0.8739507785606073
+  },
+  {
+    "userId": 9,
+    "forumId": 2,
+    "similarity": 0.8768504590058405
+  },
+  {
+    "userId": 9,
+    "forumId": 3,
+    "similarity": 0.8914640641697037
+  },
+  {
+    "userId": 9,
+    "forumId": 4,
+    "similarity": 0.8912503395843723
+  },
+  {
+    "userId": 9,
+    "forumId": 5,
+    "similarity": 0.8841672612406953
+  },
+  {
+    "userId": 9,
+    "forumId": 6,
+    "similarity": 0.8807674253281216
+  },
+  {
+    "userId": 9,
+    "forumId": 7,
+    "similarity": 0.8609885347019745
+  },
+  {
+    "userId": 9,
+    "forumId": 8,
+    "similarity": 0.8762918385760978
+  },
+  {
+    "userId": 9,
+    "forumId": 9,
+    "similarity": 0.8784293343959466
+  },
+  {
+    "userId": 9,
+    "forumId": 10,
+    "similarity": 0.8718051497967576
+  },
+  {
+    "userId": 9,
+    "forumId": 11,
+    "similarity": 0.8912099767807303
+  },
+  {
+    "userId": 9,
+    "forumId": 12,
+    "similarity": 0.8807316484741653
+  },
+  {
+    "userId": 9,
+    "forumId": 13,
+    "similarity": 0.8800617897303591
+  },
+  {
+    "userId": 9,
+    "forumId": 14,
+    "similarity": 0.8764611418459247
+  },
+  {
+    "userId": 9,
+    "forumId": 15,
+    "similarity": 0.8801665428219867
+  },
+  {
+    "userId": 9,
+    "forumId": 16,
+    "similarity": 0.8743386509431208
+  },
+  {
+    "userId": 9,
+    "forumId": 17,
+    "similarity": 0.8831849537344417
+  },
+  {
+    "userId": 9,
+    "forumId": 18,
+    "similarity": 0.8784280564740847
+  },
+  {
+    "userId": 9,
+    "forumId": 19,
+    "similarity": 0.8904861597300051
+  },
+  {
+    "userId": 9,
+    "forumId": 20,
+    "similarity": 0.8832853511592603
+  },
+  {
+    "userId": 9,
+    "forumId": 21,
+    "similarity": 0.8644969209568814
+  },
+  {
+    "userId": 9,
+    "forumId": 22,
+    "similarity": 0.888649300226705
+  },
+  {
+    "userId": 9,
+    "forumId": 23,
+    "similarity": 0.8735180310315986
+  },
+  {
+    "userId": 9,
+    "forumId": 24,
+    "similarity": 0.8728701325404039
+  },
+  {
+    "userId": 10,
+    "forumId": 1,
+    "similarity": 0.8734033613000379
+  },
+  {
+    "userId": 10,
+    "forumId": 2,
+    "similarity": 0.8779864889542728
+  },
+  {
+    "userId": 10,
+    "forumId": 3,
+    "similarity": 0.869751016970122
+  },
+  {
+    "userId": 10,
+    "forumId": 4,
+    "similarity": 0.8664106586761255
+  },
+  {
+    "userId": 10,
+    "forumId": 5,
+    "similarity": 0.8861213768297188
+  },
+  {
+    "userId": 10,
+    "forumId": 6,
+    "similarity": 0.8868223547699843
+  },
+  {
+    "userId": 10,
+    "forumId": 7,
+    "similarity": 0.8621455147920418
+  },
+  {
+    "userId": 10,
+    "forumId": 8,
+    "similarity": 0.8708819474981407
+  },
+  {
+    "userId": 10,
+    "forumId": 9,
+    "similarity": 0.8692256739150837
+  },
+  {
+    "userId": 10,
+    "forumId": 10,
+    "similarity": 0.874913776697873
+  },
+  {
+    "userId": 10,
+    "forumId": 11,
+    "similarity": 0.8788524623515155
+  },
+  {
+    "userId": 10,
+    "forumId": 12,
+    "similarity": 0.8647380554553923
+  },
+  {
+    "userId": 10,
+    "forumId": 13,
+    "similarity": 0.8637123160949619
+  },
+  {
+    "userId": 10,
+    "forumId": 14,
+    "similarity": 0.8788470388691905
+  },
+  {
+    "userId": 10,
+    "forumId": 15,
+    "similarity": 0.8707587004470995
+  },
+  {
+    "userId": 10,
+    "forumId": 16,
+    "similarity": 0.8722602730069677
+  },
+  {
+    "userId": 10,
+    "forumId": 17,
+    "similarity": 0.8772588823691851
+  },
+  {
+    "userId": 10,
+    "forumId": 18,
+    "similarity": 0.8760132032707408
+  },
+  {
+    "userId": 10,
+    "forumId": 19,
+    "similarity": 0.864413415987905
+  },
+  {
+    "userId": 10,
+    "forumId": 20,
+    "similarity": 0.883681959165452
+  },
+  {
+    "userId": 10,
+    "forumId": 21,
+    "similarity": 0.8658084521038474
+  },
+  {
+    "userId": 10,
+    "forumId": 22,
+    "similarity": 0.8930427832033757
+  },
+  {
+    "userId": 10,
+    "forumId": 23,
+    "similarity": 0.8618907972400296
+  },
+  {
+    "userId": 10,
+    "forumId": 24,
+    "similarity": 0.8660329690741629
+  },
+  {
+    "userId": 11,
+    "forumId": 1,
+    "similarity": 0.8759291247043937
+  },
+  {
+    "userId": 11,
+    "forumId": 2,
+    "similarity": 0.8773315764239514
+  },
+  {
+    "userId": 11,
+    "forumId": 3,
+    "similarity": 0.8826680680036694
+  },
+  {
+    "userId": 11,
+    "forumId": 4,
+    "similarity": 0.8789130759238525
+  },
+  {
+    "userId": 11,
+    "forumId": 5,
+    "similarity": 0.8853837994462075
+  },
+  {
+    "userId": 11,
+    "forumId": 6,
+    "similarity": 0.879235728232851
+  },
+  {
+    "userId": 11,
+    "forumId": 7,
+    "similarity": 0.856221789060444
+  },
+  {
+    "userId": 11,
+    "forumId": 8,
+    "similarity": 0.8723866234163783
+  },
+  {
+    "userId": 11,
+    "forumId": 9,
+    "similarity": 0.8768796998187686
+  },
+  {
+    "userId": 11,
+    "forumId": 10,
+    "similarity": 0.8780395122151424
+  },
+  {
+    "userId": 11,
+    "forumId": 11,
+    "similarity": 0.8892138022641926
+  },
+  {
+    "userId": 11,
+    "forumId": 12,
+    "similarity": 0.8783255644118845
+  },
+  {
+    "userId": 11,
+    "forumId": 13,
+    "similarity": 0.8703330147296611
+  },
+  {
+    "userId": 11,
+    "forumId": 14,
+    "similarity": 0.8736345521600271
+  },
+  {
+    "userId": 11,
+    "forumId": 15,
+    "similarity": 0.8808108098997998
+  },
+  {
+    "userId": 11,
+    "forumId": 16,
+    "similarity": 0.8671763445815269
+  },
+  {
+    "userId": 11,
+    "forumId": 17,
+    "similarity": 0.880272834797062
+  },
+  {
+    "userId": 11,
+    "forumId": 18,
+    "similarity": 0.8814164908322419
+  },
+  {
+    "userId": 11,
+    "forumId": 19,
+    "similarity": 0.8770716799247688
+  },
+  {
+    "userId": 11,
+    "forumId": 20,
+    "similarity": 0.8866390448054012
+  },
+  {
+    "userId": 11,
+    "forumId": 21,
+    "similarity": 0.8680079667383583
+  },
+  {
+    "userId": 11,
+    "forumId": 22,
+    "similarity": 0.8840164166257575
+  },
+  {
+    "userId": 11,
+    "forumId": 23,
+    "similarity": 0.8756770746672521
+  },
+  {
+    "userId": 11,
+    "forumId": 24,
+    "similarity": 0.8752607630742536
+  },
+  {
+    "userId": 12,
+    "forumId": 1,
+    "similarity": 0.8745978721594215
+  },
+  {
+    "userId": 12,
+    "forumId": 2,
+    "similarity": 0.875855451744797
+  },
+  {
+    "userId": 12,
+    "forumId": 3,
+    "similarity": 0.8734074667496375
+  },
+  {
+    "userId": 12,
+    "forumId": 4,
+    "similarity": 0.8715135682431094
+  },
+  {
+    "userId": 12,
+    "forumId": 5,
+    "similarity": 0.8862840888211891
+  },
+  {
+    "userId": 12,
+    "forumId": 6,
+    "similarity": 0.8855258506929994
+  },
+  {
+    "userId": 12,
+    "forumId": 7,
+    "similarity": 0.8649244650043566
+  },
+  {
+    "userId": 12,
+    "forumId": 8,
+    "similarity": 0.8802572304185208
+  },
+  {
+    "userId": 12,
+    "forumId": 9,
+    "similarity": 0.867127261599905
+  },
+  {
+    "userId": 12,
+    "forumId": 10,
+    "similarity": 0.8806552963588345
+  },
+  {
+    "userId": 12,
+    "forumId": 11,
+    "similarity": 0.8836928873051834
+  },
+  {
+    "userId": 12,
+    "forumId": 12,
+    "similarity": 0.8705759712562641
+  },
+  {
+    "userId": 12,
+    "forumId": 13,
+    "similarity": 0.8661734464050183
+  },
+  {
+    "userId": 12,
+    "forumId": 14,
+    "similarity": 0.8778867385712799
+  },
+  {
+    "userId": 12,
+    "forumId": 15,
+    "similarity": 0.8755333085261174
+  },
+  {
+    "userId": 12,
+    "forumId": 16,
+    "similarity": 0.8746477045715343
+  },
+  {
+    "userId": 12,
+    "forumId": 17,
+    "similarity": 0.884694969032659
+  },
+  {
+    "userId": 12,
+    "forumId": 18,
+    "similarity": 0.8861679120708557
+  },
+  {
+    "userId": 12,
+    "forumId": 19,
+    "similarity": 0.8686508872234832
+  },
+  {
+    "userId": 12,
+    "forumId": 20,
+    "similarity": 0.8902961495859947
+  },
+  {
+    "userId": 12,
+    "forumId": 21,
+    "similarity": 0.8769499080079689
+  },
+  {
+    "userId": 12,
+    "forumId": 22,
+    "similarity": 0.8907937039204661
+  },
+  {
+    "userId": 12,
+    "forumId": 23,
+    "similarity": 0.8714343978178987
+  },
+  {
+    "userId": 12,
+    "forumId": 24,
+    "similarity": 0.8669302519524669
+  },
+  {
+    "userId": 13,
+    "forumId": 1,
+    "similarity": 0.8709841519196235
+  },
+  {
+    "userId": 13,
+    "forumId": 2,
+    "similarity": 0.874636018438474
+  },
+  {
+    "userId": 13,
+    "forumId": 3,
+    "similarity": 0.8821455806185239
+  },
+  {
+    "userId": 13,
+    "forumId": 4,
+    "similarity": 0.8787014100678671
+  },
+  {
+    "userId": 13,
+    "forumId": 5,
+    "similarity": 0.8827136280219136
+  },
+  {
+    "userId": 13,
+    "forumId": 6,
+    "similarity": 0.8796254643969342
+  },
+  {
+    "userId": 13,
+    "forumId": 7,
+    "similarity": 0.8555872479666917
+  },
+  {
+    "userId": 13,
+    "forumId": 8,
+    "similarity": 0.8738614772032659
+  },
+  {
+    "userId": 13,
+    "forumId": 9,
+    "similarity": 0.8729415477258632
+  },
+  {
+    "userId": 13,
+    "forumId": 10,
+    "similarity": 0.8756052546364753
+  },
+  {
+    "userId": 13,
+    "forumId": 11,
+    "similarity": 0.8914559188768779
+  },
+  {
+    "userId": 13,
+    "forumId": 12,
+    "similarity": 0.8733729603664082
+  },
+  {
+    "userId": 13,
+    "forumId": 13,
+    "similarity": 0.8743546428242648
+  },
+  {
+    "userId": 13,
+    "forumId": 14,
+    "similarity": 0.8713439042387338
+  },
+  {
+    "userId": 13,
+    "forumId": 15,
+    "similarity": 0.8852335873593903
+  },
+  {
+    "userId": 13,
+    "forumId": 16,
+    "similarity": 0.8721224165490454
+  },
+  {
+    "userId": 13,
+    "forumId": 17,
+    "similarity": 0.8781797185130532
+  },
+  {
+    "userId": 13,
+    "forumId": 18,
+    "similarity": 0.8805593838802626
+  },
+  {
+    "userId": 13,
+    "forumId": 19,
+    "similarity": 0.872961837189776
+  },
+  {
+    "userId": 13,
+    "forumId": 20,
+    "similarity": 0.884039292131114
+  },
+  {
+    "userId": 13,
+    "forumId": 21,
+    "similarity": 0.8693866102921551
+  },
+  {
+    "userId": 13,
+    "forumId": 22,
+    "similarity": 0.8866443113566304
+  },
+  {
+    "userId": 13,
+    "forumId": 23,
+    "similarity": 0.8729873407216472
+  },
+  {
+    "userId": 13,
+    "forumId": 24,
+    "similarity": 0.8699990500375177
+  },
+  {
+    "userId": 14,
+    "forumId": 1,
+    "similarity": 0.872656528818748
+  },
+  {
+    "userId": 14,
+    "forumId": 2,
+    "similarity": 0.8730629448078459
+  },
+  {
+    "userId": 14,
+    "forumId": 3,
+    "similarity": 0.8833673885801643
+  },
+  {
+    "userId": 14,
+    "forumId": 4,
+    "similarity": 0.8801619942384713
+  },
+  {
+    "userId": 14,
+    "forumId": 5,
+    "similarity": 0.8853316133662847
+  },
+  {
+    "userId": 14,
+    "forumId": 6,
+    "similarity": 0.8784017540055927
+  },
+  {
+    "userId": 14,
+    "forumId": 7,
+    "similarity": 0.8601117551320364
+  },
+  {
+    "userId": 14,
+    "forumId": 8,
+    "similarity": 0.8801252831343609
+  },
+  {
+    "userId": 14,
+    "forumId": 9,
+    "similarity": 0.8699306139710331
+  },
+  {
+    "userId": 14,
+    "forumId": 10,
+    "similarity": 0.8794522505253171
+  },
+  {
+    "userId": 14,
+    "forumId": 11,
+    "similarity": 0.8879493254067202
+  },
+  {
+    "userId": 14,
+    "forumId": 12,
+    "similarity": 0.8746871388351196
+  },
+  {
+    "userId": 14,
+    "forumId": 13,
+    "similarity": 0.8669111455357372
+  },
+  {
+    "userId": 14,
+    "forumId": 14,
+    "similarity": 0.8724246233615026
+  },
+  {
+    "userId": 14,
+    "forumId": 15,
+    "similarity": 0.8773052906180544
+  },
+  {
+    "userId": 14,
+    "forumId": 16,
+    "similarity": 0.8661720088910962
+  },
+  {
+    "userId": 14,
+    "forumId": 17,
+    "similarity": 0.8873797137604783
+  },
+  {
+    "userId": 14,
+    "forumId": 18,
+    "similarity": 0.8804717281674743
+  },
+  {
+    "userId": 14,
+    "forumId": 19,
+    "similarity": 0.8775845866597204
+  },
+  {
+    "userId": 14,
+    "forumId": 20,
+    "similarity": 0.8862117785691918
+  },
+  {
+    "userId": 14,
+    "forumId": 21,
+    "similarity": 0.86578860125261
+  },
+  {
+    "userId": 14,
+    "forumId": 22,
+    "similarity": 0.8816291682440682
+  },
+  {
+    "userId": 14,
+    "forumId": 23,
+    "similarity": 0.8710878775887526
+  },
+  {
+    "userId": 14,
+    "forumId": 24,
+    "similarity": 0.8701836596466271
+  },
+  {
+    "userId": 15,
+    "forumId": 1,
+    "similarity": 0.8732661800952296
+  },
+  {
+    "userId": 15,
+    "forumId": 2,
+    "similarity": 0.8795119156096436
+  },
+  {
+    "userId": 15,
+    "forumId": 3,
+    "similarity": 0.8824768930026825
+  },
+  {
+    "userId": 15,
+    "forumId": 4,
+    "similarity": 0.8805089715007235
+  },
+  {
+    "userId": 15,
+    "forumId": 5,
+    "similarity": 0.8810363185007624
+  },
+  {
+    "userId": 15,
+    "forumId": 6,
+    "similarity": 0.8783532778897154
+  },
+  {
+    "userId": 15,
+    "forumId": 7,
+    "similarity": 0.8520950222575223
+  },
+  {
+    "userId": 15,
+    "forumId": 8,
+    "similarity": 0.8673569896449318
+  },
+  {
+    "userId": 15,
+    "forumId": 9,
+    "similarity": 0.87123673524076
+  },
+  {
+    "userId": 15,
+    "forumId": 10,
+    "similarity": 0.8684061478668286
+  },
+  {
+    "userId": 15,
+    "forumId": 11,
+    "similarity": 0.8876648287235829
+  },
+  {
+    "userId": 15,
+    "forumId": 12,
+    "similarity": 0.8743376727731134
+  },
+  {
+    "userId": 15,
+    "forumId": 13,
+    "similarity": 0.8686829047677552
+  },
+  {
+    "userId": 15,
+    "forumId": 14,
+    "similarity": 0.8702820172836228
+  },
+  {
+    "userId": 15,
+    "forumId": 15,
+    "similarity": 0.8831108095925252
+  },
+  {
+    "userId": 15,
+    "forumId": 16,
+    "similarity": 0.8691691521633582
+  },
+  {
+    "userId": 15,
+    "forumId": 17,
+    "similarity": 0.8772787532661009
+  },
+  {
+    "userId": 15,
+    "forumId": 18,
+    "similarity": 0.8689955783458845
+  },
+  {
+    "userId": 15,
+    "forumId": 19,
+    "similarity": 0.87351507875853
+  },
+  {
+    "userId": 15,
+    "forumId": 20,
+    "similarity": 0.8757997779316402
+  },
+  {
+    "userId": 15,
+    "forumId": 21,
+    "similarity": 0.8579658268116501
+  },
+  {
+    "userId": 15,
+    "forumId": 22,
+    "similarity": 0.8858933648753133
+  },
+  {
+    "userId": 15,
+    "forumId": 23,
+    "similarity": 0.8743215138250537
+  },
+  {
+    "userId": 15,
+    "forumId": 24,
+    "similarity": 0.8677651201875685
+  },
+  {
+    "userId": 16,
+    "forumId": 1,
+    "similarity": 0.8683079462542426
+  },
+  {
+    "userId": 16,
+    "forumId": 2,
+    "similarity": 0.8721066579752477
+  },
+  {
+    "userId": 16,
+    "forumId": 3,
+    "similarity": 0.8682085779229634
+  },
+  {
+    "userId": 16,
+    "forumId": 4,
+    "similarity": 0.8703988202820857
+  },
+  {
+    "userId": 16,
+    "forumId": 5,
+    "similarity": 0.8832072879935962
+  },
+  {
+    "userId": 16,
+    "forumId": 6,
+    "similarity": 0.8876111189120528
+  },
+  {
+    "userId": 16,
+    "forumId": 7,
+    "similarity": 0.8644884817888252
+  },
+  {
+    "userId": 16,
+    "forumId": 8,
+    "similarity": 0.8861672754612608
+  },
+  {
+    "userId": 16,
+    "forumId": 9,
+    "similarity": 0.8723383587083435
+  },
+  {
+    "userId": 16,
+    "forumId": 10,
+    "similarity": 0.8747585926577712
+  },
+  {
+    "userId": 16,
+    "forumId": 11,
+    "similarity": 0.8823474524354014
+  },
+  {
+    "userId": 16,
+    "forumId": 12,
+    "similarity": 0.8692732794746328
+  },
+  {
+    "userId": 16,
+    "forumId": 13,
+    "similarity": 0.8703881507853932
+  },
+  {
+    "userId": 16,
+    "forumId": 14,
+    "similarity": 0.8805873890849617
+  },
+  {
+    "userId": 16,
+    "forumId": 15,
+    "similarity": 0.8706653030423718
+  },
+  {
+    "userId": 16,
+    "forumId": 16,
+    "similarity": 0.8727855031013978
+  },
+  {
+    "userId": 16,
+    "forumId": 17,
+    "similarity": 0.8919989536854761
+  },
+  {
+    "userId": 16,
+    "forumId": 18,
+    "similarity": 0.8780559717231052
+  },
+  {
+    "userId": 16,
+    "forumId": 19,
+    "similarity": 0.8679834996690011
+  },
+  {
+    "userId": 16,
+    "forumId": 20,
+    "similarity": 0.8857663741062783
+  },
+  {
+    "userId": 16,
+    "forumId": 21,
+    "similarity": 0.8669760361011641
+  },
+  {
+    "userId": 16,
+    "forumId": 22,
+    "similarity": 0.891494767529595
+  },
+  {
+    "userId": 16,
+    "forumId": 23,
+    "similarity": 0.8661585447130676
+  },
+  {
+    "userId": 16,
+    "forumId": 24,
+    "similarity": 0.8691153521096574
+  },
+  {
+    "userId": 17,
+    "forumId": 1,
+    "similarity": 0.8714422446902947
+  },
+  {
+    "userId": 17,
+    "forumId": 2,
+    "similarity": 0.877531347904814
+  },
+  {
+    "userId": 17,
+    "forumId": 3,
+    "similarity": 0.8783793976197813
+  },
+  {
+    "userId": 17,
+    "forumId": 4,
+    "similarity": 0.8754719648726658
+  },
+  {
+    "userId": 17,
+    "forumId": 5,
+    "similarity": 0.8823202581131118
+  },
+  {
+    "userId": 17,
+    "forumId": 6,
+    "similarity": 0.8776911153284339
+  },
+  {
+    "userId": 17,
+    "forumId": 7,
+    "similarity": 0.8537114572259733
+  },
+  {
+    "userId": 17,
+    "forumId": 8,
+    "similarity": 0.8730736720850489
+  },
+  {
+    "userId": 17,
+    "forumId": 9,
+    "similarity": 0.8839562470120117
+  },
+  {
+    "userId": 17,
+    "forumId": 10,
+    "similarity": 0.8746645699815521
+  },
+  {
+    "userId": 17,
+    "forumId": 11,
+    "similarity": 0.8918949377026377
+  },
+  {
+    "userId": 17,
+    "forumId": 12,
+    "similarity": 0.8733370914351014
+  },
+  {
+    "userId": 17,
+    "forumId": 13,
+    "similarity": 0.8741735580170686
+  },
+  {
+    "userId": 17,
+    "forumId": 14,
+    "similarity": 0.8699169045579178
+  },
+  {
+    "userId": 17,
+    "forumId": 15,
+    "similarity": 0.8783130255612508
+  },
+  {
+    "userId": 17,
+    "forumId": 16,
+    "similarity": 0.8662161210812448
+  },
+  {
+    "userId": 17,
+    "forumId": 17,
+    "similarity": 0.8785194389153649
+  },
+  {
+    "userId": 17,
+    "forumId": 18,
+    "similarity": 0.8815530079951004
+  },
+  {
+    "userId": 17,
+    "forumId": 19,
+    "similarity": 0.8722146255218108
+  },
+  {
+    "userId": 17,
+    "forumId": 20,
+    "similarity": 0.8907923697182917
+  },
+  {
+    "userId": 17,
+    "forumId": 21,
+    "similarity": 0.867820068430568
+  },
+  {
+    "userId": 17,
+    "forumId": 22,
+    "similarity": 0.882337078906307
+  },
+  {
+    "userId": 17,
+    "forumId": 23,
+    "similarity": 0.8697954116756252
+  },
+  {
+    "userId": 17,
+    "forumId": 24,
+    "similarity": 0.87713225694948
+  },
+  {
+    "userId": 18,
+    "forumId": 1,
+    "similarity": 0.8733021244032872
+  },
+  {
+    "userId": 18,
+    "forumId": 2,
+    "similarity": 0.8758786970296014
+  },
+  {
+    "userId": 18,
+    "forumId": 3,
+    "similarity": 0.8775150776695404
+  },
+  {
+    "userId": 18,
+    "forumId": 4,
+    "similarity": 0.877435803294566
+  },
+  {
+    "userId": 18,
+    "forumId": 5,
+    "similarity": 0.8838030883839058
+  },
+  {
+    "userId": 18,
+    "forumId": 6,
+    "similarity": 0.8846741025083046
+  },
+  {
+    "userId": 18,
+    "forumId": 7,
+    "similarity": 0.8634046102567822
+  },
+  {
+    "userId": 18,
+    "forumId": 8,
+    "similarity": 0.8766603554635065
+  },
+  {
+    "userId": 18,
+    "forumId": 9,
+    "similarity": 0.8741909453827996
+  },
+  {
+    "userId": 18,
+    "forumId": 10,
+    "similarity": 0.8707339958706669
+  },
+  {
+    "userId": 18,
+    "forumId": 11,
+    "similarity": 0.8877062801529996
+  },
+  {
+    "userId": 18,
+    "forumId": 12,
+    "similarity": 0.875470287111755
+  },
+  {
+    "userId": 18,
+    "forumId": 13,
+    "similarity": 0.8694959155073984
+  },
+  {
+    "userId": 18,
+    "forumId": 14,
+    "similarity": 0.877885002737856
+  },
+  {
+    "userId": 18,
+    "forumId": 15,
+    "similarity": 0.8814563807035298
+  },
+  {
+    "userId": 18,
+    "forumId": 16,
+    "similarity": 0.8717672477887076
+  },
+  {
+    "userId": 18,
+    "forumId": 17,
+    "similarity": 0.8789347647566171
+  },
+  {
+    "userId": 18,
+    "forumId": 18,
+    "similarity": 0.8703282617242296
+  },
+  {
+    "userId": 18,
+    "forumId": 19,
+    "similarity": 0.8777788803478347
+  },
+  {
+    "userId": 18,
+    "forumId": 20,
+    "similarity": 0.8760244243188748
+  },
+  {
+    "userId": 18,
+    "forumId": 21,
+    "similarity": 0.8603305615087089
+  },
+  {
+    "userId": 18,
+    "forumId": 22,
+    "similarity": 0.890907483094335
+  },
+  {
+    "userId": 18,
+    "forumId": 23,
+    "similarity": 0.8710437147325362
+  },
+  {
+    "userId": 18,
+    "forumId": 24,
+    "similarity": 0.8685945098555843
+  },
+  {
+    "userId": 19,
+    "forumId": 1,
+    "similarity": 0.8775107667317975
+  },
+  {
+    "userId": 19,
+    "forumId": 2,
+    "similarity": 0.8746054930437156
+  },
+  {
+    "userId": 19,
+    "forumId": 3,
+    "similarity": 0.8755164576396415
+  },
+  {
+    "userId": 19,
+    "forumId": 4,
+    "similarity": 0.8702917440702541
+  },
+  {
+    "userId": 19,
+    "forumId": 5,
+    "similarity": 0.8869538405626325
+  },
+  {
+    "userId": 19,
+    "forumId": 6,
+    "similarity": 0.8783458332491363
+  },
+  {
+    "userId": 19,
+    "forumId": 7,
+    "similarity": 0.8571675006482106
+  },
+  {
+    "userId": 19,
+    "forumId": 8,
+    "similarity": 0.8719922908427397
+  },
+  {
+    "userId": 19,
+    "forumId": 9,
+    "similarity": 0.8658038954618175
+  },
+  {
+    "userId": 19,
+    "forumId": 10,
+    "similarity": 0.8805680894781419
+  },
+  {
+    "userId": 19,
+    "forumId": 11,
+    "similarity": 0.8853834222475091
+  },
+  {
+    "userId": 19,
+    "forumId": 12,
+    "similarity": 0.8705297058824608
+  },
+  {
+    "userId": 19,
+    "forumId": 13,
+    "similarity": 0.8630553091646581
+  },
+  {
+    "userId": 19,
+    "forumId": 14,
+    "similarity": 0.8726169279945484
+  },
+  {
+    "userId": 19,
+    "forumId": 15,
+    "similarity": 0.8755896439686675
+  },
+  {
+    "userId": 19,
+    "forumId": 16,
+    "similarity": 0.8671949105697409
+  },
+  {
+    "userId": 19,
+    "forumId": 17,
+    "similarity": 0.8738346774059533
+  },
+  {
+    "userId": 19,
+    "forumId": 18,
+    "similarity": 0.8795695539291896
+  },
+  {
+    "userId": 19,
+    "forumId": 19,
+    "similarity": 0.8703345144697026
+  },
+  {
+    "userId": 19,
+    "forumId": 20,
+    "similarity": 0.8836436390035027
+  },
+  {
+    "userId": 19,
+    "forumId": 21,
+    "similarity": 0.8675080565054106
+  },
+  {
+    "userId": 19,
+    "forumId": 22,
+    "similarity": 0.8815982778327545
+  },
+  {
+    "userId": 19,
+    "forumId": 23,
+    "similarity": 0.8656185387108841
+  },
+  {
+    "userId": 19,
+    "forumId": 24,
+    "similarity": 0.8669152666155495
+  },
+  {
+    "userId": 20,
+    "forumId": 1,
+    "similarity": 0.8749156798102871
+  },
+  {
+    "userId": 20,
+    "forumId": 2,
+    "similarity": 0.8748955076695769
+  },
+  {
+    "userId": 20,
+    "forumId": 3,
+    "similarity": 0.8849331166585708
+  },
+  {
+    "userId": 20,
+    "forumId": 4,
+    "similarity": 0.8742257407547136
+  },
+  {
+    "userId": 20,
+    "forumId": 5,
+    "similarity": 0.88085129800742
+  },
+  {
+    "userId": 20,
+    "forumId": 6,
+    "similarity": 0.8730871621742562
+  },
+  {
+    "userId": 20,
+    "forumId": 7,
+    "similarity": 0.8523569449719993
+  },
+  {
+    "userId": 20,
+    "forumId": 8,
+    "similarity": 0.876669932461037
+  },
+  {
+    "userId": 20,
+    "forumId": 9,
+    "similarity": 0.887515205556037
+  },
+  {
+    "userId": 20,
+    "forumId": 10,
+    "similarity": 0.8775430918419287
+  },
+  {
+    "userId": 20,
+    "forumId": 11,
+    "similarity": 0.8880532163221742
+  },
+  {
+    "userId": 20,
+    "forumId": 12,
+    "similarity": 0.8749658321538573
+  },
+  {
+    "userId": 20,
+    "forumId": 13,
+    "similarity": 0.8832116849348994
+  },
+  {
+    "userId": 20,
+    "forumId": 14,
+    "similarity": 0.8644892144483847
+  },
+  {
+    "userId": 20,
+    "forumId": 15,
+    "similarity": 0.8777743946604164
+  },
+  {
+    "userId": 20,
+    "forumId": 16,
+    "similarity": 0.8639659095198122
+  },
+  {
+    "userId": 20,
+    "forumId": 17,
+    "similarity": 0.8801740370081723
+  },
+  {
+    "userId": 20,
+    "forumId": 18,
+    "similarity": 0.8745206257673616
+  },
+  {
+    "userId": 20,
+    "forumId": 19,
+    "similarity": 0.8711425144953919
+  },
+  {
+    "userId": 20,
+    "forumId": 20,
+    "similarity": 0.8781140255264511
+  },
+  {
+    "userId": 20,
+    "forumId": 21,
+    "similarity": 0.8621077119337911
+  },
+  {
+    "userId": 20,
+    "forumId": 22,
+    "similarity": 0.8790671635568138
+  },
+  {
+    "userId": 20,
+    "forumId": 23,
+    "similarity": 0.8746950200147702
+  },
+  {
+    "userId": 20,
+    "forumId": 24,
+    "similarity": 0.8756915356411609
+  },
+  {
+    "userId": 21,
+    "forumId": 1,
+    "similarity": 0.8653866680662985
+  },
+  {
+    "userId": 21,
+    "forumId": 2,
+    "similarity": 0.8679612536041804
+  },
+  {
+    "userId": 21,
+    "forumId": 3,
+    "similarity": 0.8860704907639374
+  },
+  {
+    "userId": 21,
+    "forumId": 4,
+    "similarity": 0.8849218860029033
+  },
+  {
+    "userId": 21,
+    "forumId": 5,
+    "similarity": 0.8826729599137247
+  },
+  {
+    "userId": 21,
+    "forumId": 6,
+    "similarity": 0.8748710658069426
+  },
+  {
+    "userId": 21,
+    "forumId": 7,
+    "similarity": 0.8534770377190473
+  },
+  {
+    "userId": 21,
+    "forumId": 8,
+    "similarity": 0.8690320697178641
+  },
+  {
+    "userId": 21,
+    "forumId": 9,
+    "similarity": 0.8704286506476296
+  },
+  {
+    "userId": 21,
+    "forumId": 10,
+    "similarity": 0.8693622480832168
+  },
+  {
+    "userId": 21,
+    "forumId": 11,
+    "similarity": 0.8861655078300316
+  },
+  {
+    "userId": 21,
+    "forumId": 12,
+    "similarity": 0.8689458797201358
+  },
+  {
+    "userId": 21,
+    "forumId": 13,
+    "similarity": 0.8667710947579889
+  },
+  {
+    "userId": 21,
+    "forumId": 14,
+    "similarity": 0.8666848841191639
+  },
+  {
+    "userId": 21,
+    "forumId": 15,
+    "similarity": 0.8789162136013334
+  },
+  {
+    "userId": 21,
+    "forumId": 16,
+    "similarity": 0.8619919423806311
+  },
+  {
+    "userId": 21,
+    "forumId": 17,
+    "similarity": 0.8745606850533311
+  },
+  {
+    "userId": 21,
+    "forumId": 18,
+    "similarity": 0.8727928308332534
+  },
+  {
+    "userId": 21,
+    "forumId": 19,
+    "similarity": 0.8812017254728717
+  },
+  {
+    "userId": 21,
+    "forumId": 20,
+    "similarity": 0.8765886739871956
+  },
+  {
+    "userId": 21,
+    "forumId": 21,
+    "similarity": 0.8649064775112614
+  },
+  {
+    "userId": 21,
+    "forumId": 22,
+    "similarity": 0.8768962053480526
+  },
+  {
+    "userId": 21,
+    "forumId": 23,
+    "similarity": 0.8750740885659675
+  },
+  {
+    "userId": 21,
+    "forumId": 24,
+    "similarity": 0.8686830455456844
+  },
+  {
+    "userId": 22,
+    "forumId": 1,
+    "similarity": 0.8724849591375664
+  },
+  {
+    "userId": 22,
+    "forumId": 2,
+    "similarity": 0.8762110421765265
+  },
+  {
+    "userId": 22,
+    "forumId": 3,
+    "similarity": 0.8747728382235037
+  },
+  {
+    "userId": 22,
+    "forumId": 4,
+    "similarity": 0.8715656228028449
+  },
+  {
+    "userId": 22,
+    "forumId": 5,
+    "similarity": 0.8860656009733446
+  },
+  {
+    "userId": 22,
+    "forumId": 6,
+    "similarity": 0.8898406120453424
+  },
+  {
+    "userId": 22,
+    "forumId": 7,
+    "similarity": 0.8597731176354559
+  },
+  {
+    "userId": 22,
+    "forumId": 8,
+    "similarity": 0.8762931317688641
+  },
+  {
+    "userId": 22,
+    "forumId": 9,
+    "similarity": 0.8699001738875561
+  },
+  {
+    "userId": 22,
+    "forumId": 10,
+    "similarity": 0.8770656453994493
+  },
+  {
+    "userId": 22,
+    "forumId": 11,
+    "similarity": 0.8813125489531088
+  },
+  {
+    "userId": 22,
+    "forumId": 12,
+    "similarity": 0.8690835230978243
+  },
+  {
+    "userId": 22,
+    "forumId": 13,
+    "similarity": 0.8703564451113484
+  },
+  {
+    "userId": 22,
+    "forumId": 14,
+    "similarity": 0.8821035504162382
+  },
+  {
+    "userId": 22,
+    "forumId": 15,
+    "similarity": 0.87505791360607
+  },
+  {
+    "userId": 22,
+    "forumId": 16,
+    "similarity": 0.8748904991669086
+  },
+  {
+    "userId": 22,
+    "forumId": 17,
+    "similarity": 0.8782902446748168
+  },
+  {
+    "userId": 22,
+    "forumId": 18,
+    "similarity": 0.8843523399084712
+  },
+  {
+    "userId": 22,
+    "forumId": 19,
+    "similarity": 0.868574447887932
+  },
+  {
+    "userId": 22,
+    "forumId": 20,
+    "similarity": 0.8914356057207334
+  },
+  {
+    "userId": 22,
+    "forumId": 21,
+    "similarity": 0.870829427873913
+  },
+  {
+    "userId": 22,
+    "forumId": 22,
+    "similarity": 0.8958113052479892
+  },
+  {
+    "userId": 22,
+    "forumId": 23,
+    "similarity": 0.8672424391144237
+  },
+  {
+    "userId": 22,
+    "forumId": 24,
+    "similarity": 0.8661423642337082
+  },
+  {
+    "userId": 23,
+    "forumId": 1,
+    "similarity": 0.8698574188555906
+  },
+  {
+    "userId": 23,
+    "forumId": 2,
+    "similarity": 0.8797289612138961
+  },
+  {
+    "userId": 23,
+    "forumId": 3,
+    "similarity": 0.8723986940887304
+  },
+  {
+    "userId": 23,
+    "forumId": 4,
+    "similarity": 0.8789791062077914
+  },
+  {
+    "userId": 23,
+    "forumId": 5,
+    "similarity": 0.8789605124869789
+  },
+  {
+    "userId": 23,
+    "forumId": 6,
+    "similarity": 0.8849361484172973
+  },
+  {
+    "userId": 23,
+    "forumId": 7,
+    "similarity": 0.8549328711633981
+  },
+  {
+    "userId": 23,
+    "forumId": 8,
+    "similarity": 0.8817418874435013
+  },
+  {
+    "userId": 23,
+    "forumId": 9,
+    "similarity": 0.8744012861840578
+  },
+  {
+    "userId": 23,
+    "forumId": 10,
+    "similarity": 0.8698231559719051
+  },
+  {
+    "userId": 23,
+    "forumId": 11,
+    "similarity": 0.8863903458148571
+  },
+  {
+    "userId": 23,
+    "forumId": 12,
+    "similarity": 0.8812624439401179
+  },
+  {
+    "userId": 23,
+    "forumId": 13,
+    "similarity": 0.8673682060014337
+  },
+  {
+    "userId": 23,
+    "forumId": 14,
+    "similarity": 0.8781368688590694
+  },
+  {
+    "userId": 23,
+    "forumId": 15,
+    "similarity": 0.8751485577172529
+  },
+  {
+    "userId": 23,
+    "forumId": 16,
+    "similarity": 0.874149185041723
+  },
+  {
+    "userId": 23,
+    "forumId": 17,
+    "similarity": 0.8935798769357481
+  },
+  {
+    "userId": 23,
+    "forumId": 18,
+    "similarity": 0.8701916065198128
+  },
+  {
+    "userId": 23,
+    "forumId": 19,
+    "similarity": 0.8765986567593308
+  },
+  {
+    "userId": 23,
+    "forumId": 20,
+    "similarity": 0.8800704249942376
+  },
+  {
+    "userId": 23,
+    "forumId": 21,
+    "similarity": 0.8583887498317742
+  },
+  {
+    "userId": 23,
+    "forumId": 22,
+    "similarity": 0.8925478199220435
+  },
+  {
+    "userId": 23,
+    "forumId": 23,
+    "similarity": 0.8675193524779476
+  },
+  {
+    "userId": 23,
+    "forumId": 24,
+    "similarity": 0.8700764939211888
+  },
+  {
+    "userId": 24,
+    "forumId": 1,
+    "similarity": 0.8735037852815636
+  },
+  {
+    "userId": 24,
+    "forumId": 2,
+    "similarity": 0.876186472435675
+  },
+  {
+    "userId": 24,
+    "forumId": 3,
+    "similarity": 0.8838842171864753
+  },
+  {
+    "userId": 24,
+    "forumId": 4,
+    "similarity": 0.8815007419600334
+  },
+  {
+    "userId": 24,
+    "forumId": 5,
+    "similarity": 0.8867765106188897
+  },
+  {
+    "userId": 24,
+    "forumId": 6,
+    "similarity": 0.8872968035578425
+  },
+  {
+    "userId": 24,
+    "forumId": 7,
+    "similarity": 0.8571936883039726
+  },
+  {
+    "userId": 24,
+    "forumId": 8,
+    "similarity": 0.8706383324876966
+  },
+  {
+    "userId": 24,
+    "forumId": 9,
+    "similarity": 0.8747415498758905
+  },
+  {
+    "userId": 24,
+    "forumId": 10,
+    "similarity": 0.8764141800629004
+  },
+  {
+    "userId": 24,
+    "forumId": 11,
+    "similarity": 0.8828411385026325
+  },
+  {
+    "userId": 24,
+    "forumId": 12,
+    "similarity": 0.8770129134066522
+  },
+  {
+    "userId": 24,
+    "forumId": 13,
+    "similarity": 0.8724454565244513
+  },
+  {
+    "userId": 24,
+    "forumId": 14,
+    "similarity": 0.8812023673307413
+  },
+  {
+    "userId": 24,
+    "forumId": 15,
+    "similarity": 0.8740957729479527
+  },
+  {
+    "userId": 24,
+    "forumId": 16,
+    "similarity": 0.8724499041709084
+  },
+  {
+    "userId": 24,
+    "forumId": 17,
+    "similarity": 0.8781494873379183
+  },
+  {
+    "userId": 24,
+    "forumId": 18,
+    "similarity": 0.8774607346128849
+  },
+  {
+    "userId": 24,
+    "forumId": 19,
+    "similarity": 0.8744341350582171
+  },
+  {
+    "userId": 24,
+    "forumId": 20,
+    "similarity": 0.8806244936752345
+  },
+  {
+    "userId": 24,
+    "forumId": 21,
+    "similarity": 0.8641614449568251
+  },
+  {
+    "userId": 24,
+    "forumId": 22,
+    "similarity": 0.8920366106312207
+  },
+  {
+    "userId": 24,
+    "forumId": 23,
+    "similarity": 0.8672765974018182
+  },
+  {
+    "userId": 24,
+    "forumId": 24,
+    "similarity": 0.8706133890425797
+  },
+  {
+    "userId": 25,
+    "forumId": 1,
+    "similarity": 0.8702467669298435
+  },
+  {
+    "userId": 25,
+    "forumId": 2,
+    "similarity": 0.8712973077034104
+  },
+  {
+    "userId": 25,
+    "forumId": 3,
+    "similarity": 0.8822099964145667
+  },
+  {
+    "userId": 25,
+    "forumId": 4,
+    "similarity": 0.8733545140047941
+  },
+  {
+    "userId": 25,
+    "forumId": 5,
+    "similarity": 0.8847994744215846
+  },
+  {
+    "userId": 25,
+    "forumId": 6,
+    "similarity": 0.8705265895618706
+  },
+  {
+    "userId": 25,
+    "forumId": 7,
+    "similarity": 0.8507545153982292
+  },
+  {
+    "userId": 25,
+    "forumId": 8,
+    "similarity": 0.8653110919390337
+  },
+  {
+    "userId": 25,
+    "forumId": 9,
+    "similarity": 0.8703084345835369
+  },
+  {
+    "userId": 25,
+    "forumId": 10,
+    "similarity": 0.8784544907219308
+  },
+  {
+    "userId": 25,
+    "forumId": 11,
+    "similarity": 0.8873866349313889
+  },
+  {
+    "userId": 25,
+    "forumId": 12,
+    "similarity": 0.8683607756814011
+  },
+  {
+    "userId": 25,
+    "forumId": 13,
+    "similarity": 0.865102446197176
+  },
+  {
+    "userId": 25,
+    "forumId": 14,
+    "similarity": 0.8630539522237393
+  },
+  {
+    "userId": 25,
+    "forumId": 15,
+    "similarity": 0.8826874321811691
+  },
+  {
+    "userId": 25,
+    "forumId": 16,
+    "similarity": 0.8600158306564192
+  },
+  {
+    "userId": 25,
+    "forumId": 17,
+    "similarity": 0.8726717358700834
+  },
+  {
+    "userId": 25,
+    "forumId": 18,
+    "similarity": 0.8833118319300013
+  },
+  {
+    "userId": 25,
+    "forumId": 19,
+    "similarity": 0.8721600490655314
+  },
+  {
+    "userId": 25,
+    "forumId": 20,
+    "similarity": 0.8855760845947029
+  },
+  {
+    "userId": 25,
+    "forumId": 21,
+    "similarity": 0.8669196173850301
+  },
+  {
+    "userId": 25,
+    "forumId": 22,
+    "similarity": 0.8757868829144254
+  },
+  {
+    "userId": 25,
+    "forumId": 23,
+    "similarity": 0.8817570045752672
+  },
+  {
+    "userId": 25,
+    "forumId": 24,
+    "similarity": 0.871611041766143
+  },
+  {
+    "userId": 26,
+    "forumId": 1,
+    "similarity": 0.8703637320150913
+  },
+  {
+    "userId": 26,
+    "forumId": 2,
+    "similarity": 0.8679253994181118
+  },
+  {
+    "userId": 26,
+    "forumId": 3,
+    "similarity": 0.8777603127075416
+  },
+  {
+    "userId": 26,
+    "forumId": 4,
+    "similarity": 0.8664573460364147
+  },
+  {
+    "userId": 26,
+    "forumId": 5,
+    "similarity": 0.8875069162277918
+  },
+  {
+    "userId": 26,
+    "forumId": 6,
+    "similarity": 0.8768423511392025
+  },
+  {
+    "userId": 26,
+    "forumId": 7,
+    "similarity": 0.8611341022314385
+  },
+  {
+    "userId": 26,
+    "forumId": 8,
+    "similarity": 0.8755815346293859
+  },
+  {
+    "userId": 26,
+    "forumId": 9,
+    "similarity": 0.8610976842520615
+  },
+  {
+    "userId": 26,
+    "forumId": 10,
+    "similarity": 0.8799772997695627
+  },
+  {
+    "userId": 26,
+    "forumId": 11,
+    "similarity": 0.8778321412065807
+  },
+  {
+    "userId": 26,
+    "forumId": 12,
+    "similarity": 0.8630031567286749
+  },
+  {
+    "userId": 26,
+    "forumId": 13,
+    "similarity": 0.8616388509380021
+  },
+  {
+    "userId": 26,
+    "forumId": 14,
+    "similarity": 0.8696304291518426
+  },
+  {
+    "userId": 26,
+    "forumId": 15,
+    "similarity": 0.8685987992336018
+  },
+  {
+    "userId": 26,
+    "forumId": 16,
+    "similarity": 0.8716987950896281
+  },
+  {
+    "userId": 26,
+    "forumId": 17,
+    "similarity": 0.8781704420811272
+  },
+  {
+    "userId": 26,
+    "forumId": 18,
+    "similarity": 0.8845956827699123
+  },
+  {
+    "userId": 26,
+    "forumId": 19,
+    "similarity": 0.8641234262096189
+  },
+  {
+    "userId": 26,
+    "forumId": 20,
+    "similarity": 0.8849313565576072
+  },
+  {
+    "userId": 26,
+    "forumId": 21,
+    "similarity": 0.8777614746967294
+  },
+  {
+    "userId": 26,
+    "forumId": 22,
+    "similarity": 0.8845382052656071
+  },
+  {
+    "userId": 26,
+    "forumId": 23,
+    "similarity": 0.8640338407659786
+  },
+  {
+    "userId": 26,
+    "forumId": 24,
+    "similarity": 0.865180385755659
+  },
+  {
+    "userId": 27,
+    "forumId": 1,
+    "similarity": 0.8693380586096953
+  },
+  {
+    "userId": 27,
+    "forumId": 2,
+    "similarity": 0.8821765928491355
+  },
+  {
+    "userId": 27,
+    "forumId": 3,
+    "similarity": 0.8699993577421016
+  },
+  {
+    "userId": 27,
+    "forumId": 4,
+    "similarity": 0.8771426639418075
+  },
+  {
+    "userId": 27,
+    "forumId": 5,
+    "similarity": 0.8766097258173037
+  },
+  {
+    "userId": 27,
+    "forumId": 6,
+    "similarity": 0.8718231574142443
+  },
+  {
+    "userId": 27,
+    "forumId": 7,
+    "similarity": 0.8499951476519036
+  },
+  {
+    "userId": 27,
+    "forumId": 8,
+    "similarity": 0.8663993692320435
+  },
+  {
+    "userId": 27,
+    "forumId": 9,
+    "similarity": 0.8642083000981521
+  },
+  {
+    "userId": 27,
+    "forumId": 10,
+    "similarity": 0.8748650140621109
+  },
+  {
+    "userId": 27,
+    "forumId": 11,
+    "similarity": 0.8767430472504928
+  },
+  {
+    "userId": 27,
+    "forumId": 12,
+    "similarity": 0.8737959445230262
+  },
+  {
+    "userId": 27,
+    "forumId": 13,
+    "similarity": 0.8656530874788149
+  },
+  {
+    "userId": 27,
+    "forumId": 14,
+    "similarity": 0.864921545318763
+  },
+  {
+    "userId": 27,
+    "forumId": 15,
+    "similarity": 0.8665513384269268
+  },
+  {
+    "userId": 27,
+    "forumId": 16,
+    "similarity": 0.8591673745580511
+  },
+  {
+    "userId": 27,
+    "forumId": 17,
+    "similarity": 0.8844645236837138
+  },
+  {
+    "userId": 27,
+    "forumId": 18,
+    "similarity": 0.8806722236138264
+  },
+  {
+    "userId": 27,
+    "forumId": 19,
+    "similarity": 0.8685121923300817
+  },
+  {
+    "userId": 27,
+    "forumId": 20,
+    "similarity": 0.8933048511875509
+  },
+  {
+    "userId": 27,
+    "forumId": 21,
+    "similarity": 0.8733328048488741
+  },
+  {
+    "userId": 27,
+    "forumId": 22,
+    "similarity": 0.8760626137517785
+  },
+  {
+    "userId": 27,
+    "forumId": 23,
+    "similarity": 0.8594242748999962
+  },
+  {
+    "userId": 27,
+    "forumId": 24,
+    "similarity": 0.8652504420198611
+  },
+  {
+    "userId": 28,
+    "forumId": 1,
+    "similarity": 0.8657076134053984
+  },
+  {
+    "userId": 28,
+    "forumId": 2,
+    "similarity": 0.8685185995842941
+  },
+  {
+    "userId": 28,
+    "forumId": 3,
+    "similarity": 0.8694528467930243
+  },
+  {
+    "userId": 28,
+    "forumId": 4,
+    "similarity": 0.8611037827408797
+  },
+  {
+    "userId": 28,
+    "forumId": 5,
+    "similarity": 0.8821236866872536
+  },
+  {
+    "userId": 28,
+    "forumId": 6,
+    "similarity": 0.8745153636929761
+  },
+  {
+    "userId": 28,
+    "forumId": 7,
+    "similarity": 0.8596230219015085
+  },
+  {
+    "userId": 28,
+    "forumId": 8,
+    "similarity": 0.8679865569419899
+  },
+  {
+    "userId": 28,
+    "forumId": 9,
+    "similarity": 0.857639501108766
+  },
+  {
+    "userId": 28,
+    "forumId": 10,
+    "similarity": 0.8761026143326924
+  },
+  {
+    "userId": 28,
+    "forumId": 11,
+    "similarity": 0.8836334456100069
+  },
+  {
+    "userId": 28,
+    "forumId": 12,
+    "similarity": 0.8588481662270858
+  },
+  {
+    "userId": 28,
+    "forumId": 13,
+    "similarity": 0.8585458517156948
+  },
+  {
+    "userId": 28,
+    "forumId": 14,
+    "similarity": 0.8664584921050053
+  },
+  {
+    "userId": 28,
+    "forumId": 15,
+    "similarity": 0.8741461585761868
+  },
+  {
+    "userId": 28,
+    "forumId": 16,
+    "similarity": 0.8611290971190462
+  },
+  {
+    "userId": 28,
+    "forumId": 17,
+    "similarity": 0.872106470583881
+  },
+  {
+    "userId": 28,
+    "forumId": 18,
+    "similarity": 0.878858573515904
+  },
+  {
+    "userId": 28,
+    "forumId": 19,
+    "similarity": 0.8575786230279069
+  },
+  {
+    "userId": 28,
+    "forumId": 20,
+    "similarity": 0.8810098822439046
+  },
+  {
+    "userId": 28,
+    "forumId": 21,
+    "similarity": 0.8707006860316879
+  },
+  {
+    "userId": 28,
+    "forumId": 22,
+    "similarity": 0.876867907536217
+  },
+  {
+    "userId": 28,
+    "forumId": 23,
+    "similarity": 0.8694070968151568
+  },
+  {
+    "userId": 28,
+    "forumId": 24,
+    "similarity": 0.8638409594079448
+  },
+  {
+    "userId": 29,
+    "forumId": 1,
+    "similarity": 0.8629350405238296
+  },
+  {
+    "userId": 29,
+    "forumId": 2,
+    "similarity": 0.8674355142738538
+  },
+  {
+    "userId": 29,
+    "forumId": 3,
+    "similarity": 0.8706342948725985
+  },
+  {
+    "userId": 29,
+    "forumId": 4,
+    "similarity": 0.8650199013817006
+  },
+  {
+    "userId": 29,
+    "forumId": 5,
+    "similarity": 0.8755113041978622
+  },
+  {
+    "userId": 29,
+    "forumId": 6,
+    "similarity": 0.8715340580835459
+  },
+  {
+    "userId": 29,
+    "forumId": 7,
+    "similarity": 0.859543405520392
+  },
+  {
+    "userId": 29,
+    "forumId": 8,
+    "similarity": 0.8797439659438113
+  },
+  {
+    "userId": 29,
+    "forumId": 9,
+    "similarity": 0.8612556954895018
+  },
+  {
+    "userId": 29,
+    "forumId": 10,
+    "similarity": 0.8791780213368231
+  },
+  {
+    "userId": 29,
+    "forumId": 11,
+    "similarity": 0.8849180713793795
+  },
+  {
+    "userId": 29,
+    "forumId": 12,
+    "similarity": 0.8602318643706481
+  },
+  {
+    "userId": 29,
+    "forumId": 13,
+    "similarity": 0.8622318346498714
+  },
+  {
+    "userId": 29,
+    "forumId": 14,
+    "similarity": 0.8643505697754499
+  },
+  {
+    "userId": 29,
+    "forumId": 15,
+    "similarity": 0.8733199041511873
+  },
+  {
+    "userId": 29,
+    "forumId": 16,
+    "similarity": 0.8593691765140608
+  },
+  {
+    "userId": 29,
+    "forumId": 17,
+    "similarity": 0.8802848486818802
+  },
+  {
+    "userId": 29,
+    "forumId": 18,
+    "similarity": 0.8736684724253445
+  },
+  {
+    "userId": 29,
+    "forumId": 19,
+    "similarity": 0.8594532538863806
+  },
+  {
+    "userId": 29,
+    "forumId": 20,
+    "similarity": 0.8801130785043401
+  },
+  {
+    "userId": 29,
+    "forumId": 21,
+    "similarity": 0.8606323720194309
+  },
+  {
+    "userId": 29,
+    "forumId": 22,
+    "similarity": 0.8763826182579424
+  },
+  {
+    "userId": 29,
+    "forumId": 23,
+    "similarity": 0.8654907823456371
+  },
+  {
+    "userId": 29,
+    "forumId": 24,
+    "similarity": 0.8662875404087853
+  },
+  {
+    "userId": 30,
+    "forumId": 1,
+    "similarity": 0.8701937752697358
+  },
+  {
+    "userId": 30,
+    "forumId": 2,
+    "similarity": 0.8713387470480112
+  },
+  {
+    "userId": 30,
+    "forumId": 3,
+    "similarity": 0.8671528119605427
+  },
+  {
+    "userId": 30,
+    "forumId": 4,
+    "similarity": 0.8686322067814441
+  },
+  {
+    "userId": 30,
+    "forumId": 5,
+    "similarity": 0.8865317637776624
+  },
+  {
+    "userId": 30,
+    "forumId": 6,
+    "similarity": 0.8885205908909708
+  },
+  {
+    "userId": 30,
+    "forumId": 7,
+    "similarity": 0.85887417147814
+  },
+  {
+    "userId": 30,
+    "forumId": 8,
+    "similarity": 0.8813961959453651
+  },
+  {
+    "userId": 30,
+    "forumId": 9,
+    "similarity": 0.8620804052279886
+  },
+  {
+    "userId": 30,
+    "forumId": 10,
+    "similarity": 0.8788767607705742
+  },
+  {
+    "userId": 30,
+    "forumId": 11,
+    "similarity": 0.8807781490491037
+  },
+  {
+    "userId": 30,
+    "forumId": 12,
+    "similarity": 0.8665456120120388
+  },
+  {
+    "userId": 30,
+    "forumId": 13,
+    "similarity": 0.8633934513921785
+  },
+  {
+    "userId": 30,
+    "forumId": 14,
+    "similarity": 0.8784539987671232
+  },
+  {
+    "userId": 30,
+    "forumId": 15,
+    "similarity": 0.8727606786294763
+  },
+  {
+    "userId": 30,
+    "forumId": 16,
+    "similarity": 0.8714540356363922
+  },
+  {
+    "userId": 30,
+    "forumId": 17,
+    "similarity": 0.8785997484285571
+  },
+  {
+    "userId": 30,
+    "forumId": 18,
+    "similarity": 0.88075540955399
+  },
+  {
+    "userId": 30,
+    "forumId": 19,
+    "similarity": 0.8647066635744631
+  },
+  {
+    "userId": 30,
+    "forumId": 20,
+    "similarity": 0.8842437467857319
+  },
+  {
+    "userId": 30,
+    "forumId": 21,
+    "similarity": 0.8783310460775912
+  },
+  {
+    "userId": 30,
+    "forumId": 22,
+    "similarity": 0.8920994012371913
+  },
+  {
+    "userId": 30,
+    "forumId": 23,
+    "similarity": 0.8704553735779776
+  },
+  {
+    "userId": 30,
+    "forumId": 24,
+    "similarity": 0.8634415366625893
+  },
+  {
+    "userId": 31,
+    "forumId": 1,
+    "similarity": 0.8705019089235065
+  },
+  {
+    "userId": 31,
+    "forumId": 2,
+    "similarity": 0.8746950904206603
+  },
+  {
+    "userId": 31,
+    "forumId": 3,
+    "similarity": 0.8816182063793679
+  },
+  {
+    "userId": 31,
+    "forumId": 4,
+    "similarity": 0.8777777550812436
+  },
+  {
+    "userId": 31,
+    "forumId": 5,
+    "similarity": 0.8827550035266271
+  },
+  {
+    "userId": 31,
+    "forumId": 6,
+    "similarity": 0.8862143792939909
+  },
+  {
+    "userId": 31,
+    "forumId": 7,
+    "similarity": 0.8578569340558383
+  },
+  {
+    "userId": 31,
+    "forumId": 8,
+    "similarity": 0.8713822251030091
+  },
+  {
+    "userId": 31,
+    "forumId": 9,
+    "similarity": 0.8756648596115069
+  },
+  {
+    "userId": 31,
+    "forumId": 10,
+    "similarity": 0.8717874044412705
+  },
+  {
+    "userId": 31,
+    "forumId": 11,
+    "similarity": 0.8861018207650263
+  },
+  {
+    "userId": 31,
+    "forumId": 12,
+    "similarity": 0.8732396353145664
+  },
+  {
+    "userId": 31,
+    "forumId": 13,
+    "similarity": 0.8843609680303303
+  },
+  {
+    "userId": 31,
+    "forumId": 14,
+    "similarity": 0.878468120342897
+  },
+  {
+    "userId": 31,
+    "forumId": 15,
+    "similarity": 0.883266051561359
+  },
+  {
+    "userId": 31,
+    "forumId": 16,
+    "similarity": 0.8761751246815065
+  },
+  {
+    "userId": 31,
+    "forumId": 17,
+    "similarity": 0.8757386308608501
+  },
+  {
+    "userId": 31,
+    "forumId": 18,
+    "similarity": 0.8743497265704288
+  },
+  {
+    "userId": 31,
+    "forumId": 19,
+    "similarity": 0.8768219084265244
+  },
+  {
+    "userId": 31,
+    "forumId": 20,
+    "similarity": 0.8774368683134062
+  },
+  {
+    "userId": 31,
+    "forumId": 21,
+    "similarity": 0.8653334320832838
+  },
+  {
+    "userId": 31,
+    "forumId": 22,
+    "similarity": 0.8960137345248542
+  },
+  {
+    "userId": 31,
+    "forumId": 23,
+    "similarity": 0.8777432356231807
+  },
+  {
+    "userId": 31,
+    "forumId": 24,
+    "similarity": 0.8692748629274367
+  },
+  {
+    "userId": 32,
+    "forumId": 1,
+    "similarity": 0.8723667457626171
+  },
+  {
+    "userId": 32,
+    "forumId": 2,
+    "similarity": 0.876474751931081
+  },
+  {
+    "userId": 32,
+    "forumId": 3,
+    "similarity": 0.8802354173981922
+  },
+  {
+    "userId": 32,
+    "forumId": 4,
+    "similarity": 0.8772062780062584
+  },
+  {
+    "userId": 32,
+    "forumId": 5,
+    "similarity": 0.8868922808284089
+  },
+  {
+    "userId": 32,
+    "forumId": 6,
+    "similarity": 0.87899123840979
+  },
+  {
+    "userId": 32,
+    "forumId": 7,
+    "similarity": 0.854237998020595
+  },
+  {
+    "userId": 32,
+    "forumId": 8,
+    "similarity": 0.8700619776599751
+  },
+  {
+    "userId": 32,
+    "forumId": 9,
+    "similarity": 0.8727570357851835
+  },
+  {
+    "userId": 32,
+    "forumId": 10,
+    "similarity": 0.8785102834702401
+  },
+  {
+    "userId": 32,
+    "forumId": 11,
+    "similarity": 0.8855908454383262
+  },
+  {
+    "userId": 32,
+    "forumId": 12,
+    "similarity": 0.8754075220724793
+  },
+  {
+    "userId": 32,
+    "forumId": 13,
+    "similarity": 0.8662261695939774
+  },
+  {
+    "userId": 32,
+    "forumId": 14,
+    "similarity": 0.8720547512743385
+  },
+  {
+    "userId": 32,
+    "forumId": 15,
+    "similarity": 0.8733176375537828
+  },
+  {
+    "userId": 32,
+    "forumId": 16,
+    "similarity": 0.8725997548394581
+  },
+  {
+    "userId": 32,
+    "forumId": 17,
+    "similarity": 0.8778472028649491
+  },
+  {
+    "userId": 32,
+    "forumId": 18,
+    "similarity": 0.8818557294542264
+  },
+  {
+    "userId": 32,
+    "forumId": 19,
+    "similarity": 0.8772298947078132
+  },
+  {
+    "userId": 32,
+    "forumId": 20,
+    "similarity": 0.8861673672466605
+  },
+  {
+    "userId": 32,
+    "forumId": 21,
+    "similarity": 0.8724441936370728
+  },
+  {
+    "userId": 32,
+    "forumId": 22,
+    "similarity": 0.8866218213344829
+  },
+  {
+    "userId": 32,
+    "forumId": 23,
+    "similarity": 0.8669951941747905
+  },
+  {
+    "userId": 32,
+    "forumId": 24,
+    "similarity": 0.8696080282188213
+  },
+  {
+    "userId": 33,
+    "forumId": 1,
+    "similarity": 0.8675529565505816
+  },
+  {
+    "userId": 33,
+    "forumId": 2,
+    "similarity": 0.8776854189279255
+  },
+  {
+    "userId": 33,
+    "forumId": 3,
+    "similarity": 0.8703941517261548
+  },
+  {
+    "userId": 33,
+    "forumId": 4,
+    "similarity": 0.8707184436627222
+  },
+  {
+    "userId": 33,
+    "forumId": 5,
+    "similarity": 0.8799500480694595
+  },
+  {
+    "userId": 33,
+    "forumId": 6,
+    "similarity": 0.8799652891194794
+  },
+  {
+    "userId": 33,
+    "forumId": 7,
+    "similarity": 0.8589155363314079
+  },
+  {
+    "userId": 33,
+    "forumId": 8,
+    "similarity": 0.8748801209419189
+  },
+  {
+    "userId": 33,
+    "forumId": 9,
+    "similarity": 0.8645978620665252
+  },
+  {
+    "userId": 33,
+    "forumId": 10,
+    "similarity": 0.8744556698910795
+  },
+  {
+    "userId": 33,
+    "forumId": 11,
+    "similarity": 0.8801637325046583
+  },
+  {
+    "userId": 33,
+    "forumId": 12,
+    "similarity": 0.8702727675536712
+  },
+  {
+    "userId": 33,
+    "forumId": 13,
+    "similarity": 0.8693632220157693
+  },
+  {
+    "userId": 33,
+    "forumId": 14,
+    "similarity": 0.8725018378366151
+  },
+  {
+    "userId": 33,
+    "forumId": 15,
+    "similarity": 0.873665134104445
+  },
+  {
+    "userId": 33,
+    "forumId": 16,
+    "similarity": 0.8703034459919302
+  },
+  {
+    "userId": 33,
+    "forumId": 17,
+    "similarity": 0.8861017745262456
+  },
+  {
+    "userId": 33,
+    "forumId": 18,
+    "similarity": 0.8766725501436453
+  },
+  {
+    "userId": 33,
+    "forumId": 19,
+    "similarity": 0.865666139984642
+  },
+  {
+    "userId": 33,
+    "forumId": 20,
+    "similarity": 0.8865162782763554
+  },
+  {
+    "userId": 33,
+    "forumId": 21,
+    "similarity": 0.8659966550713786
+  },
+  {
+    "userId": 33,
+    "forumId": 22,
+    "similarity": 0.8886846022940248
+  },
+  {
+    "userId": 33,
+    "forumId": 23,
+    "similarity": 0.8704674632563303
+  },
+  {
+    "userId": 33,
+    "forumId": 24,
+    "similarity": 0.8695803553654613
+  },
+  {
+    "userId": 34,
+    "forumId": 1,
+    "similarity": 0.8693109058248105
+  },
+  {
+    "userId": 34,
+    "forumId": 2,
+    "similarity": 0.8732877649703662
+  },
+  {
+    "userId": 34,
+    "forumId": 3,
+    "similarity": 0.8807437329390777
+  },
+  {
+    "userId": 34,
+    "forumId": 4,
+    "similarity": 0.8744519807566251
+  },
+  {
+    "userId": 34,
+    "forumId": 5,
+    "similarity": 0.8831849542030155
+  },
+  {
+    "userId": 34,
+    "forumId": 6,
+    "similarity": 0.875806390408215
+  },
+  {
+    "userId": 34,
+    "forumId": 7,
+    "similarity": 0.855857386808321
+  },
+  {
+    "userId": 34,
+    "forumId": 8,
+    "similarity": 0.8721341960429596
+  },
+  {
+    "userId": 34,
+    "forumId": 9,
+    "similarity": 0.8804414333511748
+  },
+  {
+    "userId": 34,
+    "forumId": 10,
+    "similarity": 0.8791302735373843
+  },
+  {
+    "userId": 34,
+    "forumId": 11,
+    "similarity": 0.8927006169522667
+  },
+  {
+    "userId": 34,
+    "forumId": 12,
+    "similarity": 0.8721395899084498
+  },
+  {
+    "userId": 34,
+    "forumId": 13,
+    "similarity": 0.8735978183041355
+  },
+  {
+    "userId": 34,
+    "forumId": 14,
+    "similarity": 0.8679971495950926
+  },
+  {
+    "userId": 34,
+    "forumId": 15,
+    "similarity": 0.8796747884666152
+  },
+  {
+    "userId": 34,
+    "forumId": 16,
+    "similarity": 0.8686393287743941
+  },
+  {
+    "userId": 34,
+    "forumId": 17,
+    "similarity": 0.8765841407251616
+  },
+  {
+    "userId": 34,
+    "forumId": 18,
+    "similarity": 0.8827130639638904
+  },
+  {
+    "userId": 34,
+    "forumId": 19,
+    "similarity": 0.8720150670079403
+  },
+  {
+    "userId": 34,
+    "forumId": 20,
+    "similarity": 0.88487072921004
+  },
+  {
+    "userId": 34,
+    "forumId": 21,
+    "similarity": 0.8728300217110411
+  },
+  {
+    "userId": 34,
+    "forumId": 22,
+    "similarity": 0.8840050656441012
+  },
+  {
+    "userId": 34,
+    "forumId": 23,
+    "similarity": 0.8745433527217111
+  },
+  {
+    "userId": 34,
+    "forumId": 24,
+    "similarity": 0.8764946186418775
+  },
+  {
+    "userId": 35,
+    "forumId": 1,
+    "similarity": 0.8667109987457383
+  },
+  {
+    "userId": 35,
+    "forumId": 2,
+    "similarity": 0.8726601768327036
+  },
+  {
+    "userId": 35,
+    "forumId": 3,
+    "similarity": 0.8695467662715045
+  },
+  {
+    "userId": 35,
+    "forumId": 4,
+    "similarity": 0.8709452878248984
+  },
+  {
+    "userId": 35,
+    "forumId": 5,
+    "similarity": 0.882030655701762
+  },
+  {
+    "userId": 35,
+    "forumId": 6,
+    "similarity": 0.8840737840800158
+  },
+  {
+    "userId": 35,
+    "forumId": 7,
+    "similarity": 0.8579488882766676
+  },
+  {
+    "userId": 35,
+    "forumId": 8,
+    "similarity": 0.8744645597469403
+  },
+  {
+    "userId": 35,
+    "forumId": 9,
+    "similarity": 0.8627762991970785
+  },
+  {
+    "userId": 35,
+    "forumId": 10,
+    "similarity": 0.8755203272277194
+  },
+  {
+    "userId": 35,
+    "forumId": 11,
+    "similarity": 0.8842386426344274
+  },
+  {
+    "userId": 35,
+    "forumId": 12,
+    "similarity": 0.8679237229062486
+  },
+  {
+    "userId": 35,
+    "forumId": 13,
+    "similarity": 0.8625902006737665
+  },
+  {
+    "userId": 35,
+    "forumId": 14,
+    "similarity": 0.8755120317446408
+  },
+  {
+    "userId": 35,
+    "forumId": 15,
+    "similarity": 0.8792705278225873
+  },
+  {
+    "userId": 35,
+    "forumId": 16,
+    "similarity": 0.8659850155969695
+  },
+  {
+    "userId": 35,
+    "forumId": 17,
+    "similarity": 0.8782583883563725
+  },
+  {
+    "userId": 35,
+    "forumId": 18,
+    "similarity": 0.8783044300299779
+  },
+  {
+    "userId": 35,
+    "forumId": 19,
+    "similarity": 0.8673927703543586
+  },
+  {
+    "userId": 35,
+    "forumId": 20,
+    "similarity": 0.8849748810071562
+  },
+  {
+    "userId": 35,
+    "forumId": 21,
+    "similarity": 0.8663719068868885
+  },
+  {
+    "userId": 35,
+    "forumId": 22,
+    "similarity": 0.8865965235648677
+  },
+  {
+    "userId": 35,
+    "forumId": 23,
+    "similarity": 0.8766384841552991
+  },
+  {
+    "userId": 35,
+    "forumId": 24,
+    "similarity": 0.8672966442727283
+  },
+  {
+    "userId": 36,
+    "forumId": 1,
+    "similarity": 0.8773908141816044
+  },
+  {
+    "userId": 36,
+    "forumId": 2,
+    "similarity": 0.8787471622770503
+  },
+  {
+    "userId": 36,
+    "forumId": 3,
+    "similarity": 0.8786940006389801
+  },
+  {
+    "userId": 36,
+    "forumId": 4,
+    "similarity": 0.8756992214460897
+  },
+  {
+    "userId": 36,
+    "forumId": 5,
+    "similarity": 0.8891674396953948
+  },
+  {
+    "userId": 36,
+    "forumId": 6,
+    "similarity": 0.8838813205166911
+  },
+  {
+    "userId": 36,
+    "forumId": 7,
+    "similarity": 0.8601723476880146
+  },
+  {
+    "userId": 36,
+    "forumId": 8,
+    "similarity": 0.8768525207807253
+  },
+  {
+    "userId": 36,
+    "forumId": 9,
+    "similarity": 0.8807539467081932
+  },
+  {
+    "userId": 36,
+    "forumId": 10,
+    "similarity": 0.8829362570943032
+  },
+  {
+    "userId": 36,
+    "forumId": 11,
+    "similarity": 0.8858694430692137
+  },
+  {
+    "userId": 36,
+    "forumId": 12,
+    "similarity": 0.8743103193264986
+  },
+  {
+    "userId": 36,
+    "forumId": 13,
+    "similarity": 0.8727760016595894
+  },
+  {
+    "userId": 36,
+    "forumId": 14,
+    "similarity": 0.8768054223577733
+  },
+  {
+    "userId": 36,
+    "forumId": 15,
+    "similarity": 0.877428960201765
+  },
+  {
+    "userId": 36,
+    "forumId": 16,
+    "similarity": 0.8728266749447097
+  },
+  {
+    "userId": 36,
+    "forumId": 17,
+    "similarity": 0.8800220237133586
+  },
+  {
+    "userId": 36,
+    "forumId": 18,
+    "similarity": 0.891333086582749
+  },
+  {
+    "userId": 36,
+    "forumId": 19,
+    "similarity": 0.873051463850546
+  },
+  {
+    "userId": 36,
+    "forumId": 20,
+    "similarity": 0.893465500932068
+  },
+  {
+    "userId": 36,
+    "forumId": 21,
+    "similarity": 0.8801147795704484
+  },
+  {
+    "userId": 36,
+    "forumId": 22,
+    "similarity": 0.890324041702841
+  },
+  {
+    "userId": 36,
+    "forumId": 23,
+    "similarity": 0.8725549773647863
+  },
+  {
+    "userId": 36,
+    "forumId": 24,
+    "similarity": 0.8767055147661748
+  },
+  {
+    "userId": 37,
+    "forumId": 1,
+    "similarity": 0.8711326153950044
+  },
+  {
+    "userId": 37,
+    "forumId": 2,
+    "similarity": 0.8753316127610287
+  },
+  {
+    "userId": 37,
+    "forumId": 3,
+    "similarity": 0.8790384598678456
+  },
+  {
+    "userId": 37,
+    "forumId": 4,
+    "similarity": 0.877399510657442
+  },
+  {
+    "userId": 37,
+    "forumId": 5,
+    "similarity": 0.8861994229735906
+  },
+  {
+    "userId": 37,
+    "forumId": 6,
+    "similarity": 0.879655430881799
+  },
+  {
+    "userId": 37,
+    "forumId": 7,
+    "similarity": 0.8621104414094357
+  },
+  {
+    "userId": 37,
+    "forumId": 8,
+    "similarity": 0.8748854380951846
+  },
+  {
+    "userId": 37,
+    "forumId": 9,
+    "similarity": 0.8733547770156586
+  },
+  {
+    "userId": 37,
+    "forumId": 10,
+    "similarity": 0.8753773073283814
+  },
+  {
+    "userId": 37,
+    "forumId": 11,
+    "similarity": 0.8901616304735737
+  },
+  {
+    "userId": 37,
+    "forumId": 12,
+    "similarity": 0.8696531856409344
+  },
+  {
+    "userId": 37,
+    "forumId": 13,
+    "similarity": 0.8674605895680212
+  },
+  {
+    "userId": 37,
+    "forumId": 14,
+    "similarity": 0.8711767936597167
+  },
+  {
+    "userId": 37,
+    "forumId": 15,
+    "similarity": 0.8843960705280698
+  },
+  {
+    "userId": 37,
+    "forumId": 16,
+    "similarity": 0.8699266767962802
+  },
+  {
+    "userId": 37,
+    "forumId": 17,
+    "similarity": 0.8790224157418031
+  },
+  {
+    "userId": 37,
+    "forumId": 18,
+    "similarity": 0.874714178185168
+  },
+  {
+    "userId": 37,
+    "forumId": 19,
+    "similarity": 0.8734495505588522
+  },
+  {
+    "userId": 37,
+    "forumId": 20,
+    "similarity": 0.878731894007028
+  },
+  {
+    "userId": 37,
+    "forumId": 21,
+    "similarity": 0.8681876358692671
+  },
+  {
+    "userId": 37,
+    "forumId": 22,
+    "similarity": 0.8869045503416558
+  },
+  {
+    "userId": 37,
+    "forumId": 23,
+    "similarity": 0.8816898549947926
+  },
+  {
+    "userId": 37,
+    "forumId": 24,
+    "similarity": 0.8718260469272394
+  },
+  {
+    "userId": 38,
+    "forumId": 1,
+    "similarity": 0.8684634272685756
+  },
+  {
+    "userId": 38,
+    "forumId": 2,
+    "similarity": 0.8758968178602589
+  },
+  {
+    "userId": 38,
+    "forumId": 3,
+    "similarity": 0.8762398842082337
+  },
+  {
+    "userId": 38,
+    "forumId": 4,
+    "similarity": 0.8787989094839257
+  },
+  {
+    "userId": 38,
+    "forumId": 5,
+    "similarity": 0.877278439966471
+  },
+  {
+    "userId": 38,
+    "forumId": 6,
+    "similarity": 0.8763572136581073
+  },
+  {
+    "userId": 38,
+    "forumId": 7,
+    "similarity": 0.8584078166136027
+  },
+  {
+    "userId": 38,
+    "forumId": 8,
+    "similarity": 0.8749987001959458
+  },
+  {
+    "userId": 38,
+    "forumId": 9,
+    "similarity": 0.8693238046831435
+  },
+  {
+    "userId": 38,
+    "forumId": 10,
+    "similarity": 0.8720551632237259
+  },
+  {
+    "userId": 38,
+    "forumId": 11,
+    "similarity": 0.8941868927502544
+  },
+  {
+    "userId": 38,
+    "forumId": 12,
+    "similarity": 0.8685442500199375
+  },
+  {
+    "userId": 38,
+    "forumId": 13,
+    "similarity": 0.8712034734544661
+  },
+  {
+    "userId": 38,
+    "forumId": 14,
+    "similarity": 0.86922571283735
+  },
+  {
+    "userId": 38,
+    "forumId": 15,
+    "similarity": 0.8914109805760697
+  },
+  {
+    "userId": 38,
+    "forumId": 16,
+    "similarity": 0.865008014873272
+  },
+  {
+    "userId": 38,
+    "forumId": 17,
+    "similarity": 0.8792798715801942
+  },
+  {
+    "userId": 38,
+    "forumId": 18,
+    "similarity": 0.8713667307116343
+  },
+  {
+    "userId": 38,
+    "forumId": 19,
+    "similarity": 0.8748267695676817
+  },
+  {
+    "userId": 38,
+    "forumId": 20,
+    "similarity": 0.8767220607016907
+  },
+  {
+    "userId": 38,
+    "forumId": 21,
+    "similarity": 0.8644739074366647
+  },
+  {
+    "userId": 38,
+    "forumId": 22,
+    "similarity": 0.8844709015583024
+  },
+  {
+    "userId": 38,
+    "forumId": 23,
+    "similarity": 0.8852831382509198
+  },
+  {
+    "userId": 38,
+    "forumId": 24,
+    "similarity": 0.8694918871831493
+  },
+  {
+    "userId": 39,
+    "forumId": 1,
+    "similarity": 0.8687538637608737
+  },
+  {
+    "userId": 39,
+    "forumId": 2,
+    "similarity": 0.8710064839443658
+  },
+  {
+    "userId": 39,
+    "forumId": 3,
+    "similarity": 0.8750074256784698
+  },
+  {
+    "userId": 39,
+    "forumId": 4,
+    "similarity": 0.8647843352405461
+  },
+  {
+    "userId": 39,
+    "forumId": 5,
+    "similarity": 0.880980625656855
+  },
+  {
+    "userId": 39,
+    "forumId": 6,
+    "similarity": 0.869727369926103
+  },
+  {
+    "userId": 39,
+    "forumId": 7,
+    "similarity": 0.8588475758133394
+  },
+  {
+    "userId": 39,
+    "forumId": 8,
+    "similarity": 0.8693542166522004
+  },
+  {
+    "userId": 39,
+    "forumId": 9,
+    "similarity": 0.8696265314639038
+  },
+  {
+    "userId": 39,
+    "forumId": 10,
+    "similarity": 0.8771964235137871
+  },
+  {
+    "userId": 39,
+    "forumId": 11,
+    "similarity": 0.8833703202337796
+  },
+  {
+    "userId": 39,
+    "forumId": 12,
+    "similarity": 0.8659494709216826
+  },
+  {
+    "userId": 39,
+    "forumId": 13,
+    "similarity": 0.870417187394062
+  },
+  {
+    "userId": 39,
+    "forumId": 14,
+    "similarity": 0.8625622425653406
+  },
+  {
+    "userId": 39,
+    "forumId": 15,
+    "similarity": 0.8746945800588192
+  },
+  {
+    "userId": 39,
+    "forumId": 16,
+    "similarity": 0.867635106988979
+  },
+  {
+    "userId": 39,
+    "forumId": 17,
+    "similarity": 0.8738075250616207
+  },
+  {
+    "userId": 39,
+    "forumId": 18,
+    "similarity": 0.8724230192484788
+  },
+  {
+    "userId": 39,
+    "forumId": 19,
+    "similarity": 0.8609626461201523
+  },
+  {
+    "userId": 39,
+    "forumId": 20,
+    "similarity": 0.8751085821790726
+  },
+  {
+    "userId": 39,
+    "forumId": 21,
+    "similarity": 0.8619338637247717
+  },
+  {
+    "userId": 39,
+    "forumId": 22,
+    "similarity": 0.8791570462725583
+  },
+  {
+    "userId": 39,
+    "forumId": 23,
+    "similarity": 0.8656468383523336
+  },
+  {
+    "userId": 39,
+    "forumId": 24,
+    "similarity": 0.870246565649051
+  },
+  {
+    "userId": 40,
+    "forumId": 1,
+    "similarity": 0.8715043390157311
+  },
+  {
+    "userId": 40,
+    "forumId": 2,
+    "similarity": 0.8808062453494283
+  },
+  {
+    "userId": 40,
+    "forumId": 3,
+    "similarity": 0.878762999975557
+  },
+  {
+    "userId": 40,
+    "forumId": 4,
+    "similarity": 0.8803317846288553
+  },
+  {
+    "userId": 40,
+    "forumId": 5,
+    "similarity": 0.880479272616053
+  },
+  {
+    "userId": 40,
+    "forumId": 6,
+    "similarity": 0.8714245208282542
+  },
+  {
+    "userId": 40,
+    "forumId": 7,
+    "similarity": 0.8544117541550668
+  },
+  {
+    "userId": 40,
+    "forumId": 8,
+    "similarity": 0.867822559489485
+  },
+  {
+    "userId": 40,
+    "forumId": 9,
+    "similarity": 0.8684003529467398
+  },
+  {
+    "userId": 40,
+    "forumId": 10,
+    "similarity": 0.8718049722743647
+  },
+  {
+    "userId": 40,
+    "forumId": 11,
+    "similarity": 0.8828522447627991
+  },
+  {
+    "userId": 40,
+    "forumId": 12,
+    "similarity": 0.8838578419147833
+  },
+  {
+    "userId": 40,
+    "forumId": 13,
+    "similarity": 0.8740508150518412
+  },
+  {
+    "userId": 40,
+    "forumId": 14,
+    "similarity": 0.8669218386835804
+  },
+  {
+    "userId": 40,
+    "forumId": 15,
+    "similarity": 0.8734542672881142
+  },
+  {
+    "userId": 40,
+    "forumId": 16,
+    "similarity": 0.8620221651496093
+  },
+  {
+    "userId": 40,
+    "forumId": 17,
+    "similarity": 0.8812954653118933
+  },
+  {
+    "userId": 40,
+    "forumId": 18,
+    "similarity": 0.8819400967398258
+  },
+  {
+    "userId": 40,
+    "forumId": 19,
+    "similarity": 0.8791742171938565
+  },
+  {
+    "userId": 40,
+    "forumId": 20,
+    "similarity": 0.890258872697004
+  },
+  {
+    "userId": 40,
+    "forumId": 21,
+    "similarity": 0.865427113403403
+  },
+  {
+    "userId": 40,
+    "forumId": 22,
+    "similarity": 0.8773808089508434
+  },
+  {
+    "userId": 40,
+    "forumId": 23,
+    "similarity": 0.8724486455943883
+  },
+  {
+    "userId": 40,
+    "forumId": 24,
+    "similarity": 0.8709887882392974
+  },
+  {
+    "userId": 41,
+    "forumId": 1,
+    "similarity": 0.8719035165732284
+  },
+  {
+    "userId": 41,
+    "forumId": 2,
+    "similarity": 0.8802021769483436
+  },
+  {
+    "userId": 41,
+    "forumId": 3,
+    "similarity": 0.8665718302424941
+  },
+  {
+    "userId": 41,
+    "forumId": 4,
+    "similarity": 0.8695788259821329
+  },
+  {
+    "userId": 41,
+    "forumId": 5,
+    "similarity": 0.8773719714430385
+  },
+  {
+    "userId": 41,
+    "forumId": 6,
+    "similarity": 0.8792875238347361
+  },
+  {
+    "userId": 41,
+    "forumId": 7,
+    "similarity": 0.8560507506528646
+  },
+  {
+    "userId": 41,
+    "forumId": 8,
+    "similarity": 0.8678804856896825
+  },
+  {
+    "userId": 41,
+    "forumId": 9,
+    "similarity": 0.8648363235500929
+  },
+  {
+    "userId": 41,
+    "forumId": 10,
+    "similarity": 0.8726062256642073
+  },
+  {
+    "userId": 41,
+    "forumId": 11,
+    "similarity": 0.8909715146426074
+  },
+  {
+    "userId": 41,
+    "forumId": 12,
+    "similarity": 0.8698402085604336
+  },
+  {
+    "userId": 41,
+    "forumId": 13,
+    "similarity": 0.861448024657841
+  },
+  {
+    "userId": 41,
+    "forumId": 14,
+    "similarity": 0.8725318853294023
+  },
+  {
+    "userId": 41,
+    "forumId": 15,
+    "similarity": 0.8820070697821653
+  },
+  {
+    "userId": 41,
+    "forumId": 16,
+    "similarity": 0.8677211909523055
+  },
+  {
+    "userId": 41,
+    "forumId": 17,
+    "similarity": 0.8768405500116795
+  },
+  {
+    "userId": 41,
+    "forumId": 18,
+    "similarity": 0.875318031014047
+  },
+  {
+    "userId": 41,
+    "forumId": 19,
+    "similarity": 0.8676178858381731
+  },
+  {
+    "userId": 41,
+    "forumId": 20,
+    "similarity": 0.8802600132766675
+  },
+  {
+    "userId": 41,
+    "forumId": 21,
+    "similarity": 0.8619524688381467
+  },
+  {
+    "userId": 41,
+    "forumId": 22,
+    "similarity": 0.889158870063305
+  },
+  {
+    "userId": 41,
+    "forumId": 23,
+    "similarity": 0.8698201956719039
+  },
+  {
+    "userId": 41,
+    "forumId": 24,
+    "similarity": 0.8608833086091185
+  },
+  {
+    "userId": 42,
+    "forumId": 1,
+    "similarity": 0.8747341676268146
+  },
+  {
+    "userId": 42,
+    "forumId": 2,
+    "similarity": 0.8812378431830724
+  },
+  {
+    "userId": 42,
+    "forumId": 3,
+    "similarity": 0.8789960622812161
+  },
+  {
+    "userId": 42,
+    "forumId": 4,
+    "similarity": 0.8825174973854247
+  },
+  {
+    "userId": 42,
+    "forumId": 5,
+    "similarity": 0.8803766859855591
+  },
+  {
+    "userId": 42,
+    "forumId": 6,
+    "similarity": 0.8732865924454928
+  },
+  {
+    "userId": 42,
+    "forumId": 7,
+    "similarity": 0.8611769164525402
+  },
+  {
+    "userId": 42,
+    "forumId": 8,
+    "similarity": 0.8788831039483812
+  },
+  {
+    "userId": 42,
+    "forumId": 9,
+    "similarity": 0.8693862381595551
+  },
+  {
+    "userId": 42,
+    "forumId": 10,
+    "similarity": 0.8777187461227995
+  },
+  {
+    "userId": 42,
+    "forumId": 11,
+    "similarity": 0.8866372536353194
+  },
+  {
+    "userId": 42,
+    "forumId": 12,
+    "similarity": 0.8753800818083936
+  },
+  {
+    "userId": 42,
+    "forumId": 13,
+    "similarity": 0.87104403478637
+  },
+  {
+    "userId": 42,
+    "forumId": 14,
+    "similarity": 0.8676530279041396
+  },
+  {
+    "userId": 42,
+    "forumId": 15,
+    "similarity": 0.8778155976285236
+  },
+  {
+    "userId": 42,
+    "forumId": 16,
+    "similarity": 0.8632349185579603
+  },
+  {
+    "userId": 42,
+    "forumId": 17,
+    "similarity": 0.8864909461103145
+  },
+  {
+    "userId": 42,
+    "forumId": 18,
+    "similarity": 0.8792636691253318
+  },
+  {
+    "userId": 42,
+    "forumId": 19,
+    "similarity": 0.8799760251326659
+  },
+  {
+    "userId": 42,
+    "forumId": 20,
+    "similarity": 0.8872203081961496
+  },
+  {
+    "userId": 42,
+    "forumId": 21,
+    "similarity": 0.8701625496035864
+  },
+  {
+    "userId": 42,
+    "forumId": 22,
+    "similarity": 0.8788643188431838
+  },
+  {
+    "userId": 42,
+    "forumId": 23,
+    "similarity": 0.8751999398615667
+  },
+  {
+    "userId": 42,
+    "forumId": 24,
+    "similarity": 0.8717495667803382
+  },
+  {
+    "userId": 43,
+    "forumId": 1,
+    "similarity": 0.8656393197110415
+  },
+  {
+    "userId": 43,
+    "forumId": 2,
+    "similarity": 0.8713903270832828
+  },
+  {
+    "userId": 43,
+    "forumId": 3,
+    "similarity": 0.8748172986088526
+  },
+  {
+    "userId": 43,
+    "forumId": 4,
+    "similarity": 0.8743860569689805
+  },
+  {
+    "userId": 43,
+    "forumId": 5,
+    "similarity": 0.8806430424622952
+  },
+  {
+    "userId": 43,
+    "forumId": 6,
+    "similarity": 0.8776431254454404
+  },
+  {
+    "userId": 43,
+    "forumId": 7,
+    "similarity": 0.8659090810843755
+  },
+  {
+    "userId": 43,
+    "forumId": 8,
+    "similarity": 0.8804306936739562
+  },
+  {
+    "userId": 43,
+    "forumId": 9,
+    "similarity": 0.8614451013774602
+  },
+  {
+    "userId": 43,
+    "forumId": 10,
+    "similarity": 0.8776497352423245
+  },
+  {
+    "userId": 43,
+    "forumId": 11,
+    "similarity": 0.8781699104141967
+  },
+  {
+    "userId": 43,
+    "forumId": 12,
+    "similarity": 0.8678254115866311
+  },
+  {
+    "userId": 43,
+    "forumId": 13,
+    "similarity": 0.8608321559145248
+  },
+  {
+    "userId": 43,
+    "forumId": 14,
+    "similarity": 0.8719155566683785
+  },
+  {
+    "userId": 43,
+    "forumId": 15,
+    "similarity": 0.8682926957854047
+  },
+  {
+    "userId": 43,
+    "forumId": 16,
+    "similarity": 0.8703129411256817
+  },
+  {
+    "userId": 43,
+    "forumId": 17,
+    "similarity": 0.8912076547314501
+  },
+  {
+    "userId": 43,
+    "forumId": 18,
+    "similarity": 0.875569728496689
+  },
+  {
+    "userId": 43,
+    "forumId": 19,
+    "similarity": 0.8701102443148642
+  },
+  {
+    "userId": 43,
+    "forumId": 20,
+    "similarity": 0.8828672519325087
+  },
+  {
+    "userId": 43,
+    "forumId": 21,
+    "similarity": 0.8640008892986623
+  },
+  {
+    "userId": 43,
+    "forumId": 22,
+    "similarity": 0.8856467231986341
+  },
+  {
+    "userId": 43,
+    "forumId": 23,
+    "similarity": 0.8640869676986631
+  },
+  {
+    "userId": 43,
+    "forumId": 24,
+    "similarity": 0.8668634008783233
+  },
+  {
+    "userId": 44,
+    "forumId": 1,
+    "similarity": 0.8696820122825941
+  },
+  {
+    "userId": 44,
+    "forumId": 2,
+    "similarity": 0.8715501667840196
+  },
+  {
+    "userId": 44,
+    "forumId": 3,
+    "similarity": 0.874481482339842
+  },
+  {
+    "userId": 44,
+    "forumId": 4,
+    "similarity": 0.866918425561037
+  },
+  {
+    "userId": 44,
+    "forumId": 5,
+    "similarity": 0.8841512721951134
+  },
+  {
+    "userId": 44,
+    "forumId": 6,
+    "similarity": 0.8805367532013639
+  },
+  {
+    "userId": 44,
+    "forumId": 7,
+    "similarity": 0.8623240315024429
+  },
+  {
+    "userId": 44,
+    "forumId": 8,
+    "similarity": 0.8722298946392631
+  },
+  {
+    "userId": 44,
+    "forumId": 9,
+    "similarity": 0.8644926538962232
+  },
+  {
+    "userId": 44,
+    "forumId": 10,
+    "similarity": 0.8805036021843797
+  },
+  {
+    "userId": 44,
+    "forumId": 11,
+    "similarity": 0.8824990252991327
+  },
+  {
+    "userId": 44,
+    "forumId": 12,
+    "similarity": 0.8656403015457493
+  },
+  {
+    "userId": 44,
+    "forumId": 13,
+    "similarity": 0.8698132062536554
+  },
+  {
+    "userId": 44,
+    "forumId": 14,
+    "similarity": 0.8741731556891482
+  },
+  {
+    "userId": 44,
+    "forumId": 15,
+    "similarity": 0.8767511989513286
+  },
+  {
+    "userId": 44,
+    "forumId": 16,
+    "similarity": 0.8688711605435169
+  },
+  {
+    "userId": 44,
+    "forumId": 17,
+    "similarity": 0.8787058686544275
+  },
+  {
+    "userId": 44,
+    "forumId": 18,
+    "similarity": 0.8832786111546417
+  },
+  {
+    "userId": 44,
+    "forumId": 19,
+    "similarity": 0.8631480527750879
+  },
+  {
+    "userId": 44,
+    "forumId": 20,
+    "similarity": 0.885821004025513
+  },
+  {
+    "userId": 44,
+    "forumId": 21,
+    "similarity": 0.8699688901278181
+  },
+  {
+    "userId": 44,
+    "forumId": 22,
+    "similarity": 0.8844069245692467
+  },
+  {
+    "userId": 44,
+    "forumId": 23,
+    "similarity": 0.8684073949915063
+  },
+  {
+    "userId": 44,
+    "forumId": 24,
+    "similarity": 0.8680176106031148
+  },
+  {
+    "userId": 45,
+    "forumId": 1,
+    "similarity": 0.8696027298359935
+  },
+  {
+    "userId": 45,
+    "forumId": 2,
+    "similarity": 0.87378469497382
+  },
+  {
+    "userId": 45,
+    "forumId": 3,
+    "similarity": 0.8741183787862993
+  },
+  {
+    "userId": 45,
+    "forumId": 4,
+    "similarity": 0.8765745628551778
+  },
+  {
+    "userId": 45,
+    "forumId": 5,
+    "similarity": 0.882708177357998
+  },
+  {
+    "userId": 45,
+    "forumId": 6,
+    "similarity": 0.8799499941564616
+  },
+  {
+    "userId": 45,
+    "forumId": 7,
+    "similarity": 0.8617406213830914
+  },
+  {
+    "userId": 45,
+    "forumId": 8,
+    "similarity": 0.8844041494059957
+  },
+  {
+    "userId": 45,
+    "forumId": 9,
+    "similarity": 0.8698413957899364
+  },
+  {
+    "userId": 45,
+    "forumId": 10,
+    "similarity": 0.8811304783065261
+  },
+  {
+    "userId": 45,
+    "forumId": 11,
+    "similarity": 0.887757245781458
+  },
+  {
+    "userId": 45,
+    "forumId": 12,
+    "similarity": 0.8741205968860079
+  },
+  {
+    "userId": 45,
+    "forumId": 13,
+    "similarity": 0.8676459640827637
+  },
+  {
+    "userId": 45,
+    "forumId": 14,
+    "similarity": 0.8729417867035422
+  },
+  {
+    "userId": 45,
+    "forumId": 15,
+    "similarity": 0.8773464592467453
+  },
+  {
+    "userId": 45,
+    "forumId": 16,
+    "similarity": 0.8773046221530296
+  },
+  {
+    "userId": 45,
+    "forumId": 17,
+    "similarity": 0.8847732275281684
+  },
+  {
+    "userId": 45,
+    "forumId": 18,
+    "similarity": 0.8794460235036268
+  },
+  {
+    "userId": 45,
+    "forumId": 19,
+    "similarity": 0.8743916136515436
+  },
+  {
+    "userId": 45,
+    "forumId": 20,
+    "similarity": 0.8845482282593372
+  },
+  {
+    "userId": 45,
+    "forumId": 21,
+    "similarity": 0.87063714561694
+  },
+  {
+    "userId": 45,
+    "forumId": 22,
+    "similarity": 0.8925535444741649
+  },
+  {
+    "userId": 45,
+    "forumId": 23,
+    "similarity": 0.8724853309672793
+  },
+  {
+    "userId": 45,
+    "forumId": 24,
+    "similarity": 0.8695015891430649
+  },
+  {
+    "userId": 46,
+    "forumId": 1,
+    "similarity": 0.8726377902241153
+  },
+  {
+    "userId": 46,
+    "forumId": 2,
+    "similarity": 0.8760576088296358
+  },
+  {
+    "userId": 46,
+    "forumId": 3,
+    "similarity": 0.8819829589924527
+  },
+  {
+    "userId": 46,
+    "forumId": 4,
+    "similarity": 0.8827527185484081
+  },
+  {
+    "userId": 46,
+    "forumId": 5,
+    "similarity": 0.8852379797646512
+  },
+  {
+    "userId": 46,
+    "forumId": 6,
+    "similarity": 0.8798009708584719
+  },
+  {
+    "userId": 46,
+    "forumId": 7,
+    "similarity": 0.8560336117991105
+  },
+  {
+    "userId": 46,
+    "forumId": 8,
+    "similarity": 0.8748434716731308
+  },
+  {
+    "userId": 46,
+    "forumId": 9,
+    "similarity": 0.8669677184554975
+  },
+  {
+    "userId": 46,
+    "forumId": 10,
+    "similarity": 0.8763783522955826
+  },
+  {
+    "userId": 46,
+    "forumId": 11,
+    "similarity": 0.8831827778832338
+  },
+  {
+    "userId": 46,
+    "forumId": 12,
+    "similarity": 0.8806404923403024
+  },
+  {
+    "userId": 46,
+    "forumId": 13,
+    "similarity": 0.8654017271768911
+  },
+  {
+    "userId": 46,
+    "forumId": 14,
+    "similarity": 0.8757606659700804
+  },
+  {
+    "userId": 46,
+    "forumId": 15,
+    "similarity": 0.8746396693174465
+  },
+  {
+    "userId": 46,
+    "forumId": 16,
+    "similarity": 0.8666784812906743
+  },
+  {
+    "userId": 46,
+    "forumId": 17,
+    "similarity": 0.883095937204451
+  },
+  {
+    "userId": 46,
+    "forumId": 18,
+    "similarity": 0.877747546195433
+  },
+  {
+    "userId": 46,
+    "forumId": 19,
+    "similarity": 0.8812451638873522
+  },
+  {
+    "userId": 46,
+    "forumId": 20,
+    "similarity": 0.8845763447073013
+  },
+  {
+    "userId": 46,
+    "forumId": 21,
+    "similarity": 0.8640794140266378
+  },
+  {
+    "userId": 46,
+    "forumId": 22,
+    "similarity": 0.8857018872831951
+  },
+  {
+    "userId": 46,
+    "forumId": 23,
+    "similarity": 0.8710362664481064
+  },
+  {
+    "userId": 46,
+    "forumId": 24,
+    "similarity": 0.8712435613199664
+  },
+  {
+    "userId": 47,
+    "forumId": 1,
+    "similarity": 0.8672077053247843
+  },
+  {
+    "userId": 47,
+    "forumId": 2,
+    "similarity": 0.8780165153890261
+  },
+  {
+    "userId": 47,
+    "forumId": 3,
+    "similarity": 0.8804353191703929
+  },
+  {
+    "userId": 47,
+    "forumId": 4,
+    "similarity": 0.8859250977520766
+  },
+  {
+    "userId": 47,
+    "forumId": 5,
+    "similarity": 0.8767049783194152
+  },
+  {
+    "userId": 47,
+    "forumId": 6,
+    "similarity": 0.87211166353697
+  },
+  {
+    "userId": 47,
+    "forumId": 7,
+    "similarity": 0.8570667848185367
+  },
+  {
+    "userId": 47,
+    "forumId": 8,
+    "similarity": 0.8690178378925635
+  },
+  {
+    "userId": 47,
+    "forumId": 9,
+    "similarity": 0.8690673405161939
+  },
+  {
+    "userId": 47,
+    "forumId": 10,
+    "similarity": 0.8728538795178499
+  },
+  {
+    "userId": 47,
+    "forumId": 11,
+    "similarity": 0.8856174025753075
+  },
+  {
+    "userId": 47,
+    "forumId": 12,
+    "similarity": 0.8724392804476305
+  },
+  {
+    "userId": 47,
+    "forumId": 13,
+    "similarity": 0.869384456827587
+  },
+  {
+    "userId": 47,
+    "forumId": 14,
+    "similarity": 0.8671898244376958
+  },
+  {
+    "userId": 47,
+    "forumId": 15,
+    "similarity": 0.8818399417514918
+  },
+  {
+    "userId": 47,
+    "forumId": 16,
+    "similarity": 0.8606840371956294
+  },
+  {
+    "userId": 47,
+    "forumId": 17,
+    "similarity": 0.8844940007634365
+  },
+  {
+    "userId": 47,
+    "forumId": 18,
+    "similarity": 0.8737141090471666
+  },
+  {
+    "userId": 47,
+    "forumId": 19,
+    "similarity": 0.8804996571887166
+  },
+  {
+    "userId": 47,
+    "forumId": 20,
+    "similarity": 0.8829245390596239
+  },
+  {
+    "userId": 47,
+    "forumId": 21,
+    "similarity": 0.8612753465449243
+  },
+  {
+    "userId": 47,
+    "forumId": 22,
+    "similarity": 0.8771632525449002
+  },
+  {
+    "userId": 47,
+    "forumId": 23,
+    "similarity": 0.8735468495025404
+  },
+  {
+    "userId": 47,
+    "forumId": 24,
+    "similarity": 0.8699067587966802
+  },
+  {
+    "userId": 48,
+    "forumId": 1,
+    "similarity": 0.8663334187308948
+  },
+  {
+    "userId": 48,
+    "forumId": 2,
+    "similarity": 0.8717322061017394
+  },
+  {
+    "userId": 48,
+    "forumId": 3,
+    "similarity": 0.8603787313645305
+  },
+  {
+    "userId": 48,
+    "forumId": 4,
+    "similarity": 0.8677142642728238
+  },
+  {
+    "userId": 48,
+    "forumId": 5,
+    "similarity": 0.8809003430298731
+  },
+  {
+    "userId": 48,
+    "forumId": 6,
+    "similarity": 0.8900427162739801
+  },
+  {
+    "userId": 48,
+    "forumId": 7,
+    "similarity": 0.8600834696014151
+  },
+  {
+    "userId": 48,
+    "forumId": 8,
+    "similarity": 0.8787134363217819
+  },
+  {
+    "userId": 48,
+    "forumId": 9,
+    "similarity": 0.8610527055588417
+  },
+  {
+    "userId": 48,
+    "forumId": 10,
+    "similarity": 0.8768171069186436
+  },
+  {
+    "userId": 48,
+    "forumId": 11,
+    "similarity": 0.8762826284539968
+  },
+  {
+    "userId": 48,
+    "forumId": 12,
+    "similarity": 0.8698513930304831
+  },
+  {
+    "userId": 48,
+    "forumId": 13,
+    "similarity": 0.8606923085368062
+  },
+  {
+    "userId": 48,
+    "forumId": 14,
+    "similarity": 0.8815695354524341
+  },
+  {
+    "userId": 48,
+    "forumId": 15,
+    "similarity": 0.8653163763804412
+  },
+  {
+    "userId": 48,
+    "forumId": 16,
+    "similarity": 0.8713189868477509
+  },
+  {
+    "userId": 48,
+    "forumId": 17,
+    "similarity": 0.8825440044303595
+  },
+  {
+    "userId": 48,
+    "forumId": 18,
+    "similarity": 0.8764497907701262
+  },
+  {
+    "userId": 48,
+    "forumId": 19,
+    "similarity": 0.8664075504640347
+  },
+  {
+    "userId": 48,
+    "forumId": 20,
+    "similarity": 0.8819465840145755
+  },
+  {
+    "userId": 48,
+    "forumId": 21,
+    "similarity": 0.8745549448271992
+  },
+  {
+    "userId": 48,
+    "forumId": 22,
+    "similarity": 0.8931350463989276
+  },
+  {
+    "userId": 48,
+    "forumId": 23,
+    "similarity": 0.8614639821449241
+  },
+  {
+    "userId": 48,
+    "forumId": 24,
+    "similarity": 0.8584448448677997
+  },
+  {
+    "userId": 49,
+    "forumId": 1,
+    "similarity": 0.8656997228550535
+  },
+  {
+    "userId": 49,
+    "forumId": 2,
+    "similarity": 0.8755713412790231
+  },
+  {
+    "userId": 49,
+    "forumId": 3,
+    "similarity": 0.8766006145242409
+  },
+  {
+    "userId": 49,
+    "forumId": 4,
+    "similarity": 0.877813020610724
+  },
+  {
+    "userId": 49,
+    "forumId": 5,
+    "similarity": 0.8766497440759388
+  },
+  {
+    "userId": 49,
+    "forumId": 6,
+    "similarity": 0.8766304299205671
+  },
+  {
+    "userId": 49,
+    "forumId": 7,
+    "similarity": 0.8534516234001112
+  },
+  {
+    "userId": 49,
+    "forumId": 8,
+    "similarity": 0.8688004852458787
+  },
+  {
+    "userId": 49,
+    "forumId": 9,
+    "similarity": 0.8757515391937779
+  },
+  {
+    "userId": 49,
+    "forumId": 10,
+    "similarity": 0.8766229345794725
+  },
+  {
+    "userId": 49,
+    "forumId": 11,
+    "similarity": 0.8836155739925827
+  },
+  {
+    "userId": 49,
+    "forumId": 12,
+    "similarity": 0.8747932358074617
+  },
+  {
+    "userId": 49,
+    "forumId": 13,
+    "similarity": 0.8845539726060031
+  },
+  {
+    "userId": 49,
+    "forumId": 14,
+    "similarity": 0.8704965990877854
+  },
+  {
+    "userId": 49,
+    "forumId": 15,
+    "similarity": 0.875601227203295
+  },
+  {
+    "userId": 49,
+    "forumId": 16,
+    "similarity": 0.8706370149834493
+  },
+  {
+    "userId": 49,
+    "forumId": 17,
+    "similarity": 0.8819595987957711
+  },
+  {
+    "userId": 49,
+    "forumId": 18,
+    "similarity": 0.8875744623523826
+  },
+  {
+    "userId": 49,
+    "forumId": 19,
+    "similarity": 0.8709216612632559
+  },
+  {
+    "userId": 49,
+    "forumId": 20,
+    "similarity": 0.8961914296496878
+  },
+  {
+    "userId": 49,
+    "forumId": 21,
+    "similarity": 0.8727910980970822
+  },
+  {
+    "userId": 49,
+    "forumId": 22,
+    "similarity": 0.8866461027302975
+  },
+  {
+    "userId": 49,
+    "forumId": 23,
+    "similarity": 0.8698292361930773
+  },
+  {
+    "userId": 49,
+    "forumId": 24,
+    "similarity": 0.8699081526208348
+  },
+  {
+    "userId": 50,
+    "forumId": 1,
+    "similarity": 0.8647038419142123
+  },
+  {
+    "userId": 50,
+    "forumId": 2,
+    "similarity": 0.8714910356444343
+  },
+  {
+    "userId": 50,
+    "forumId": 3,
+    "similarity": 0.8826531909023786
+  },
+  {
+    "userId": 50,
+    "forumId": 4,
+    "similarity": 0.8929991778704891
+  },
+  {
+    "userId": 50,
+    "forumId": 5,
+    "similarity": 0.8750753376669264
+  },
+  {
+    "userId": 50,
+    "forumId": 6,
+    "similarity": 0.8733327501726915
+  },
+  {
+    "userId": 50,
+    "forumId": 7,
+    "similarity": 0.8607514706860766
+  },
+  {
+    "userId": 50,
+    "forumId": 8,
+    "similarity": 0.884445795496127
+  },
+  {
+    "userId": 50,
+    "forumId": 9,
+    "similarity": 0.8819458931137961
+  },
+  {
+    "userId": 50,
+    "forumId": 10,
+    "similarity": 0.865869164224844
+  },
+  {
+    "userId": 50,
+    "forumId": 11,
+    "similarity": 0.8918808151514273
+  },
+  {
+    "userId": 50,
+    "forumId": 12,
+    "similarity": 0.8745706525311995
+  },
+  {
+    "userId": 50,
+    "forumId": 13,
+    "similarity": 0.8701809666300275
+  },
+  {
+    "userId": 50,
+    "forumId": 14,
+    "similarity": 0.8677922219108137
+  },
+  {
+    "userId": 50,
+    "forumId": 15,
+    "similarity": 0.8874026541197337
+  },
+  {
+    "userId": 50,
+    "forumId": 16,
+    "similarity": 0.8733315855824053
+  },
+  {
+    "userId": 50,
+    "forumId": 17,
+    "similarity": 0.8889275691032443
+  },
+  {
+    "userId": 50,
+    "forumId": 18,
+    "similarity": 0.8673963340970718
+  },
+  {
+    "userId": 50,
+    "forumId": 19,
+    "similarity": 0.8834818756527224
+  },
+  {
+    "userId": 50,
+    "forumId": 20,
+    "similarity": 0.874383544636566
+  },
+  {
+    "userId": 50,
+    "forumId": 21,
+    "similarity": 0.8577250714528805
+  },
+  {
+    "userId": 50,
+    "forumId": 22,
+    "similarity": 0.8874898741766456
+  },
+  {
+    "userId": 50,
+    "forumId": 23,
+    "similarity": 0.8937752501921691
+  },
+  {
+    "userId": 50,
+    "forumId": 24,
+    "similarity": 0.8753762573840881
+  },
+  {
+    "userId": 51,
+    "forumId": 1,
+    "similarity": 0.8728316453509289
+  },
+  {
+    "userId": 51,
+    "forumId": 2,
+    "similarity": 0.8770955656759395
+  },
+  {
+    "userId": 51,
+    "forumId": 3,
+    "similarity": 0.8824508933875321
+  },
+  {
+    "userId": 51,
+    "forumId": 4,
+    "similarity": 0.8782120856963652
+  },
+  {
+    "userId": 51,
+    "forumId": 5,
+    "similarity": 0.8843630617660944
+  },
+  {
+    "userId": 51,
+    "forumId": 6,
+    "similarity": 0.871715771596753
+  },
+  {
+    "userId": 51,
+    "forumId": 7,
+    "similarity": 0.8532699776040755
+  },
+  {
+    "userId": 51,
+    "forumId": 8,
+    "similarity": 0.8691254566245008
+  },
+  {
+    "userId": 51,
+    "forumId": 9,
+    "similarity": 0.8669637184307697
+  },
+  {
+    "userId": 51,
+    "forumId": 10,
+    "similarity": 0.8793147428052133
+  },
+  {
+    "userId": 51,
+    "forumId": 11,
+    "similarity": 0.884737397237046
+  },
+  {
+    "userId": 51,
+    "forumId": 12,
+    "similarity": 0.8745156531092652
+  },
+  {
+    "userId": 51,
+    "forumId": 13,
+    "similarity": 0.8634824435530404
+  },
+  {
+    "userId": 51,
+    "forumId": 14,
+    "similarity": 0.8660641780766142
+  },
+  {
+    "userId": 51,
+    "forumId": 15,
+    "similarity": 0.8737186795636129
+  },
+  {
+    "userId": 51,
+    "forumId": 16,
+    "similarity": 0.8663498355580516
+  },
+  {
+    "userId": 51,
+    "forumId": 17,
+    "similarity": 0.8774163675852925
+  },
+  {
+    "userId": 51,
+    "forumId": 18,
+    "similarity": 0.8837723641082592
+  },
+  {
+    "userId": 51,
+    "forumId": 19,
+    "similarity": 0.8754619777538251
+  },
+  {
+    "userId": 51,
+    "forumId": 20,
+    "similarity": 0.8884590895418372
+  },
+  {
+    "userId": 51,
+    "forumId": 21,
+    "similarity": 0.8677249102347481
+  },
+  {
+    "userId": 51,
+    "forumId": 22,
+    "similarity": 0.8797776785300927
+  },
+  {
+    "userId": 51,
+    "forumId": 23,
+    "similarity": 0.8691654875947544
+  },
+  {
+    "userId": 51,
+    "forumId": 24,
+    "similarity": 0.8701611706823579
+  },
+  {
+    "userId": 52,
+    "forumId": 1,
+    "similarity": 0.8711303372588857
+  },
+  {
+    "userId": 52,
+    "forumId": 2,
+    "similarity": 0.8708685434936336
+  },
+  {
+    "userId": 52,
+    "forumId": 3,
+    "similarity": 0.8800310923469205
+  },
+  {
+    "userId": 52,
+    "forumId": 4,
+    "similarity": 0.8692342990052567
+  },
+  {
+    "userId": 52,
+    "forumId": 5,
+    "similarity": 0.8859992809321731
+  },
+  {
+    "userId": 52,
+    "forumId": 6,
+    "similarity": 0.8768379501961304
+  },
+  {
+    "userId": 52,
+    "forumId": 7,
+    "similarity": 0.8615915450805166
+  },
+  {
+    "userId": 52,
+    "forumId": 8,
+    "similarity": 0.8755718206733407
+  },
+  {
+    "userId": 52,
+    "forumId": 9,
+    "similarity": 0.8660387267806824
+  },
+  {
+    "userId": 52,
+    "forumId": 10,
+    "similarity": 0.8790952017920636
+  },
+  {
+    "userId": 52,
+    "forumId": 11,
+    "similarity": 0.8792484104270144
+  },
+  {
+    "userId": 52,
+    "forumId": 12,
+    "similarity": 0.8675839516945114
+  },
+  {
+    "userId": 52,
+    "forumId": 13,
+    "similarity": 0.861316508482984
+  },
+  {
+    "userId": 52,
+    "forumId": 14,
+    "similarity": 0.8713522090571336
+  },
+  {
+    "userId": 52,
+    "forumId": 15,
+    "similarity": 0.8691650051907944
+  },
+  {
+    "userId": 52,
+    "forumId": 16,
+    "similarity": 0.8649708374764593
+  },
+  {
+    "userId": 52,
+    "forumId": 17,
+    "similarity": 0.8780676381024993
+  },
+  {
+    "userId": 52,
+    "forumId": 18,
+    "similarity": 0.8801095888110874
+  },
+  {
+    "userId": 52,
+    "forumId": 19,
+    "similarity": 0.8667505663151486
+  },
+  {
+    "userId": 52,
+    "forumId": 20,
+    "similarity": 0.8851903199868166
+  },
+  {
+    "userId": 52,
+    "forumId": 21,
+    "similarity": 0.8662905308276708
+  },
+  {
+    "userId": 52,
+    "forumId": 22,
+    "similarity": 0.8812120720547229
+  },
+  {
+    "userId": 52,
+    "forumId": 23,
+    "similarity": 0.8648314976536755
+  },
+  {
+    "userId": 52,
+    "forumId": 24,
+    "similarity": 0.8691618753957948
+  },
+  {
+    "userId": 53,
+    "forumId": 1,
+    "similarity": 0.820058466313041
+  },
+  {
+    "userId": 53,
+    "forumId": 2,
+    "similarity": 0.8296824837203833
+  },
+  {
+    "userId": 53,
+    "forumId": 3,
+    "similarity": 0.8124975561348629
+  },
+  {
+    "userId": 53,
+    "forumId": 4,
+    "similarity": 0.8230570797759662
+  },
+  {
+    "userId": 53,
+    "forumId": 5,
+    "similarity": 0.8217563923214573
+  },
+  {
+    "userId": 53,
+    "forumId": 6,
+    "similarity": 0.8249070710405535
+  },
+  {
+    "userId": 53,
+    "forumId": 7,
+    "similarity": 0.7970229279056399
+  },
+  {
+    "userId": 53,
+    "forumId": 8,
+    "similarity": 0.8199259591443795
+  },
+  {
+    "userId": 53,
+    "forumId": 9,
+    "similarity": 0.8200800159787235
+  },
+  {
+    "userId": 53,
+    "forumId": 10,
+    "similarity": 0.8134239486934428
+  },
+  {
+    "userId": 53,
+    "forumId": 11,
+    "similarity": 0.8572671661744805
+  },
+  {
+    "userId": 53,
+    "forumId": 12,
+    "similarity": 0.8027820045837076
+  },
+  {
+    "userId": 53,
+    "forumId": 13,
+    "similarity": 0.8129915394346916
+  },
+  {
+    "userId": 53,
+    "forumId": 14,
+    "similarity": 0.8133872870825424
+  },
+  {
+    "userId": 53,
+    "forumId": 15,
+    "similarity": 0.8378669112657707
+  },
+  {
+    "userId": 53,
+    "forumId": 16,
+    "similarity": 0.7961250312342971
+  },
+  {
+    "userId": 53,
+    "forumId": 17,
+    "similarity": 0.8216414167768566
+  },
+  {
+    "userId": 53,
+    "forumId": 18,
+    "similarity": 0.8089551888426579
+  },
+  {
+    "userId": 53,
+    "forumId": 19,
+    "similarity": 0.8090422836586298
+  },
+  {
+    "userId": 53,
+    "forumId": 20,
+    "similarity": 0.8250552571071498
+  },
+  {
+    "userId": 53,
+    "forumId": 21,
+    "similarity": 0.8006217848683675
+  },
+  {
+    "userId": 53,
+    "forumId": 22,
+    "similarity": 0.8230957864642415
+  },
+  {
+    "userId": 53,
+    "forumId": 23,
+    "similarity": 0.8271970811379102
+  },
+  {
+    "userId": 53,
+    "forumId": 24,
+    "similarity": 0.8249509516375964
+  }
+]

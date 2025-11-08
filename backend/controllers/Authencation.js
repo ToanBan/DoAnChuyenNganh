@@ -65,7 +65,7 @@ const LoginController = async (req, res) => {
       sameSite: "Lax",
       path: "/",
     });
-    return res.status(200).json({ message: user.role });
+    return res.status(200).json({ message: user.role, token, username: user.username });
   } catch (error) {
     console.error("Error during login:", error);
     return res.status(401).json({ message: "Internal server error" });

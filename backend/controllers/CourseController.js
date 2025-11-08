@@ -15,7 +15,7 @@ const {
   Certificate,
   CartItem,
   Cart,
-  TopicPurchase
+  TopicPurchase,
 } = require("../models");
 const { CreateNotification } = require("./Notification");
 const { where, Op } = require("sequelize");
@@ -24,8 +24,7 @@ const path = require("path");
 const mammoth = require("mammoth");
 const ffmpeg = require("fluent-ffmpeg");
 const redisClient = require("../lib/redis");
-const { verify } = require("crypto");
-
+const { updateBehaviorDataset } = require("./GetDatasetController");
 const CreateCourseController = async (req, res) => {
   try {
     const token = req.cookies.token;
@@ -539,13 +538,20 @@ const DeleteContentController = async (req, res) => {
 const CourseBoughtController = async (req, res) => {
   try {
     const token = req.cookies.token;
+    console.log(token);
     const decoded = jwt.verify(token, process.env.ACCESS_TOKEN);
     if (!decoded) {
       return res.status(401).json({ message: "Xác thực không thành công" });
     }
     const userId = decoded.id;
     const courses = await Course.findAll({
-      attributes: ["id", "course_name", "course_description", "course_image"],
+      attributes: [
+        "id",
+        "course_name",
+        "course_description",
+        "course_image",
+        "price",
+      ],
       include: [
         {
           model: InvoiceItem,
@@ -643,11 +649,24 @@ const CompleteProgressCourseController = async (req, res) => {
 
     const { id } = req.params;
     const userId = decoded.id;
-    await UserTopicProgress.create({
+
+    const topic = await Topic.findByPk(id);
+    if (!topic) {
+      return res.status(404).json({
+        message: "Không tìm thấy topic",
+      });
+    }
+
+    const progress = await UserTopicProgress.create({
       user_id: userId,
       topic_id: id,
       is_completed: true,
     });
+
+    if (progress) {
+      await updateBehaviorDataset(userId, topic.course_id);
+    }
+
     return res.status(200).json({
       message: id,
     });
@@ -874,8 +893,8 @@ const SearchCourseController = async (req, res) => {
       include: [
         {
           model: Teacher,
-          as: "teacher", // đúng với alias bạn đặt
-          attributes: ["id", "name", "email"], // chọn các cột bạn muốn lấy
+          as: "teacher",
+          attributes: ["id", "name", "email", "avatar"],
         },
       ],
     });
@@ -1120,7 +1139,7 @@ const GetTopicsPurchasedController = async (req, res) => {
       include: [
         {
           model: Topic,
-          as: "topic", 
+          as: "topic",
           include: [
             {
               model: Course,
@@ -1153,6 +1172,10 @@ const GetTopicsPurchasedController = async (req, res) => {
   }
 };
 
+
+
+
+
 module.exports = {
   CreateCourseController,
   DeleteCourseByIdController,
@@ -1176,5 +1199,5 @@ module.exports = {
   SuggestionCoursesController,
   SuggestionTopicController,
   GetTopicDetailController,
-  GetTopicsPurchasedController
+  GetTopicsPurchasedController,
 };

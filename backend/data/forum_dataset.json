@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Lập trình Java cơ bản",
+    "description": "Diễn đàn thảo luận về các kiến thức Java cơ bản: biến, vòng lặp, mảng, hàm, OOP.",
+    "tags": ["java", "lập trình", "cơ bản"],
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Lập trình Java nâng cao",
+    "description": "Thảo luận về Java nâng cao: multithreading, collection framework, design pattern.",
+    "tags": ["java", "nâng cao", "design pattern"],
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name": "ReactJS cho người mới bắt đầu",
+    "description": "Diễn đàn hướng dẫn ReactJS cơ bản, JSX, component, state, props.",
+    "tags": ["react", "frontend", "cơ bản"],
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "name": "React nâng cao & Redux",
+    "description": "Thảo luận React nâng cao, Redux, hooks nâng cao và quản lý state.",
+    "tags": ["react", "redux", "nâng cao"],
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "name": "Python cho người mới học",
+    "description": "Forum về Python cơ bản: biến, vòng lặp, hàm, OOP, xử lý file.",
+    "tags": ["python", "cơ bản", "lập trình"],
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "name": "Phân tích dữ liệu với Python",
+    "description": "Thảo luận phân tích dữ liệu, Pandas, NumPy, trực quan hóa dữ liệu với Python.",
+    "tags": ["python", "phân tích dữ liệu", "pandas"],
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "name": "Cấu trúc dữ liệu & Giải thuật",
+    "description": "Forum về các cấu trúc dữ liệu, thuật toán sắp xếp, tìm kiếm và OOP.",
+    "tags": ["data structure", "algorithm", "giải thuật"],
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "name": "SQL và Quản trị cơ sở dữ liệu",
+    "description": "Diễn đàn thảo luận SQL, truy vấn dữ liệu, quản trị cơ sở dữ liệu.",
+    "tags": ["sql", "database", "quản trị"],
+    "status": "active"
+  },
+  {
+    "id": 9,
+    "name": "Lập trình Web Fullstack (MERN)",
+    "description": "Thảo luận về MERN stack: MongoDB, Express, React, Node.js.",
+    "tags": ["mern", "fullstack", "web"],
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "name": "Machine Learning cơ bản",
+    "description": "Forum thảo luận Machine Learning cơ bản, thuật toán supervised & unsupervised.",
+    "tags": ["machine learning", "ml cơ bản", "ai"],
+    "status": "active"
+  },
+  {
+    "id": 11,
+    "name": "Lập trình Web với HTML và CSS",
+    "description": "Thảo luận HTML, CSS cơ bản, layout, responsive design.",
+    "tags": ["html", "css", "web cơ bản"],
+    "status": "active"
+  },
+  {
+    "id": 12,
+    "name": "JavaScript Cơ Bản đến Nâng Cao",
+    "description": "Forum thảo luận JavaScript, ES6+, DOM, event, async/await.",
+    "tags": ["javascript", "frontend", "es6"],
+    "status": "active"
+  },
+  {
+    "id": 13,
+    "name": "Xây dựng RESTful API với Node.js và Express",
+    "description": "Thảo luận xây dựng API với Node.js, Express, routing, middleware, JWT.",
+    "tags": ["nodejs", "express", "api"],
+    "status": "active"
+  },
+  {
+    "id": 14,
+    "name": "Phân tích dữ liệu với Python và Pandas",
+    "description": "Forum về phân tích dữ liệu nâng cao với Python, Pandas và trực quan hóa.",
+    "tags": ["python", "pandas", "data analysis"],
+    "status": "active"
+  },
+  {
+    "id": 15,
+    "name": "Lập trình Web với Bootstrap và Responsive",
+    "description": "Thảo luận Bootstrap, thiết kế web responsive và layout.",
+    "tags": ["bootstrap", "responsive", "web design"],
+    "status": "active"
+  },
+  {
+    "id": 16,
+    "name": "Xử lý dữ liệu lớn với Python & Spark",
+    "description": "Forum về Big Data, Spark với Python, RDD, DataFrame.",
+    "tags": ["python", "big data", "spark"],
+    "status": "active"
+  },
+  {
+    "id": 17,
+    "name": "Tối ưu truy vấn SQL nâng cao",
+    "description": "Thảo luận tối ưu truy vấn SQL, indexing, performance tuning.",
+    "tags": ["sql", "database", "tối ưu hóa"],
+    "status": "active"
+  },
+  {
+    "id": 18,
+    "name": "Deep Learning với TensorFlow",
+    "description": "Diễn đàn Deep Learning cơ bản với TensorFlow, neural network, CNN, RNN.",
+    "tags": ["deep learning", "tensorflow", "ai"],
+    "status": "active"
+  },
+  {
+    "id": 19,
+    "name": "React Hooks & Context nâng cao",
+    "description": "Forum về React nâng cao: hooks, context, state management.",
+    "tags": ["react", "hooks", "context"],
+    "status": "active"
+  },
+  {
+    "id": 20,
+    "name": "Triển khai mô hình Deep Learning với TensorFlow nâng cao",
+    "description": "Thảo luận triển khai các mô hình DL nâng cao, fine-tuning, deployment.",
+    "tags": ["tensorflow", "deep learning", "nâng cao"],
+    "status": "active"
+  },
+  {
+    "id": 21,
+    "name": "Xử lý ngôn ngữ tự nhiên (NLP) với TensorFlow",
+    "description": "Forum thảo luận NLP, text processing, embedding, TensorFlow.",
+    "tags": ["nlp", "tensorflow", "text"],
+    "status": "active"
+  },
+  {
+    "id": 22,
+    "name": "Phân tích dữ liệu với PySpark và DataFrame",
+    "description": "Thảo luận PySpark, DataFrame, xử lý dữ liệu lớn.",
+    "tags": ["pyspark", "dataframe", "big data"],
+    "status": "active"
+  },
+  {
+    "id": 23,
+    "name": "Thiết kế giao diện web responsive với Bootstrap 5",
+    "description": "Forum thảo luận UI, responsive design, Bootstrap 5.",
+    "tags": ["bootstrap", "ui", "responsive"],
+    "status": "active"
+  },
+  {
+    "id": 24,
+    "name": "Triển khai dự án Web Fullstack",
+    "description": "Diễn đàn thảo luận về triển khai dự án Web fullstack từ backend đến frontend.",
+    "tags": ["fullstack", "web", "project"],
+    "status": "active"
+  }
+]

@@ -8,6 +8,7 @@ import GetCourse from "@/app/api/GetCourse";
 import Link from "next/link";
 import { useCart } from "@/app/context/CartContext";
 import AlertSuccess from "@/app/components/share/alert_success";
+import Chatbox from "@/app/components/share/Chatbot";
 interface Course {
   id: number;
   course_description: string;
@@ -275,6 +276,7 @@ const CoursePage = () => {
       
       {success && <AlertSuccess message="Thêm Giỏ Hàng Thành Công"/>}
       <Footer />
+      {/* <Chatbox/> */}
     </>
   );
 };

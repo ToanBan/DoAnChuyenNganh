@@ -16,7 +16,8 @@ import "aos/dist/aos.css";
 import GetCourse from "./api/GetCourse";
 import { useCart } from "./context/CartContext";
 import AlertSuccess from "./components/share/alert_success";
-
+import Swal from "sweetalert2";
+import Chatbox from "./components/share/Chatbot";
 interface Slide {
   title: string;
   desc: string;
@@ -59,6 +60,12 @@ interface Course {
 interface WhyUsItem {
   icon: string;
   title: string;
+  description: string;
+}
+
+interface Forum {
+  id: string;
+  name: string;
   description: string;
 }
 
@@ -111,6 +118,7 @@ export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [courses, setCourses] = useState<Course[] | []>([]);
   const [suggestionCourse, setSuggestionCourse] = useState<Course[]>([]);
+  const [forums, setForums] = useState<Forum[] | []>([]);
   const [success, setSuccess] = useState(false);
   const { refreshCartCount } = useCart();
   const imageCourse = "http://localhost:5000/uploads/";
@@ -136,6 +144,31 @@ export default function Home() {
     setSuggestionCourse(data.message);
   };
 
+  const GetSuggestionForums = async () => {
+    try {
+      const res = await fetch(
+        "http://localhost:5000/api/recommendations/forums",
+        {
+          method: "GET",
+          credentials: "include",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (res.ok) {
+        const data = await res.json();
+        console.log("Suggested Forums:", data.recommendations);
+        setForums(data.recommendations);
+      }
+    } catch (error) {
+      console.error("Error fetching suggestion forums:", error);
+      setForums([]);
+      return;
+    }
+  };
+
   useEffect(() => {
     const fetchCourses = async () => {
       const data = await GetCourse();
@@ -146,6 +179,7 @@ export default function Home() {
 
   useEffect(() => {
     GetSuggestionCourse();
+    GetSuggestionForums();
   }, []);
 
   const toggleMobileMenu = (): void => {
@@ -154,6 +188,45 @@ export default function Home() {
 
   const closeMobileMenu = (): void => {
     setIsMobileMenuOpen(false);
+  };
+
+  const handleJoinForum = async (forumId: string) => {
+    try {
+      const res = await fetch("http://localhost:5000/api/join_forum", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ forumId }),
+        credentials: "include",
+      });
+      const data = await res.json();
+      if (res.status == 409) {
+        window.location.href = `/forum/${forumId}`;
+      } else if (res.status === 200) {
+        Swal.fire({
+          title: "Tham gia diễn đàn thành công!",
+          text: `Bạn đã tham gia diễn đàn thành công.`,
+          icon: "success",
+          confirmButtonColor: "#6366f1",
+          confirmButtonText: "OK",
+        });
+        setTimeout(() => {
+          window.location.href = `/forum/${forumId}`;
+        }, 3000);
+      } else {
+        Swal.fire({
+          title: "Lỗi khi tham gia diễn đàn",
+          text: data.message || "Đã có lỗi xảy ra khi tham gia diễn đàn.",
+          icon: "error",
+          confirmButtonColor: "#6366f1",
+          confirmButtonText: "OK",
+        });
+      }
+    } catch (error) {
+      console.error("Error joining forum:", error);
+      return;
+    }
   };
 
   const handleAddToCart = async (courseId: number) => {
@@ -456,6 +529,166 @@ export default function Home() {
         <></>
       )}
 
+      {Array.isArray(forums) && forums.length > 0 ? (
+        <section
+          style={{
+            backgroundColor: "#fff",
+            padding: "50px 0",
+          }}
+        >
+          <h2
+            style={{
+              textAlign: "center",
+              fontSize: "28px",
+              fontWeight: "700",
+              color: "#333",
+              marginBottom: "30px",
+            }}
+            data-aos="fade-up"
+          >
+            DIỄN ĐÀN BẠN CÓ THỂ THÍCH
+          </h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "24px",
+              width: "90%",
+              margin: "0 auto",
+            }}
+          >
+            {Array.isArray(forums) && forums.length > 0 ? (
+              <section
+                style={{
+                  backgroundColor: "#fff",
+                  padding: "50px 0",
+                }}
+              >
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                    gap: "24px",
+                    width: "90%",
+                    margin: "0 auto",
+                  }}
+                >
+                  {forums.map((f, index) => (
+                    <div
+                      key={f.id}
+                      data-aos="zoom-in"
+                      data-aos-delay={index * 100}
+                      style={{
+                        background: "linear-gradient(135deg, #e6f0ff, #ffffff)",
+                        borderRadius: "16px",
+                        boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                        padding: "20px",
+                        transition: "all 0.3s ease",
+                        cursor: "pointer",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = "translateY(-6px)";
+                        e.currentTarget.style.boxShadow =
+                          "0 8px 20px rgba(0,0,0,0.15)";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = "translateY(0)";
+                        e.currentTarget.style.boxShadow =
+                          "0 4px 12px rgba(0,0,0,0.08)";
+                      }}
+                    >
+                      <div>
+                        <h3
+                          style={{
+                            fontSize: "20px",
+                            fontWeight: "600",
+                            color: "#1a237e",
+                          }}
+                        >
+                          {f.name}
+                        </h3>
+                        <p
+                          style={{
+                            color: "#555",
+                            fontSize: "15px",
+                            margin: "10px 0 20px",
+                          }}
+                        >
+                          {f.description}
+                        </p>
+                        <div>
+                          <button
+                            style={{
+                              textDecoration: "none",
+                              color: "#fff",
+                              backgroundColor: "#1e88e5",
+                              padding: "10px 18px",
+                              borderRadius: "8px",
+                              fontWeight: "500",
+                              transition: "background 0.3s",
+                              border: "none",
+                            }}
+                            onMouseEnter={(e) =>
+                              (e.currentTarget.style.backgroundColor =
+                                "#1565c0")
+                            }
+                            onMouseLeave={(e) =>
+                              (e.currentTarget.style.backgroundColor =
+                                "#1e88e5")
+                            }
+                            onClick={() => {
+                              Swal.fire({
+                                title: "Xác nhận tham gia?",
+                                text: `Bạn có chắc chắn muốn tham gia diễn đàn "${f.name}" không?`,
+                                icon: "question",
+                                showCancelButton: true,
+                                confirmButtonColor: "#3085d6",
+                                cancelButtonColor: "#d33",
+                                confirmButtonText: "Có, tham gia ngay!",
+                                cancelButtonText: "Hủy",
+                                background: "#f9fafb",
+                                color: "#111827",
+                                customClass: {
+                                  popup:
+                                    "rounded-4 shadow-lg border border-gray-200",
+                                  confirmButton:
+                                    "rounded-pill px-4 py-2 fw-semibold",
+                                  cancelButton:
+                                    "rounded-pill px-4 py-2 fw-semibold",
+                                },
+                              }).then((result) => {
+                                if (result.isConfirmed) {
+                                  handleJoinForum(f.id);
+                                } else {
+                                  Swal.fire({
+                                    title: "Đã hủy!",
+                                    text: "Bạn có thể tham gia sau nhé 😊",
+                                    icon: "info",
+                                    confirmButtonColor: "#6366f1",
+                                    confirmButtonText: "OK",
+                                  });
+                                }
+                              });
+                            }}
+                          >
+                            THAM GIA DIỄN ĐÀN
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            ) : (
+              <></>
+            )}
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
+
       <section className={styles.sectionDark}>
         <h2 className={styles.sectionTitle} data-aos="fade-up">
           Khóa học nổi bật
@@ -600,6 +833,7 @@ export default function Home() {
 
       {success && <AlertSuccess message="Thêm Giỏ Hàng Thành Công" />}
       <Footer />
+      <Chatbox/>
     </div>
   );
 }
