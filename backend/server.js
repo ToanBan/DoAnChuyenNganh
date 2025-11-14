@@ -10,6 +10,7 @@ const http = require("http");
 const { Server } = require("socket.io");
 const server = http.createServer(app);
 const jwt = require("jsonwebtoken");
+// require("./recommendation/schedule")
 require("dotenv").config();
 const {
   RegisterController,
@@ -101,6 +102,8 @@ const {
   GetCommentByCourseIdController,
   AddCommentPost,
   GetCommentByPostId,
+  AddCommentForumTopic, 
+  GetCommentsForumTopic
 } = require("./controllers/CommentController");
 const {
   AddPost,
@@ -125,7 +128,6 @@ const {
 const { AddForum, JoinForum, GetForumDetail, GetPostForum, JoinedForum, QuitForum} = require("./controllers/ForumController");
 const {generateChatbotResponse} = require("./controllers/ChatbotController")
 const {getRecommendedForums} = require("./controllers/RecommendationController");
-
 app.post(
   "/api/webhook",
   express.raw({ type: "application/json" }),
@@ -204,6 +206,16 @@ io.on("connection", (socket) => {
   socket.on("newComment", (data) => {
     console.log("New comment data received:", data);
     AddCommentPost(io, socket, data);
+  });
+
+  socket.on("joinForumRoom", (room) => {
+    socket.join(room);
+    console.log(`socket forum ${socket.id} joined room: ${room}`)
+  })
+
+  socket.on("newCommentForum", (data) => {
+    console.log("New comment data received:", data);
+    AddCommentForumTopic(io, socket, data);
   });
 
   socket.on("leavePostRoom", (room) => {
@@ -285,9 +297,7 @@ app.get("/api/cart", GetCartController);
 app.post("/api/checkout/create-session", CreateCheckoutController);
 app.post("/api/topic/checkout/create-session", CreateCheckoutTopicController);
 app.get("/api/checkout/session", GetSessionController);
-// app.delete("/api/cart/remove", RemoveFromCartController);
-app.post("/api/cart/remove", RemoveFromCartController);
-
+app.delete("/api/cart/remove", RemoveFromCartController);
 app.get("/api/count_cart_item", CountCartItemsController);
 app.get("/api/admin/students", GetStudentFollowCourseController);
 app.get("/api/admin/courses_bought", GetCourseBoughtController);
@@ -317,6 +327,7 @@ app.get("/api/forum", JoinedForum);
 app.delete("/api/forum/:id", QuitForum);
 app.get("/api/topic_progress", GetTopicProgressController);
 app.post("/api/chatbot", generateChatbotResponse);
+app.get("/api/comment_forumtopic/:id", GetCommentsForumTopic)
 // FakeUserReactionPosts()
 // FakePostForUser()
 // GetContentDataset();

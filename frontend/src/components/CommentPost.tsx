@@ -26,10 +26,6 @@ const CommentPost = ({ postId }: { postId: string }) => {
       postId: Number(postId),
       text: newComment,
     };
-
-    console.log(commentData);
-
-
     socket.emit("newComment", commentData);
     setNewComment("");
   };
@@ -132,7 +128,6 @@ const CommentPost = ({ postId }: { postId: string }) => {
           )}
         </div>
 
-        {/* Nếu có reply thì render lồng */}
         {cmt.children && cmt.children.length > 0 && (
           <div className="ms-4 mt-2 border-start ps-2">
             {renderComments(cmt.children)}

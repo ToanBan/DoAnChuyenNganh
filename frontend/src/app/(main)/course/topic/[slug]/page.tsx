@@ -60,6 +60,9 @@ const TopicDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
   const [message, setMessage] = useState("");
   const [quizResultsContent, setQuizResultsContent] = useState<string>("");
   const [quizzes, setQuizzes] = useState<Quizzes[]>([]);
+  const [startQuiz, setStartQuiz] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(300); // VD: 5 phút = 300 giây
+
   const GetTopicsDetail = async () => {
     const res = await fetch(`http://localhost:5000/api/topics/${slug}`, {
       method: "GET",
@@ -269,6 +272,22 @@ const TopicDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
     );
   };
 
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (startQuiz && timeLeft > 0) {
+      timer = setInterval(() => {
+        setTimeLeft((prev) => prev - 1);
+      }, 1000);
+    }
+    if (timeLeft === 0) {
+      if (topic?.questions) {
+        const result = handleCheckQuiz(new Event("submit") as any);
+        if (result) handleSendQuizz(new Event("submit") as any, slug, result);
+      }
+    }
+    return () => clearInterval(timer);
+  }, [startQuiz, timeLeft]);
+
   return (
     <div>
       <main
@@ -321,9 +340,31 @@ const TopicDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
 
         <section>
           <h2 className="fs-3 fw-semibold text-secondary mb-3">Trắc nghiệm</h2>
-          <form className="mb-4">
-            {topic && topic.questions && topic.questions.length > 0 ? (
-              topic.questions.map((q, index) => (
+
+          {/* Nút bắt đầu làm bài */}
+          {!startQuiz && (
+            <button
+              className="btn btn-primary mb-3"
+              onClick={() => setStartQuiz(true)}
+            >
+              Bắt đầu làm bài
+            </button>
+          )}
+
+          {/* Hiển thị thời gian khi đã bắt đầu */}
+          {startQuiz && (
+            <div className="mb-3 fw-bold text-danger">
+              Thời gian còn lại: {timeLeft}s
+            </div>
+          )}
+
+          {/* Form câu hỏi */}
+          {startQuiz &&
+          topic &&
+          topic.questions &&
+          topic.questions.length > 0 ? (
+            <form className="mb-4">
+              {topic.questions.map((q, index) => (
                 <div key={index} className="mb-3">
                   <p className="fw-medium text-dark mb-2">
                     {index + 1}. {q.question_text}
@@ -350,24 +391,26 @@ const TopicDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
                     ))}
                   </div>
                 </div>
-              ))
-            ) : (
+              ))}
+              <button
+                className="btn btn-primary"
+                onClick={(e) => {
+                  const result = handleCheckQuiz(e);
+                  if (result) {
+                    handleSendQuizz(e, slug, result);
+                  }
+                }}
+              >
+                Nộp bài
+              </button>
+            </form>
+          ) : (
+            startQuiz && (
               <p className="text-muted">
                 Không có câu hỏi trắc nghiệm cho chủ đề này.
               </p>
-            )}
-          </form>
-          <button
-            className="btn btn-primary"
-            onClick={(e) => {
-              const result = handleCheckQuiz(e);
-              if (result) {
-                handleSendQuizz(e, slug, result);
-              }
-            }}
-          >
-            Kiểm tra đáp án
-          </button>
+            )
+          )}
 
           <div
             className={`mt-4 p-3 rounded bg-info bg-opacity-10 text-info fw-medium ${

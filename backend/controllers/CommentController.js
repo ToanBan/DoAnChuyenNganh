@@ -1,4 +1,5 @@
-const { Comment, User, CommentPost} = require("../models");
+const { where } = require("sequelize");
+const { Comment, User, CommentPost, UserForumTopic } = require("../models");
 const jwt = require("jsonwebtoken");
 
 const AddCommentController = async (io, socket, data) => {
@@ -51,7 +52,6 @@ const AddCommentController = async (io, socket, data) => {
   }
 };
 
-
 const GetCommentByCourseIdController = async (req, res) => {
   const { courseId } = req.params;
   try {
@@ -66,7 +66,7 @@ const GetCommentByCourseIdController = async (req, res) => {
         },
       ],
     });
-    return res.json({ message:comments });
+    return res.json({ message: comments });
   } catch (err) {
     console.error("Lỗi lấy bình luận:", err);
     return res
@@ -75,14 +75,12 @@ const GetCommentByCourseIdController = async (req, res) => {
   }
 };
 
-
-
 const AddCommentPost = async (io, socket, data) => {
   try {
     const { postId, text, parentId = null } = data;
     const userId = socket.user.id;
 
-    console.log("Thêm bình luận:", { postId, text, parentId, userId});
+    console.log("Thêm bình luận:", { postId, text, parentId, userId });
 
     const newComment = await CommentPost.create({
       postId,
@@ -118,7 +116,7 @@ const AddCommentPost = async (io, socket, data) => {
 
 const GetCommentByPostId = async (req, res) => {
   try {
-    const {postId} = req.params;
+    const { postId } = req.params;
     const comments = await CommentPost.findAll({
       where: { postId },
       include: [
@@ -130,9 +128,9 @@ const GetCommentByPostId = async (req, res) => {
       ],
       order: [["createdAt", "ASC"]],
     });
-    console
+
     return res.status(200).json({
-      message:comments
+      message: comments,
     });
   } catch (error) {
     console.error(error);
@@ -140,4 +138,83 @@ const GetCommentByPostId = async (req, res) => {
   }
 };
 
-module.exports = { AddCommentController, GetCommentByCourseIdController, AddCommentPost, GetCommentByPostId};
+const AddCommentForumTopic = async (io, socket, data) => {
+  try {
+    const { forumTopicId, content, parentId = null } = data;
+    const userId = socket.user.id;
+
+    console.log("Thêm bình luận:", { forumTopicId, content, parentId });
+
+    const newComment = await UserForumTopic.create({
+      forumTopicId,
+      userId,
+      content,
+      parentId,
+    });
+
+    const user = await User.findByPk(userId, {
+      attributes: ["id", "username", "avatar"],
+    });
+
+    io.to(`forumTopic-${forumTopicId}`).emit("receiveCommentForum", {
+      id: newComment.id,
+      forumTopicId: newComment.forumTopicId,
+      userId: user.id,
+      User: {
+        username: user.username,
+        avatar: user.avatar,
+      },
+      content: newComment.content,
+      parentId: newComment.parentId,
+      createdAt: newComment.created_at,
+    });
+  } catch (error) {
+    console.error("Lỗi lưu bình luận:", error);
+    socket.emit("comment_error", {
+      message: "Lỗi khi lưu bình luận",
+      error: error.message,
+    });
+  }
+};
+
+const GetCommentsForumTopic = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const comments = await UserForumTopic.findAll({
+      where: {
+        forumTopicId: id,
+      },
+      include: [
+        {
+          model: User,
+          as: "user",
+          attributes: ["id", "username", "avatar"],
+        },
+      ],
+      order: [["createdAt", "ASC"]],
+    });
+
+    if(!comments){
+      return res.status(404).json({
+        message:"Not Found"
+      })
+    }
+    return res.status(200).json({
+      message:comments
+    })
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      message:"Internal Server Error"
+    })
+  }
+};
+
+module.exports = {
+  AddCommentController,
+  GetCommentByCourseIdController,
+  AddCommentPost,
+  GetCommentByPostId,
+  AddCommentForumTopic,
+  GetCommentsForumTopic
+};

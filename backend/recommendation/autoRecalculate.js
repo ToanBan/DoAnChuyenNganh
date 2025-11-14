@@ -1,13 +1,8 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-
-// ⚙️ Cấu hình đường dẫn chuẩn trong ES module
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const fs = require("fs");
+const path = require("path");
+const { spawn } = require("child_process");
 const baseDir = path.join(__dirname, "..", "data");
 
-// 🧠 Hàm tính cosine similarity giữa 2 vector embedding
 function cosineSimilarity(a, b) {
   const dot = a.reduce((sum, val, i) => sum + val * b[i], 0);
   const normA = Math.sqrt(a.reduce((sum, val) => sum + val * val, 0));
@@ -15,28 +10,53 @@ function cosineSimilarity(a, b) {
   return normA === 0 || normB === 0 ? 0 : dot / (normA * normB);
 }
 
-// 1️⃣ Tính similarity giữa nội dung người dùng và forum
+const runPythonScript = (scriptName) => {
+  return new Promise((resolve, reject) => {
+    console.log(`Bắt đầu chạy Python: ${scriptName}`);
+    const pyProcess = spawn("python", [path.join(__dirname, scriptName)]);
+
+    pyProcess.stdout.on("data", (data) => {
+      console.log(`[Python stdout]: ${data}`);
+    });
+
+    pyProcess.stderr.on("data", (data) => {
+      console.error(`[Python stderr]: ${data}`);
+    });
+
+    pyProcess.on("close", (code) => {
+      if (code === 0) {
+        console.log(`Python script ${scriptName} chạy xong!`);
+        resolve();
+      } else {
+        reject(
+          new Error(`Python script ${scriptName} kết thúc với code ${code}`)
+        );
+      }
+    });
+  });
+};
+
+const updateAllEmbeddings = async () => {
+  await runPythonScript("generate_embeddings.py"); 
+  await runPythonScript("generate_embedding_behavior.py"); 
+};
+
 const calculationSimilarityContentForum = async () => {
   const forumsPath = path.join(baseDir, "forum_dataset_embeddings.json");
   const contentPath = path.join(baseDir, "content_dataset_embeddings.json");
 
-  console.log("📂 Đọc dữ liệu từ:", contentPath);
+  console.log("Đọc dữ liệu từ:", contentPath);
   if (!fs.existsSync(forumsPath) || !fs.existsSync(contentPath)) {
-    console.warn("⚠️ Thiếu forum hoặc content embeddings!");
+    console.warn("Thiếu forum hoặc content embeddings!");
     return;
   }
-
   const forums = JSON.parse(fs.readFileSync(forumsPath, "utf8"));
   const contents = JSON.parse(fs.readFileSync(contentPath, "utf8"));
-
-  // Gom embedding theo user
   const userEmbeddings = {};
   for (const content of contents) {
     if (!userEmbeddings[content.userId]) userEmbeddings[content.userId] = [];
     userEmbeddings[content.userId].push(content.embedding);
   }
-
-  // Trung bình hóa embedding của mỗi user
   const averagedUsers = Object.entries(userEmbeddings).map(
     ([userId, embeddings]) => {
       const dim = embeddings[0].length;
@@ -48,7 +68,6 @@ const calculationSimilarityContentForum = async () => {
     }
   );
 
-  // Tính similarity giữa user và forum
   const results = [];
   for (const user of averagedUsers) {
     for (const forum of forums) {
@@ -66,20 +85,17 @@ const calculationSimilarityContentForum = async () => {
   console.log("Đã tính similarity_content_forum");
 };
 
-// 2Tính similarity giữa hành vi người dùng và forum
 const calculationSimilarityBehaviorForum = async () => {
   const forumsPath = path.join(baseDir, "forum_dataset_embeddings.json");
   const behaviorPath = path.join(baseDir, "behavior_dataset_embeddings.json");
 
   if (!fs.existsSync(forumsPath) || !fs.existsSync(behaviorPath)) {
-    console.warn("⚠️ Thiếu forum hoặc behavior embeddings!");
+    console.warn("Thiếu forum hoặc behavior embeddings!");
     return;
   }
 
   const forums = JSON.parse(fs.readFileSync(forumsPath, "utf8"));
   const behaviors = JSON.parse(fs.readFileSync(behaviorPath, "utf8"));
-
-  // Gom embedding hành vi theo user
   const userEmbeddings = {};
   for (const behavior of behaviors) {
     if (!userEmbeddings[behavior.userId]) userEmbeddings[behavior.userId] = [];
@@ -96,8 +112,6 @@ const calculationSimilarityBehaviorForum = async () => {
       return { userId: Number(userId), embedding: avg };
     }
   );
-
-  // Tính similarity
   const results = [];
   for (const user of averagedUsers) {
     for (const forum of forums) {
@@ -116,16 +130,13 @@ const calculationSimilarityBehaviorForum = async () => {
 };
 
 const finalSimilarity = async () => {
-  const alpha = 0.6; // 60% hành vi, 40% nội dung
-
+  const alpha = 0.6;
   const contentSimPath = path.join(baseDir, "similarity_content_forum.json");
   const behaviorSimPath = path.join(baseDir, "similarity_behavior_forum.json");
-
   if (!fs.existsSync(contentSimPath)) {
     console.warn("Không tìm thấy similarity_content_forum!");
     return;
   }
-
   const contentSims = JSON.parse(fs.readFileSync(contentSimPath, "utf8"));
   const behaviorSims = fs.existsSync(behaviorSimPath)
     ? JSON.parse(fs.readFileSync(behaviorSimPath, "utf8"))
@@ -142,8 +153,6 @@ const finalSimilarity = async () => {
     const finalScore = alpha * behaviorSim + (1 - alpha) * c.similarity;
     return { userId: c.userId, forumId: c.forumId, finalScore };
   });
-
-  // Chỉ lấy top 3 forum cho mỗi user
   const userMap = new Map();
   finalResults.forEach((item) => {
     if (!userMap.has(item.userId)) userMap.set(item.userId, []);
@@ -161,10 +170,17 @@ const finalSimilarity = async () => {
   console.log("🏁 Đã tạo final_similarity_top3");
 };
 
-export const runAutoRecalculate = async () => {
-  console.log("Bắt đầu tính toán gợi ý forum...");
-  await calculationSimilarityContentForum();
-  await calculationSimilarityBehaviorForum();
-  await finalSimilarity();
-  console.log("Hoàn tất cập nhật gợi ý forum!");
+const runAutoRecalculate = async () => {
+  try {
+    await updateAllEmbeddings();
+    console.log("📊 Bắt đầu tính similarity forum...");
+    await calculationSimilarityContentForum();
+    await calculationSimilarityBehaviorForum();
+    await finalSimilarity();
+    console.log("Hoàn tất cập nhật gợi ý forum!");
+  } catch (e) {
+    console.error("Lỗi khi cập nhật embeddings hoặc tính similarity:", e);
+  }
 };
+
+module.exports = { runAutoRecalculate };

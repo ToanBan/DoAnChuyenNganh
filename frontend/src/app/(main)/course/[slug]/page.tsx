@@ -125,11 +125,36 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
   const [selectedQuizz, setSelectedQuizz] = useState(false);
   const [topics, setTopics] = useState<Topic[]>([]);
   const [quizzes, setQuizzes] = useState<Quizzes[]>([]);
+  const [openQuiz, setOpenQuiz] = useState(false);
   const [suggestionTopics, setSuggestionTopics] = useState<TopicSuggestion[]>(
     []
   );
+  const [quizTimer, setQuizTimer] = useState<number>(0);
+  const [quizTimerInterval, setQuizTimerInterval] = useState<NodeJS.Timeout | null>(null);
+
   const isIntroOrCert =
     activeTopicId === "intro" || activeTopicId === "certificate";
+
+  const startQuizTimer = () => {
+    if (quizTimerInterval) clearInterval(quizTimerInterval);
+    setQuizTimer(0);
+    const interval = setInterval(() => {
+      setQuizTimer((prev) => prev + 1);
+    }, 1000);
+    setQuizTimerInterval(interval);
+  };
+
+  const stopQuizTimer = () => {
+    if (quizTimerInterval) {
+      clearInterval(quizTimerInterval);
+      setQuizTimerInterval(null);
+    }
+  };
+
+  const handleStartQuiz = () => {
+    setOpenQuiz(true);
+    startQuizTimer();
+  };
 
   const loadContent = (topicId: string) => {
     const content = learningContent[topicId];
@@ -158,6 +183,8 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
       });
       setActiveTopicId(topicId);
       setQuizResultsContent("");
+      stopQuizTimer();
+      setOpenQuiz(false);
       return;
     }
 
@@ -165,8 +192,12 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
       setCurrentTopic(content);
       setActiveTopicId(topicId);
       setQuizResultsContent("");
+      stopQuizTimer();
+      setOpenQuiz(false);
     } else {
       setCurrentTopic(null);
+      stopQuizTimer();
+      setOpenQuiz(false);
     }
   };
 
@@ -179,7 +210,6 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
       },
     });
     const data = await res.json();
-    console.log(data);
     setCourse(data.message);
     setTopics(data.message.topics);
     if (data.message && data.message.topics) {
@@ -262,6 +292,7 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
     const data = await res.json();
     setSuggestionTopics(data.message);
   };
+
   useEffect(() => {
     GetProgress();
   }, []);
@@ -383,13 +414,15 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
 
     resultsHtml += `<p className="fs-4 fw-bold mt-4">Bạn đã trả lời đúng ${correctCount} trên ${currentQuiz.length} câu.</p>`;
     setQuizResultsContent(resultsHtml);
+    stopQuizTimer(); // Dừng timer khi kiểm tra kết quả
     return resultList;
   };
 
   const handleSendQuizz = async (
-    e: React.FormEvent<HTMLButtonElement>,
+    e: React.MouseEvent<HTMLButtonElement>,
     topicId: string,
-    resultList: QuestionResult[]
+    resultList: QuestionResult[],
+    quizTime: number
   ) => {
     e.preventDefault();
     const res = await fetch(
@@ -400,7 +433,7 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ questionResult: resultList }),
+        body: JSON.stringify({ questionResult: resultList, quizTime }),
       }
     );
     if (res.status === 200) {
@@ -505,6 +538,13 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
         ];
       }
     });
+  };
+
+  // Format timer thành MM:SS
+  const formatTimer = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
   return (
@@ -614,69 +654,92 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
           </div>
         </section>
 
-        <section
-          className={`bg-white p-4 rounded shadow mb-4 ${
-            !isIntroOrCert && currentTopic ? "" : "d-none"
-          }`}
-        >
-          <h2 className="fs-3 fw-semibold text-secondary mb-3">Trắc nghiệm</h2>
-          <form className="mb-4">
-            {currentTopic &&
-            currentTopic.questions &&
-            currentTopic.questions.length > 0 ? (
-              currentTopic.questions.map((q, index) => (
-                <div key={index} className="mb-3">
-                  <p className="fw-medium text-dark mb-2">
-                    {index + 1}. {q.question_text}
-                  </p>
-                  <div className="d-flex flex-column">
-                    {Object.entries(q.options).map(([key, value], i) => (
-                      <div key={i} className="form-check mb-2">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name={`question${index}`}
-                          id={`question${index}Option${key}`}
-                          value={key}
-                          checked={SelectedQuestion(q.id, key)}
-                          onChange={() => handleSelect(q.id, key)}
-                        />
-                        <label
-                          className="form-check-label text-secondary"
-                          htmlFor={`question${index}Option${key}`}
-                        >
-                          {key}. {value}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))
-            ) : (
-              <p className="text-muted">
-                Không có câu hỏi trắc nghiệm cho chủ đề này.
-              </p>
-            )}
-          </form>
-          <button
-            className="btn btn-primary"
-            onClick={(e) => {
-              const result = handleCheckQuiz(e);
-              if (result) {
-                handleSendQuizz(e, activeTopicId, result);
-              }
-            }}
-          >
-            Kiểm tra đáp án
-          </button>
+        <div>
+          {currentTopic && Array.isArray(currentTopic.questions) && currentTopic.questions.length > 0 && (
+            <>
+              {!openQuiz && (
+                <button className="btn btn-primary mb-3" onClick={handleStartQuiz}>
+                  Bắt Đầu Làm Bài
+                </button>
+              )}
+            </>
+          )}
 
-          <div
-            className={`mt-4 p-3 rounded bg-info bg-opacity-10 text-info fw-medium ${
-              quizResultsContent ? "" : "d-none"
-            }`}
-            dangerouslySetInnerHTML={{ __html: quizResultsContent }}
-          ></div>
-        </section>
+          {openQuiz && (
+            <section
+              className={`bg-white p-4 rounded shadow mb-4 ${
+                !isIntroOrCert && currentTopic ? "" : "d-none"
+              }`}
+            >
+              <h2 className="fs-3 fw-semibold text-secondary mb-3">
+                Trắc nghiệm
+              </h2>
+              {/* Hiển thị thời gian chạy */}
+              <div className="alert alert-info d-flex justify-content-between align-items-center mb-3">
+                <span>Thời gian làm bài: <strong>{formatTimer(quizTimer)}</strong></span>
+                <button className="btn btn-outline-danger btn-sm" onClick={() => { setOpenQuiz(false); stopQuizTimer(); }}>
+                  Đóng
+                </button>
+              </div>
+              <form className="mb-4">
+                {currentTopic &&
+                currentTopic.questions &&
+                currentTopic.questions.length > 0 ? (
+                  currentTopic.questions.map((q, index) => (
+                    <div key={index} className="mb-3">
+                      <p className="fw-medium text-dark mb-2">
+                        {index + 1}. {q.question_text}
+                      </p>
+                      <div className="d-flex flex-column">
+                        {Object.entries(q.options).map(([key, value], i) => (
+                          <div key={i} className="form-check mb-2">
+                            <input
+                              className="form-check-input"
+                              type="radio"
+                              name={`question${index}`}
+                              id={`question${index}Option${key}`}
+                              value={key}
+                              checked={SelectedQuestion(q.id, key)}
+                              onChange={() => handleSelect(q.id, key)}
+                            />
+                            <label
+                              className="form-check-label text-secondary"
+                              htmlFor={`question${index}Option${key}`}
+                            >
+                              {key}. {value}
+                            </label>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-muted">
+                    Không có câu hỏi trắc nghiệm cho chủ đề này.
+                  </p>
+                )}
+              </form>
+              <button
+                className="btn btn-primary"
+                onClick={(e) => {
+                  const result = handleCheckQuiz(e);
+                  if (result) {
+                    handleSendQuizz(e, activeTopicId, result, quizTimer);
+                  }
+                }}
+              >
+                Kiểm tra đáp án
+              </button>
+
+              <div
+                className={`mt-4 p-3 rounded bg-info bg-opacity-10 text-info fw-medium ${
+                  quizResultsContent ? "" : "d-none"
+                }`}
+                dangerouslySetInnerHTML={{ __html: quizResultsContent }}
+              ></div>
+            </section>
+          )}
+        </div>
 
         {isIntroOrCert && currentTopic && activeTopicId === "intro" && (
           <section className="bg-white p-5 rounded shadow mb-5 border border-info-subtle border-2">
@@ -842,8 +905,10 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
                           ))}
                         </div>
                         <div className="d-flex mt-3">
-                          
-                          <ModalTopicDetail topicId={topic.topic_id} slug={slug} />
+                          <ModalTopicDetail
+                            topicId={topic.topic_id}
+                            slug={slug}
+                          />
                         </div>
                       </div>
                     </div>

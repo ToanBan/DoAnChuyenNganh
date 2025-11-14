@@ -692,7 +692,7 @@ const ResultTopicController = async (req, res) => {
 
     const { id } = req.params; // topic_id
     const userId = decoded.id;
-    const { questionResult } = req.body;
+    const { questionResult, quizTime} = req.body;
 
     if (!Array.isArray(questionResult)) {
       return res.status(400).json({ message: "Dữ liệu không hợp lệ" });
@@ -704,7 +704,7 @@ const ResultTopicController = async (req, res) => {
     );
 
     const totalQuestion = questionResult.length;
-
+    const timeQuestion = quizTime / totalQuestion
     let quizResult = await QuizResult.findOne({
       where: {
         user_id: userId,
@@ -748,6 +748,7 @@ const ResultTopicController = async (req, res) => {
       question_id: q.question_id,
       is_correct: q.is_correct,
       selected_option: q.selected_option,
+      time_spent:timeQuestion
     }));
 
     await QuizAnswer.bulkCreate(answers);
