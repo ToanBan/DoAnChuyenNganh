@@ -19,12 +19,17 @@ const {
 } = require("../models");
 const { CreateNotification } = require("./Notification");
 const { where, Op } = require("sequelize");
+const { spawn } = require("child_process"); 
 const fs = require("fs");
 const path = require("path");
 const mammoth = require("mammoth");
 const ffmpeg = require("fluent-ffmpeg");
 const redisClient = require("../lib/redis");
-const { updateBehaviorDataset } = require("./GetDatasetController");
+const {
+  updateBehaviorDataset,
+  exportQuizDataset,
+  trainQuizModelInBackground,
+} = require("./GetDatasetController");
 const CreateCourseController = async (req, res) => {
   try {
     const token = req.cookies.token;
@@ -752,6 +757,14 @@ const ResultTopicController = async (req, res) => {
     }));
 
     await QuizAnswer.bulkCreate(answers);
+       // ⭐ NEW: Sau khi lưu xong → export dataset + train model
+    try {
+      await exportQuizDataset();          // Ghi lại toàn bộ quiz_dataset.json
+      trainQuizModelInBackground();       // Gọi Python train ở background
+    } catch (err) {
+      console.error("⚠️ Lỗi export / train model quiz:", err);
+      // Không throw ra ngoài để không ảnh hưởng tới user
+    }
     return res.status(200).json({ message: "Successfully" });
   } catch (error) {
     console.error(error);

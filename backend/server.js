@@ -1,3 +1,4 @@
+
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
@@ -123,11 +124,14 @@ const {
   calculationSimilarityContentForum,
   calculationSimilarityBehaviorForum,
   finalSimilarity,
-  extractKeywordsLLM
+  extractKeywordsLLM,
+  exportQuizDataset,
 } = require("./controllers/GetDatasetController");
 const { AddForum, JoinForum, GetForumDetail, GetPostForum, JoinedForum, QuitForum} = require("./controllers/ForumController");
 const {generateChatbotResponse} = require("./controllers/ChatbotController")
 const {getRecommendedForums} = require("./controllers/RecommendationController");
+const { GetWeakTopicsRecommendation } = require("./controllers/WeakTopicsController");
+
 app.post(
   "/api/webhook",
   express.raw({ type: "application/json" }),
@@ -222,7 +226,15 @@ io.on("connection", (socket) => {
     socket.leave(room);
   });
 });
-
+app.get("/api/dev/export-quiz-dataset", async (req, res) => {
+  try {
+    await exportQuizDataset();
+    return res.status(200).json({ message: "Export quiz_dataset.json OK" });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Export failed" });
+  }
+});
 app.get("/api/user", VerifyToken, GetAuthencationUser);
 app.post("/api/register", upload.single(""), RegisterController);
 app.post("/api/login", upload.single(""), LoginController);
@@ -328,6 +340,12 @@ app.delete("/api/forum/:id", QuitForum);
 app.get("/api/topic_progress", GetTopicProgressController);
 app.post("/api/chatbot", generateChatbotResponse);
 app.get("/api/comment_forumtopic/:id", GetCommentsForumTopic)
+app.get("/api/user/weak_topics",VerifyToken, GetWeakTopicsRecommendation);
+// app.post(
+//   "/api/topics/:id/ai-questions",
+//   VerifyToken,
+//   GenerateAIQuestionsForTopic
+// );
 // FakeUserReactionPosts()
 // FakePostForUser()
 // GetContentDataset();

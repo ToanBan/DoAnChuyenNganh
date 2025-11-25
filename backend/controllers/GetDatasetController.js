@@ -1,5 +1,7 @@
 const fs = require("fs");
 const path = require("path");
+const { spawn } = require("child_process");
+
 const dayjs = require("dayjs");
 const {
   Post,
@@ -10,7 +12,9 @@ const {
   CommentPost,
   Forum,
   ForumTopic,
-  Questionnaire
+  Questionnaire,
+  QuizResult,
+  QuizAnswer,
 } = require("../models");
 const { where } = require("sequelize");
 const { GoogleGenAI } = require("@google/genai");
@@ -607,7 +611,104 @@ const updateBehaviorDataset = async (userId, courseId) => {
     console.error("❌ Lỗi khi cập nhật behavior_dataset:", error);
   }
 };
+const exportQuizDataset = async () => {
+  try {
+    const dataDir = path.join(__dirname, "../data");
+    if (!fs.existsSync(dataDir)) {
+      fs.mkdirSync(dataDir, { recursive: true });
+    }
 
+    const filePath = path.join(dataDir, "quiz_dataset.json");
+
+    // ❌ BỎ đoạn kiểm tra tồn tại
+    // if (fs.existsSync(filePath)) {
+    //   console.log("quiz_dataset.json đã tồn tại, bỏ qua export.");
+    //   return;
+    // }
+
+    const results = await QuizResult.findAll({
+      include: [
+        {
+          model: QuizAnswer,
+          as: "QuizAnswers",
+        },
+      ],
+    });
+
+    const dataset = results.map((r) => {
+      const answers = r.QuizAnswers || [];
+      const totalQuestions = r.total_questions || answers.length || 0;
+
+      const correctCount =
+        typeof r.correct_count === "number"
+          ? r.correct_count
+          : answers.filter((a) => a.is_correct).length;
+
+      const accuracy =
+        totalQuestions > 0 ? correctCount / totalQuestions : 0;
+
+      const avgTime =
+        answers.length > 0
+          ? answers.reduce((sum, a) => sum + (a.time_spent || 0), 0) /
+            answers.length
+          : 0;
+
+      const scoreOfquestion =
+        totalQuestions > 0 ? 10 / totalQuestions : 0;
+      const score = parseFloat((correctCount * scoreOfquestion).toFixed(2));
+
+      return {
+        quiz_id: r.id,
+        user_id: r.user_id,
+        topic_id: r.topic_id,
+        score,
+        correct_count: correctCount,
+        total_questions: totalQuestions,
+        accuracy,
+        attempt_number: r.attempt_number,
+        avg_time_spent: avgTime,
+        createdAt: r.createdAt,
+      };
+    });
+
+    fs.writeFileSync(filePath, JSON.stringify(dataset, null, 2), "utf8");
+    console.log(
+      `Export quiz_dataset.json thành công (${dataset.length} dòng)`
+    );
+  } catch (error) {
+    console.error("Lỗi exportQuizDataset:", error);
+  }
+};
+const trainQuizModelInBackground = () => {
+  try {
+    const pythonBin = process.env.PYTHON_BIN || "python";
+    const scriptPath = path.join(__dirname, "..", "ml", "gb_train.py");
+
+    console.log("🚀 Bắt đầu train model GradientBoosting (quiz)...");
+
+    const child = spawn(pythonBin, [scriptPath, "--mode", "train"], {
+      cwd: path.join(__dirname, ".."),
+    });
+
+    child.stdout.on("data", (data) => {
+      console.log("[gb_train.py stdout]:", data.toString());
+    });
+
+    child.stderr.on("data", (data) => {
+      console.error("[gb_train.py stderr]:", data.toString());
+    });
+
+    child.on("close", (code) => {
+      if (code === 0) {
+        console.log("✅ Train model quiz xong (exit code 0).");
+      } else {
+        console.error("⚠️ Train model quiz lỗi, exit code:", code);
+      }
+    });
+  } catch (err) {
+    console.error("Lỗi trainQuizModelInBackground:", err);
+  }
+};
 
 
 const generateWeeklyForumTopics = async () => {
@@ -750,7 +851,41 @@ Trả về JSON đúng định dạng sau:
 };
 
 
+const trainWeakTopicsModel = async () => {
+  return new Promise((resolve, reject) => {
+    const pythonBin = process.env.PYTHON_BIN || "python";
+    const scriptPath = path.join(__dirname, "..", "ml", "gb_train.py");
 
+    console.log("🚀 Bắt đầu train mô hình weak topics...");
+
+    const py = spawn(pythonBin, [scriptPath, "--mode", "train"], {
+      cwd: path.join(__dirname, ".."),
+    });
+
+    let output = "";
+    let errorOutput = "";
+
+    py.stdout.on("data", (data) => {
+      output += data.toString();
+    });
+
+    py.stderr.on("data", (data) => {
+      errorOutput += data.toString();
+    });
+
+    py.on("close", (code) => {
+      if (code !== 0) {
+        console.error("❌ Train model lỗi:", errorOutput);
+        return reject(
+          new Error("Train GradientBoosting thất bại: " + errorOutput)
+        );
+      }
+
+      console.log("✅ Train mô hình xong:", output);
+      resolve(output);
+    });
+  });
+};
 
 module.exports = {
   GetContentDataset,
@@ -764,5 +899,7 @@ module.exports = {
   updateBehaviorDataset,
   generateWeeklyForumTopics,
   extractKeywordsLLM,
- 
+  exportQuizDataset,
+  trainQuizModelInBackground,
+   trainWeakTopicsModel,
 };

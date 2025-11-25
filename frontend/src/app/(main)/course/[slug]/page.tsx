@@ -113,6 +113,14 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
   const [questionResult, setQuestionResult] = useState<QuestionResult[] | null>(
     null
   );
+  // AI
+const [aiGenerating, setAiGenerating] = useState(false);
+
+const handleAISuggestClick = () => {
+  // sau này nếu muốn có loading thì setAiGenerating(true) ở đây cũng được
+  router.push("/weak-topics");
+};
+//AI
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [progress, setProgress] = useState<TopicProgress | null>(null);
@@ -863,6 +871,18 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
             HOÀN THÀNH & HỌC BÀI TIẾP THEO
           </button>
         )}
+        {/* Nút Gợi ý AI */}
+           <button
+    type="button"
+    className="btn btn-warning d-flex align-items-center gap-2"
+    onClick={handleAISuggestClick}
+    disabled={aiGenerating}
+  >
+    <span role="img" aria-label="ai">
+      🤖
+    </span>
+    Gợi ý học tập bằng AI
+  </button>
 
         <div className="container py-5">
           {Array.isArray(suggestionTopics) && suggestionTopics.length > 0 ? (

@@ -343,5 +343,12 @@
     "percentProgress": 20,
     "startDate": "2025-10-28T12:14:00.788Z",
     "updatedAt": "2025-10-28T12:14:00.788Z"
+  },
+  {
+    "userId": 59,
+    "courseId": 13,
+    "percentProgress": 25,
+    "startDate": "2025-11-25T16:45:54.937Z",
+    "updatedAt": "2025-11-25T16:45:54.937Z"
   }
 ]
