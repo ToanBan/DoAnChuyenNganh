@@ -6,6 +6,8 @@ import VideoPlayer from "@/app/components/share/videoplayer";
 import AlertSuccess from "@/app/components/share/alert_success";
 import AlertError from "@/app/components/share/alert_error";
 import ModalTopicDetail from "@/app/components/share/modal_topic";
+import ChatTeacher from "@/app/components/share/ChatTeacher";
+
 import {
   Lock,
   BadgeCheck,
@@ -130,8 +132,8 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
     []
   );
   const [quizTimer, setQuizTimer] = useState<number>(0);
+  const [teacherId, setTeacherId] = useState<string>("");
   const [quizTimerInterval, setQuizTimerInterval] = useState<NodeJS.Timeout | null>(null);
-
   const isIntroOrCert =
     activeTopicId === "intro" || activeTopicId === "certificate";
 
@@ -307,7 +309,9 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
         },
       });
       const data = await res.json();
+      console.log("Courses purchased:", data.message);
       const coursePurchased = data.message;
+      setTeacherId(data.message[0].teacher.id);
       const ids = coursePurchased.map((item: any) => item.id);
       setPurchasedId(ids);
 
@@ -547,7 +551,15 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
+  console.log("Teacher ID:", teacherId);
+  
   return (
+    <>
+    {course && (
+      <ChatTeacher
+        teacherId={teacherId}
+        courseId={course.id}/>
+    )}
     <div className="d-flex vh-100 overflow-hidden">
       <aside className="col-md-3 col-lg-2 bg-white text-dark p-4 d-flex flex-column border rounded shadow-lg overflow-auto">
         <h2 className="fs-5 fw-bold mb-4 text-center text-primary text-uppercase border-bottom pb-2">
@@ -925,6 +937,8 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
       {success && <AlertSuccess message="Nộp Bài Thành Công" />}
       {error && <AlertError message={message} />}
     </div>
+  
+    </>
   );
 };
 

@@ -128,14 +128,27 @@ const {
 const { AddForum, JoinForum, GetForumDetail, GetPostForum, JoinedForum, QuitForum} = require("./controllers/ForumController");
 const {generateChatbotResponse} = require("./controllers/ChatbotController")
 const {getRecommendedForums} = require("./controllers/RecommendationController");
+const { InitChatTeacher, SendMessage } = require("./controllers/ChatTeacherController");
+
+// Stripe webhook phải đứng trước tất cả middleware
 app.post(
   "/api/webhook",
   express.raw({ type: "application/json" }),
   handleTransactionSuccess
 );
+
 app.use(cookieParser());
-app.use(express.json());
+
+// CHẶN express.json() khỏi webhook
+app.use((req, res, next) => {
+  if (req.originalUrl === "/api/webhook") {
+    return next();
+  }
+  express.json()(req, res, next);
+});
+
 app.use(express.urlencoded({ extended: true }));
+
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -221,6 +234,29 @@ io.on("connection", (socket) => {
   socket.on("leavePostRoom", (room) => {
     socket.leave(room);
   });
+
+  socket.on("initChatTeacher", (data) => {
+    InitChatTeacher(io, socket, data);
+  });
+
+  socket.on("joinChatRoom", (roomId) => {
+    socket.join(`chatroom_${roomId}`);
+    console.log(`Socket ${socket.id} joined chatroom_${roomId}`);
+  });
+
+  socket.on("leaveChatRoom", (roomId) => {
+    socket.leave(`chatroom_${roomId}`);
+    console.log(`Socket ${socket.id} left chatroom_${roomId}`);
+  });
+
+  socket.on("sendChatMessage", (data) => {
+    SendMessage(io, socket, data);
+  });
+
+  socket.on("disconnect", () => {
+    console.log("Socket disconnected:", socket.id);
+  });
+  
 });
 
 app.get("/api/user", VerifyToken, GetAuthencationUser);

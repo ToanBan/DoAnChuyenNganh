@@ -181,7 +181,7 @@ const handleTransactionSuccess = async (req, res) => {
   const sig = req.headers["stripe-signature"];
   const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
   console.log(endpointSecret);
-  console.log("dsahdkashjdhasjkdhasdjaskdjsadasjkdjkasdjkasjkdjkasd");
+  console.log("dsahdkashjdhasjkdhasdjaskdjsadasjkdjkasdjkasjkdjkasdasdashjdhasjdhasjdd");
   let event;
 
   try {

@@ -5,12 +5,6 @@ const jwt = require("jsonwebtoken");
 const AddCommentController = async (io, socket, data) => {
   const { courseId, userId, content, parentId = null } = data;
 
-  // if (!courseId || !userId || !content) {
-  //   return socket.emit("comment_error", {
-  //     message: "Thiếu thông tin bình luận!",
-  //   });
-  // }
-
   console.log(courseId, userId, content, parentId);
 
   try {

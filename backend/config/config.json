@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "0393146946",
-    "database": "webcoursedb",
+    "database": "smartlearn",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
