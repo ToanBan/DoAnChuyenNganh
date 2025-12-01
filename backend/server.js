@@ -128,7 +128,7 @@ const {
 const { AddForum, JoinForum, GetForumDetail, GetPostForum, JoinedForum, QuitForum} = require("./controllers/ForumController");
 const {generateChatbotResponse} = require("./controllers/ChatbotController")
 const {getRecommendedForums} = require("./controllers/RecommendationController");
-const { InitChatTeacher, SendMessage } = require("./controllers/ChatTeacherController");
+const { InitChatTeacher, GetMessagesByRoomId, SendMessage, GetTeacherChatRooms } = require("./controllers/ChatTeacherController");
 
 // Stripe webhook phải đứng trước tất cả middleware
 app.post(
@@ -202,7 +202,6 @@ io.use((socket, next) => {
     return next(new Error("Invalid token"));
   }
 });
-
 io.on("connection", (socket) => {
   console.log("Socket connected:", socket.id);
 
@@ -364,6 +363,9 @@ app.delete("/api/forum/:id", QuitForum);
 app.get("/api/topic_progress", GetTopicProgressController);
 app.post("/api/chatbot", generateChatbotResponse);
 app.get("/api/comment_forumtopic/:id", GetCommentsForumTopic)
+app.get("/api/teacher_chatrooms", VerifyToken, GetTeacherChatRooms);
+
+
 // FakeUserReactionPosts()
 // FakePostForUser()
 // GetContentDataset();

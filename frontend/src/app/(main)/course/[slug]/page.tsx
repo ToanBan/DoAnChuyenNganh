@@ -544,7 +544,6 @@ const MyCourseDetail = ({ params }: { params: Promise<{ slug: string }> }) => {
     });
   };
 
-  // Format timer thành MM:SS
   const formatTimer = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
