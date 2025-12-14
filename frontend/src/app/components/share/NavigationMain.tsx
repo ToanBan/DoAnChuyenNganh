@@ -25,12 +25,13 @@ interface Notification {
 
 const NavigationMain = () => {
   const pathName = usePathname();
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   const [notification, setNotification] = useState<Notification[] | null>(null);
   const imgUrl = "http://localhost:5000/uploads/";
   const [imgSrc, setImgSrc] = useState("");
   const { countCartItem } = useCart();
   const [teacherId, setTeacherId] = useState<string | null>(null);
+  const [topicWeak, setTopicWeak] = useState<any[]>([]);
 
 
   useEffect(() => {
@@ -88,7 +89,28 @@ const NavigationMain = () => {
     setTeacherId(id);
   }, []);
 
+  const getNotificationTopicWeak = async () => {
+    try {
+      const res = await fetch("http://localhost:5000/api/topic_weak", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      });
+      if (res.ok) {
+        const data = await res.json();
+        // setCount(data.message.length || 0);
+        setTopicWeak(data.message);
+      }
+    } catch (error) {
+      return [];
+    }
+  };
 
+  useEffect(() => {
+    getNotificationTopicWeak();
+  }, [count]);
 
   return (
     <>
@@ -181,6 +203,17 @@ const NavigationMain = () => {
                   GIỚI THIỆU
                 </Link>
               </li>
+
+                <li
+                className={`nav-item ${
+                  pathName === "/forum" ? "activeNavigation" : ""
+                }`}
+              >
+                <Link className="nav-link" href={"/forum"}>
+                  DIỄN ĐÀN
+                </Link>
+              </li>
+
               <li className="nav-item">
                 <Link className="nav-link" href={"/verify_certificate"}>
                   KIỂM TRA CHỨNG NHẬN
@@ -239,25 +272,16 @@ const NavigationMain = () => {
                     </span>
                   </span>
                 </a>
-
                 <ul
                   className="dropdown-menu dropdown-menu-end shadow-lg p-2"
-                  aria-labelledby="notificationDropdown"
+                  aria-labelledby="topicWeakDropdown"
                 >
-                  {notification && notification.length > 0 ? (
-                    notification.map((note) => (
-                      <li key={note.id}>
+                  {Array.isArray(topicWeak) && topicWeak.length > 0 ? (
+                    topicWeak.map((topic, index) => (
+                      <li key={index}>
                         <Link
-                          onClick={(e) =>
-                            handleReadNotifications(
-                              e,
-                              note.receiver.id,
-                              note.type,
-                              note.id
-                            )
-                          }
                           className="dropdown-item d-flex align-items-center"
-                          href="#"
+                          href={`topicweak/${topic.topic_id}`}
                         >
                           <Image
                             style={{
@@ -265,44 +289,38 @@ const NavigationMain = () => {
                               height: "30px",
                               objectFit: "cover",
                             }}
-                            className="img-fluid rounded-circle mb-4 border border-3 border-info shadow-sm me-2"
-                            src={
-                              note.sender.avatar
-                                ? `${imgUrl}${note.sender.avatar}`
-                                : "https://www.lewesac.co.uk/wp-content/uploads/2017/12/default-avatar.jpg"
-                            }
+                            className="img-fluid rounded-circle mb-4 border border-3 border-warning shadow-sm me-2"
+                            src="https://cdn.vectorstock.com/i/1000v/92/16/default-profile-picture-avatar-user-icon-vector-46389216.jpg"
                             width={30}
                             height={30}
-                            alt={`${note.sender.username}`}
-                            onError={() =>
-                              setImgSrc(
-                                "https://www.lewesac.co.uk/wp-content/uploads/2017/12/default-avatar.jpg"
-                              )
-                            }
+                            alt="weak-topic"
                           />
+
                           <div>
-                            <div className="fw-bold">
-                              {note.sender.username}
-                            </div>
+                            <div className="fw-bold">{`Vui Lòng Học Lại Chủ Đề ${topic.topic_name}`}</div>
                             <div className="text-muted small">
-                              {note.message}
+                              
                             </div>
                           </div>
                         </Link>
                       </li>
                     ))
                   ) : (
-                    <p>Chưa Có Thông Báo Nào</p>
+                    <p className="text-center text-muted small">
+                      Không có chủ đề yếu
+                    </p>
                   )}
+
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
+
                   <li>
                     <a
                       className="dropdown-item text-center text-muted small"
                       href="#"
                     >
-                      Xem tất cả thông báo
+                      Xem tất cả chủ đề yếu
                     </a>
                   </li>
                 </ul>

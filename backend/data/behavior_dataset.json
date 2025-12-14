@@ -2,346 +2,601 @@
   {
     "userId": 3,
     "courseId": 9,
+    "courseName": "Lập trình Web Fullstack (MERN)",
     "percentProgress": 100,
     "startDate": "2025-08-13T07:42:03.000Z"
   },
   {
     "userId": 7,
     "courseId": 3,
+    "courseName": "ReactJS cho người mới bắt đầu",
     "percentProgress": 100,
     "startDate": "2025-08-19T12:37:54.000Z"
   },
   {
     "userId": 3,
     "courseId": 1,
+    "courseName": "Lập trình Java cơ bản",
     "percentProgress": 100,
-    "startDate": "2025-09-28T08:54:48.000Z",
-    "updatedAt": "2025-10-25T10:56:04.827Z"
+    "startDate": "2025-09-28T08:54:48.000Z"
   },
   {
     "userId": 3,
     "courseId": 2,
-    "percentProgress": 50,
-    "startDate": "2025-09-28T09:25:03.000Z",
-    "updatedAt": "2025-10-25T10:50:24.977Z"
+    "courseName": "Lập trình Java nâng cao",
+    "percentProgress": 0,
+    "startDate": "2025-09-28T09:25:03.000Z"
   },
   {
     "userId": 8,
     "courseId": 3,
+    "courseName": "ReactJS cho người mới bắt đầu",
     "percentProgress": 0,
     "startDate": "2025-10-02T14:40:42.000Z"
   },
   {
     "userId": 9,
     "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
     "percentProgress": 100,
     "startDate": "2025-10-03T15:41:09.000Z"
   },
   {
     "userId": 9,
     "courseId": 16,
+    "courseName": "Lập trình Web với Bootstrap và Responsive",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:41:09.000Z"
   },
   {
     "userId": 11,
     "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:42:19.000Z"
   },
   {
     "userId": 11,
     "courseId": 13,
+    "courseName": "Xây dựng RESTful API với Node.js và Express",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:42:19.000Z"
   },
   {
     "userId": 11,
     "courseId": 16,
+    "courseName": "Lập trình Web với Bootstrap và Responsive",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:42:19.000Z"
   },
   {
     "userId": 13,
     "courseId": 27,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
     "percentProgress": 100,
     "startDate": "2025-10-03T15:43:19.000Z"
   },
   {
     "userId": 13,
     "courseId": 26,
+    "courseName": "Xử lý ngôn ngữ tự nhiên (NLP) với TensorFlow",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:43:19.000Z"
   },
   {
     "userId": 15,
     "courseId": 25,
+    "courseName": "Triển khai mô hình Deep Learning với TensorFlow nâng cao",
     "percentProgress": 50,
     "startDate": "2025-10-03T15:44:25.000Z"
   },
   {
     "userId": 15,
     "courseId": 19,
+    "courseName": "Deep Learning với TensorFlow",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:44:25.000Z"
   },
   {
     "userId": 15,
     "courseId": 27,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:44:25.000Z"
   },
   {
     "userId": 17,
     "courseId": 20,
+    "courseName": "React Hooks & Context nâng cao",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:45:42.000Z"
   },
   {
     "userId": 17,
     "courseId": 3,
+    "courseName": "ReactJS cho người mới bắt đầu",
     "percentProgress": 50,
     "startDate": "2025-10-03T15:45:42.000Z"
   },
   {
     "userId": 19,
     "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
     "percentProgress": 60,
     "startDate": "2025-10-03T15:47:02.000Z"
   },
   {
     "userId": 19,
     "courseId": 13,
+    "courseName": "Xây dựng RESTful API với Node.js và Express",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:47:02.000Z"
   },
   {
     "userId": 19,
     "courseId": 12,
+    "courseName": "JavaScript Cơ Bản đến Nâng Cao",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:47:02.000Z"
   },
   {
     "userId": 21,
     "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
     "percentProgress": 100,
     "startDate": "2025-10-03T15:48:14.000Z"
   },
   {
     "userId": 21,
     "courseId": 11,
+    "courseName": "Lập trình Web với HTML và CSS",
     "percentProgress": 50,
     "startDate": "2025-10-03T15:48:14.000Z"
   },
   {
     "userId": 23,
     "courseId": 11,
+    "courseName": "Lập trình Web với HTML và CSS",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:49:16.000Z"
   },
   {
     "userId": 23,
     "courseId": 9,
+    "courseName": "Lập trình Web Fullstack (MERN)",
     "percentProgress": 33.33333333333333,
     "startDate": "2025-10-03T15:49:16.000Z"
   },
   {
     "userId": 23,
     "courseId": 13,
+    "courseName": "Xây dựng RESTful API với Node.js và Express",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:49:16.000Z"
   },
   {
     "userId": 25,
     "courseId": 18,
+    "courseName": "Tối ưu truy vấn SQL nâng cao",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:50:33.000Z"
   },
   {
     "userId": 25,
     "courseId": 8,
+    "courseName": "SQL và Quản trị cơ sở dữ liệu",
     "percentProgress": 50,
     "startDate": "2025-10-03T15:50:33.000Z"
   },
   {
     "userId": 25,
     "courseId": 6,
+    "courseName": "Phân tích dữ liệu với Python",
     "percentProgress": 100,
     "startDate": "2025-10-03T15:50:33.000Z"
   },
   {
     "userId": 27,
     "courseId": 25,
+    "courseName": "Triển khai mô hình Deep Learning với TensorFlow nâng cao",
     "percentProgress": 100,
     "startDate": "2025-10-03T15:51:39.000Z"
   },
   {
     "userId": 27,
     "courseId": 19,
+    "courseName": "Deep Learning với TensorFlow",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:51:39.000Z"
   },
   {
     "userId": 27,
     "courseId": 5,
+    "courseName": "Python cho người mới học",
     "percentProgress": 0,
     "startDate": "2025-10-03T15:51:39.000Z"
   },
   {
     "userId": 38,
     "courseId": 1,
+    "courseName": "Lập trình Java cơ bản",
     "percentProgress": 100,
     "startDate": "2025-10-06T12:04:22.000Z"
   },
   {
     "userId": 38,
     "courseId": 5,
+    "courseName": "Python cho người mới học",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:04:22.000Z"
   },
   {
     "userId": 40,
     "courseId": 2,
+    "courseName": "Lập trình Java nâng cao",
     "percentProgress": 100,
     "startDate": "2025-10-06T12:05:24.000Z"
   },
   {
     "userId": 40,
     "courseId": 7,
+    "courseName": "Cấu trúc dữ liệu & Giải thuật",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:05:24.000Z"
   },
   {
     "userId": 42,
     "courseId": 18,
+    "courseName": "Tối ưu truy vấn SQL nâng cao",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:06:34.000Z"
   },
   {
     "userId": 42,
     "courseId": 17,
+    "courseName": "Xử lý dữ liệu lớn với Python & Spark",
     "percentProgress": 50,
     "startDate": "2025-10-06T12:06:34.000Z"
   },
   {
     "userId": 42,
     "courseId": 10,
+    "courseName": "Machine Learning cơ bản",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:06:34.000Z"
   },
   {
     "userId": 44,
     "courseId": 8,
+    "courseName": "SQL và Quản trị cơ sở dữ liệu",
     "percentProgress": 50,
     "startDate": "2025-10-06T12:07:30.000Z"
   },
   {
     "userId": 44,
     "courseId": 6,
+    "courseName": "Phân tích dữ liệu với Python",
     "percentProgress": 100,
     "startDate": "2025-10-06T12:07:30.000Z"
   },
   {
     "userId": 44,
     "courseId": 10,
+    "courseName": "Machine Learning cơ bản",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:07:30.000Z"
   },
   {
     "userId": 46,
     "courseId": 19,
+    "courseName": "Deep Learning với TensorFlow",
     "percentProgress": 50,
     "startDate": "2025-10-06T12:08:33.000Z"
   },
   {
     "userId": 46,
     "courseId": 25,
+    "courseName": "Triển khai mô hình Deep Learning với TensorFlow nâng cao",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:08:33.000Z"
   },
   {
     "userId": 48,
     "courseId": 12,
+    "courseName": "JavaScript Cơ Bản đến Nâng Cao",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:09:28.000Z"
   },
   {
     "userId": 48,
     "courseId": 13,
+    "courseName": "Xây dựng RESTful API với Node.js và Express",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:09:28.000Z"
   },
   {
     "userId": 48,
     "courseId": 16,
+    "courseName": "Lập trình Web với Bootstrap và Responsive",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:09:28.000Z"
   },
   {
     "userId": 50,
     "courseId": 20,
+    "courseName": "React Hooks & Context nâng cao",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:10:28.000Z"
   },
   {
     "userId": 50,
     "courseId": 3,
+    "courseName": "ReactJS cho người mới bắt đầu",
     "percentProgress": 25,
     "startDate": "2025-10-06T12:10:28.000Z"
   },
   {
     "userId": 52,
     "courseId": 5,
+    "courseName": "Python cho người mới học",
     "percentProgress": 100,
     "startDate": "2025-10-06T12:12:31.000Z"
   },
   {
     "userId": 52,
     "courseId": 6,
+    "courseName": "Phân tích dữ liệu với Python",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:12:31.000Z"
   },
   {
     "userId": 52,
     "courseId": 7,
+    "courseName": "Cấu trúc dữ liệu & Giải thuật",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:12:31.000Z"
   },
   {
     "userId": 18,
     "courseId": 10,
+    "courseName": "Machine Learning cơ bản",
     "percentProgress": 66.66666666666666,
     "startDate": "2025-10-06T12:15:02.000Z"
   },
   {
     "userId": 18,
     "courseId": 26,
+    "courseName": "Xử lý ngôn ngữ tự nhiên (NLP) với TensorFlow",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:15:02.000Z"
   },
   {
     "userId": 18,
     "courseId": 6,
+    "courseName": "Phân tích dữ liệu với Python",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:15:02.000Z"
   },
   {
     "userId": 20,
     "courseId": 2,
+    "courseName": "Lập trình Java nâng cao",
     "percentProgress": 50,
     "startDate": "2025-10-06T12:15:55.000Z"
   },
   {
     "userId": 20,
     "courseId": 7,
+    "courseName": "Cấu trúc dữ liệu & Giải thuật",
     "percentProgress": 0,
     "startDate": "2025-10-06T12:15:55.000Z"
   },
   {
     "userId": 53,
     "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
+    "percentProgress": 100,
+    "startDate": "2025-10-28T11:52:48.000Z"
+  },
+  {
+    "userId": 8,
+    "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
+    "percentProgress": 0,
+    "startDate": "2025-10-29T07:11:14.000Z"
+  },
+  {
+    "userId": 54,
+    "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
+    "percentProgress": 0,
+    "startDate": "2025-12-06T08:40:43.000Z"
+  },
+  {
+    "userId": 53,
+    "courseId": 18,
+    "courseName": "Tối ưu truy vấn SQL nâng cao",
+    "percentProgress": 0,
+    "startDate": "2025-12-08T09:22:10.000Z"
+  },
+  {
+    "userId": 53,
+    "courseId": 14,
+    "courseName": "Phân tích dữ liệu với Python và Pandas",
+    "percentProgress": 0,
+    "startDate": "2025-12-08T09:22:10.000Z"
+  },
+  {
+    "userId": 58,
+    "courseId": 20,
+    "courseName": "React Hooks & Context nâng cao",
+    "percentProgress": 50,
+    "startDate": "2025-12-11T10:40:50.000Z"
+  },
+  {
+    "userId": 59,
+    "courseId": 27,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
+    "percentProgress": 50,
+    "startDate": "2025-12-11T10:55:45.000Z"
+  },
+  {
+    "userId": 61,
+    "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
+    "percentProgress": 80,
+    "startDate": "2025-12-11T11:02:16.000Z"
+  },
+  {
+    "userId": 61,
+    "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
+    "percentProgress": 80,
+    "startDate": "2025-12-11T11:05:53.000Z"
+  },
+  {
+    "userId": 61,
+    "courseId": 20,
+    "courseName": "React Hooks & Context nâng cao",
+    "percentProgress": 100,
+    "startDate": "2025-12-11T11:05:53.000Z"
+  },
+  {
+    "userId": 62,
+    "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
+    "percentProgress": 60,
+    "startDate": "2025-12-11T11:23:36.000Z"
+  },
+  {
+    "userId": 62,
+    "courseId": 16,
+    "courseName": "Lập trình Web với Bootstrap và Responsive",
+    "percentProgress": 80,
+    "startDate": "2025-12-11T11:28:44.000Z"
+  },
+  {
+    "userId": 65,
+    "courseId": 29,
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
+    "percentProgress": 0,
+    "startDate": "2025-12-11T11:48:10.000Z"
+  },
+  {
+    "userId": 65,
+    "courseId": 13,
+    "courseName": "Xây dựng RESTful API với Node.js và Express",
+    "percentProgress": 75,
+    "startDate": "2025-12-11T11:48:10.000Z"
+  },
+  {
+    "userId": 65,
+    "courseId": 12,
+    "courseName": "JavaScript Cơ Bản đến Nâng Cao",
+    "percentProgress": 50,
+    "startDate": "2025-12-11T11:48:10.000Z"
+  },
+  {
+    "userId": 70,
+    "courseId": 26,
+    "courseName": "Xử lý ngôn ngữ tự nhiên (NLP) với TensorFlow",
+    "percentProgress": 100,
+    "startDate": "2025-12-11T12:23:29.000Z"
+  },
+  {
+    "userId": 71,
+    "courseId": 19,
+    "percentProgress": 100,
+    "courseName": "Deep Learning với TensorFlow",
+    "startDate": "2025-12-11T12:47:22.562Z",
+    "updatedAt": "2025-12-11T12:47:34.114Z"
+  },
+  {
+    "userId": 73,
+    "courseId": 27,
+    "percentProgress": 100,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
+    "startDate": "2025-12-12T06:55:46.710Z",
+    "updatedAt": "2025-12-12T06:59:48.036Z"
+  },
+  {
+    "userId": 74,
+    "courseId": 27,
+    "percentProgress": 100,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
+    "startDate": "2025-12-12T07:11:08.427Z",
+    "updatedAt": "2025-12-12T07:11:28.804Z"
+  },
+  {
+    "userId": 76,
+    "courseId": 25,
+    "percentProgress": 100,
+    "courseName": "Triển khai mô hình Deep Learning với TensorFlow nâng cao",
+    "startDate": "2025-12-12T07:17:46.531Z",
+    "updatedAt": "2025-12-12T07:18:21.304Z"
+  },
+  {
+    "userId": 77,
+    "courseId": 27,
+    "percentProgress": 100,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
+    "startDate": "2025-12-12T07:22:08.968Z",
+    "updatedAt": "2025-12-12T07:22:29.634Z"
+  },
+  {
+    "userId": 78,
+    "courseId": 27,
+    "percentProgress": 50,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
+    "startDate": "2025-12-12T07:35:32.134Z",
+    "updatedAt": "2025-12-12T07:35:32.134Z"
+  },
+  {
+    "userId": 84,
+    "courseId": 27,
+    "percentProgress": 50,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
+    "startDate": "2025-12-12T10:27:41.554Z",
+    "updatedAt": "2025-12-12T10:27:41.554Z"
+  },
+  {
+    "userId": 85,
+    "courseId": 27,
+    "percentProgress": 50,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
+    "startDate": "2025-12-12T10:33:06.520Z",
+    "updatedAt": "2025-12-12T10:33:06.520Z"
+  },
+  {
+    "userId": 87,
+    "courseId": 29,
     "percentProgress": 20,
-    "startDate": "2025-10-28T12:14:00.788Z",
-    "updatedAt": "2025-10-28T12:14:00.788Z"
+    "courseName": "Thiết kế giao diện web responsive với Bootstrap 5",
+    "startDate": "2025-12-12T10:39:24.281Z",
+    "updatedAt": "2025-12-12T10:39:24.281Z"
+  },
+  {
+    "userId": 87,
+    "courseId": 20,
+    "percentProgress": 100,
+    "courseName": "React Hooks & Context nâng cao",
+    "startDate": "2025-12-12T10:39:43.683Z",
+    "updatedAt": "2025-12-12T10:39:53.429Z"
+  },
+  {
+    "userId": 88,
+    "courseId": 26,
+    "percentProgress": 100,
+    "courseName": "Xử lý ngôn ngữ tự nhiên (NLP) với TensorFlow",
+    "startDate": "2025-12-12T10:42:45.802Z",
+    "updatedAt": "2025-12-12T10:43:04.619Z"
+  },
+  {
+    "userId": 88,
+    "courseId": 27,
+    "percentProgress": 50,
+    "courseName": "Phân tích dữ liệu với PySpark và DataFrame",
+    "startDate": "2025-12-12T10:43:33.278Z",
+    "updatedAt": "2025-12-12T10:43:33.278Z"
   }
 ]

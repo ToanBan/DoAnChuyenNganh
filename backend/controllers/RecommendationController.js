@@ -1,7 +1,8 @@
 const path = require("path");
 const fs = require("fs");
 const jwt = require("jsonwebtoken");
-const { Forum } = require("../models");
+const { Forum, Topic, Course} = require("../models");
+const { where } = require("sequelize");
 
 const getRecommendedForums = async (req, res) => {
   try {
@@ -51,4 +52,70 @@ const getRecommendedForums = async (req, res) => {
   }
 };
 
-module.exports = { getRecommendedForums };
+const getTopicWeak = async (req, res) => {
+  try {
+    const token = req.cookies.token || req.headers.authorization?.split(" ")[1];
+    if (!token) {
+      return res.status(401).json({ message: "Unauthorized" });
+    }
+
+    const decoded = jwt.verify(token, process.env.ACCESS_TOKEN);
+    const userId = decoded.id;
+
+    const filePath = path.resolve("data/weektopic_all_users.json");
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ message: "No recommendations found yet" });
+    }
+
+    const all = JSON.parse(fs.readFileSync(filePath, "utf8"));
+
+    const userRec = all.weak_topics.find((r) => r.user_id === userId);
+    if (!userRec) {
+      return res.status(200).json({
+        message: "No topic weak recommendations for this user",
+        recommendations: [],
+      });
+    }
+
+    let weakTopics = userRec.weak_topics || [];
+    weakTopics.sort((a, b) => b.prob_weak - a.prob_weak);
+    const topicIds = weakTopics.map((t) => t.topic_id);
+    const topics = await Topic.findAll({
+      where: { id: topicIds },
+      include: [
+        {
+          model: Course,
+          as: "course",
+        },
+      ],
+    });
+
+
+    const topicMap = {};
+    topics.forEach((t) => {
+      topicMap[t.id] = {
+        topic_name: t.topic_name,
+        course_id: t.course?.id,
+        course_name: t.course?.course_name,
+      };
+    });
+
+    const finalData = weakTopics.map((item) => ({
+      ...item,
+      ...(topicMap[item.topic_id] || {}),
+    }));
+
+    return res.status(200).json({
+      message:finalData
+    });
+  } catch (error) {
+    console.error("Error in getTopicWeak:", error);
+    return res.status(500).json({ message: "Internal Server Error" });
+  }
+};
+
+
+
+
+
+module.exports = { getRecommendedForums, getTopicWeak};

@@ -37,8 +37,8 @@ const runPythonScript = (scriptName) => {
 };
 
 const updateAllEmbeddings = async () => {
-  await runPythonScript("generate_embeddings.py"); 
-  await runPythonScript("generate_embedding_behavior.py"); 
+  await runPythonScript("generate_embeddings.py");
+  await runPythonScript("generate_embedding_behavior.py");
 };
 
 const calculationSimilarityContentForum = async () => {
@@ -130,29 +130,56 @@ const calculationSimilarityBehaviorForum = async () => {
 };
 
 const finalSimilarity = async () => {
-  const alpha = 0.6;
+  const alpha = 0.7;
+
   const contentSimPath = path.join(baseDir, "similarity_content_forum.json");
   const behaviorSimPath = path.join(baseDir, "similarity_behavior_forum.json");
-  if (!fs.existsSync(contentSimPath)) {
-    console.warn("Không tìm thấy similarity_content_forum!");
+  const forumsPath = path.join(baseDir, "forum_dataset_embeddings.json");
+
+  if (!fs.existsSync(forumsPath)) {
+    console.warn("Không có forum embeddings");
     return;
   }
-  const contentSims = JSON.parse(fs.readFileSync(contentSimPath, "utf8"));
+
+  const forums = JSON.parse(fs.readFileSync(forumsPath, "utf8"));
+  const contentSims = fs.existsSync(contentSimPath)
+    ? JSON.parse(fs.readFileSync(contentSimPath, "utf8"))
+    : [];
   const behaviorSims = fs.existsSync(behaviorSimPath)
     ? JSON.parse(fs.readFileSync(behaviorSimPath, "utf8"))
     : [];
+
+  const contentMap = new Map();
+  contentSims.forEach((c) =>
+    contentMap.set(`${c.userId}-${c.forumId}`, c.similarity)
+  );
 
   const behaviorMap = new Map();
   behaviorSims.forEach((b) =>
     behaviorMap.set(`${b.userId}-${b.forumId}`, b.similarity)
   );
 
-  const finalResults = contentSims.map((c) => {
-    const key = `${c.userId}-${c.forumId}`;
-    const behaviorSim = behaviorMap.get(key) || 0;
-    const finalScore = alpha * behaviorSim + (1 - alpha) * c.similarity;
-    return { userId: c.userId, forumId: c.forumId, finalScore };
+  const users = new Set();
+  contentSims.forEach((c) => users.add(c.userId));
+  behaviorSims.forEach((b) => users.add(b.userId));
+
+  const finalResults = [];
+
+  users.forEach((userId) => {
+    forums.forEach((forum) => {
+      const key = `${userId}-${forum.forumId}`;
+      const contentScore = contentMap.get(key) || 0;
+      const behaviorScore = behaviorMap.get(key) || 0;
+      const finalScore = alpha * behaviorScore + (1 - alpha) * contentScore;
+
+      finalResults.push({
+        userId,
+        forumId: forum.forumId,
+        finalScore,
+      });
+    });
   });
+
   const userMap = new Map();
   finalResults.forEach((item) => {
     if (!userMap.has(item.userId)) userMap.set(item.userId, []);
@@ -160,15 +187,57 @@ const finalSimilarity = async () => {
   });
 
   const topResults = [];
-  userMap.forEach((forums) => {
-    forums.sort((a, b) => b.finalScore - a.finalScore);
-    forums.slice(0, 3).forEach((f) => topResults.push(f));
+  userMap.forEach((list) => {
+    list.sort((a, b) => b.finalScore - a.finalScore);
+    topResults.push(...list.slice(0, 3));
   });
 
   const outputPath = path.join(baseDir, "final_similarity_top3.json");
   fs.writeFileSync(outputPath, JSON.stringify(topResults, null, 2), "utf8");
-  console.log("🏁 Đã tạo final_similarity_top3");
+
+  console.log("Đã tạo final_similarity_top3");
 };
+
+// const finalSimilarity = async () => {
+//   const alpha = 0.6;
+//   const contentSimPath = path.join(baseDir, "similarity_content_forum.json");
+//   const behaviorSimPath = path.join(baseDir, "similarity_behavior_forum.json");
+//   if (!fs.existsSync(contentSimPath)) {
+//     console.warn("Không tìm thấy similarity_content_forum!");
+//     return;
+//   }
+//   const contentSims = JSON.parse(fs.readFileSync(contentSimPath, "utf8"));
+//   const behaviorSims = fs.existsSync(behaviorSimPath)
+//     ? JSON.parse(fs.readFileSync(behaviorSimPath, "utf8"))
+//     : [];
+
+//   const behaviorMap = new Map();
+//   behaviorSims.forEach((b) =>
+//     behaviorMap.set(`${b.userId}-${b.forumId}`, b.similarity)
+//   );
+
+//   const finalResults = contentSims.map((c) => {
+//     const key = `${c.userId}-${c.forumId}`;
+//     const behaviorSim = behaviorMap.get(key) || 0;
+//     const finalScore = alpha * behaviorSim + (1 - alpha) * c.similarity;
+//     return { userId: c.userId, forumId: c.forumId, finalScore };
+//   });
+//   const userMap = new Map();
+//   finalResults.forEach((item) => {
+//     if (!userMap.has(item.userId)) userMap.set(item.userId, []);
+//     userMap.get(item.userId).push(item);
+//   });
+
+//   const topResults = [];
+//   userMap.forEach((forums) => {
+//     forums.sort((a, b) => b.finalScore - a.finalScore);
+//     forums.slice(0, 3).forEach((f) => topResults.push(f));
+//   });
+
+//   const outputPath = path.join(baseDir, "final_similarity_top3.json");
+//   fs.writeFileSync(outputPath, JSON.stringify(topResults, null, 2), "utf8");
+//   console.log("🏁 Đã tạo final_similarity_top3");
+// };
 
 const runAutoRecalculate = async () => {
   try {

@@ -24,7 +24,11 @@ const path = require("path");
 const mammoth = require("mammoth");
 const ffmpeg = require("fluent-ffmpeg");
 const redisClient = require("../lib/redis");
-const { updateBehaviorDataset } = require("./GetDatasetController");
+const {
+  updateBehaviorDataset,
+  exportQuizDataset,
+  DeleteQuizDataset,
+} = require("./GetDatasetController");
 const CreateCourseController = async (req, res) => {
   try {
     const token = req.cookies.token;
@@ -684,27 +688,22 @@ const ResultTopicController = async (req, res) => {
     if (!token) {
       return res.status(401).json({ message: "Not Found Token" });
     }
-
     const decoded = jwt.verify(token, process.env.ACCESS_TOKEN);
     if (!decoded) {
       return res.status(401).json({ message: "Unauthorized" });
     }
-
-    const { id } = req.params; // topic_id
+    const { id } = req.params;
     const userId = decoded.id;
-    const { questionResult, quizTime} = req.body;
-
+    const { questionResult, quizTime } = req.body;
     if (!Array.isArray(questionResult)) {
       return res.status(400).json({ message: "Dữ liệu không hợp lệ" });
     }
-
     const score = questionResult.reduce(
       (total, q) => (q.is_correct ? total + 1 : total),
       0
     );
-
     const totalQuestion = questionResult.length;
-    const timeQuestion = quizTime / totalQuestion
+    const timeQuestion = quizTime / totalQuestion;
     let quizResult = await QuizResult.findOne({
       where: {
         user_id: userId,
@@ -748,10 +747,11 @@ const ResultTopicController = async (req, res) => {
       question_id: q.question_id,
       is_correct: q.is_correct,
       selected_option: q.selected_option,
-      time_spent:timeQuestion
+      time_spent: timeQuestion,
     }));
-
     await QuizAnswer.bulkCreate(answers);
+    await DeleteQuizDataset();
+    await exportQuizDataset();
     return res.status(200).json({ message: "Successfully" });
   } catch (error) {
     console.error(error);
@@ -1172,10 +1172,6 @@ const GetTopicsPurchasedController = async (req, res) => {
     });
   }
 };
-
-
-
-
 
 module.exports = {
   CreateCourseController,

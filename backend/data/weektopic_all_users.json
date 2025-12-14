@@ -1,0 +1,639 @@
+{
+  "weak_topics": [
+    {
+      "user_id": 7,
+      "weakest_topic": {
+        "topic_id": "1",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0,
+        "score": 0,
+        "correct_count": 0,
+        "total_questions": 6,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "1",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 6,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "2",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.2222222222222222,
+          "score": 2.22,
+          "correct_count": 2,
+          "total_questions": 9,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "3",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.25,
+          "score": 2.5,
+          "correct_count": 2,
+          "total_questions": 8,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "4",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.2857142857142857,
+          "score": 2.86,
+          "correct_count": 2,
+          "total_questions": 7,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 3,
+      "weakest_topic": {
+        "topic_id": "23",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0,
+        "score": 0,
+        "correct_count": 0,
+        "total_questions": 3,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "23",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "24",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.25,
+          "score": 2.5,
+          "correct_count": 1,
+          "total_questions": 4,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "52",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 2,
+          "attempt_number": 2
+        },
+        {
+          "topic_id": "53",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.5,
+          "score": 5,
+          "correct_count": 1,
+          "total_questions": 2,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "25",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 1,
+          "score": 10,
+          "correct_count": 3,
+          "total_questions": 3,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 9,
+      "weakest_topic": {
+        "topic_id": "16",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0,
+        "score": 0,
+        "correct_count": 0,
+        "total_questions": 5,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "16",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 5,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "19",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "15",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 0.8,
+          "score": 8,
+          "correct_count": 4,
+          "total_questions": 5,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "17",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 1,
+          "score": 10,
+          "correct_count": 3,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "18",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 0.6666666666666666,
+          "score": 6.67,
+          "correct_count": 2,
+          "total_questions": 3,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 38,
+      "weakest_topic": {
+        "topic_id": "53",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0.5,
+        "score": 5,
+        "correct_count": 1,
+        "total_questions": 2,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "53",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.5,
+          "score": 5,
+          "correct_count": 1,
+          "total_questions": 2,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "52",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 1,
+          "score": 10,
+          "correct_count": 2,
+          "total_questions": 2,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 21,
+      "weakest_topic": {
+        "topic_id": "19",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0.3333333333333333,
+        "score": 3.33,
+        "correct_count": 1,
+        "total_questions": 3,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "19",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "15",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 0.8,
+          "score": 8,
+          "correct_count": 4,
+          "total_questions": 5,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "17",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 0.6666666666666666,
+          "score": 6.67,
+          "correct_count": 2,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "18",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 1,
+          "score": 10,
+          "correct_count": 3,
+          "total_questions": 3,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 27,
+      "weakest_topic": {
+        "topic_id": "50",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0,
+        "score": 0,
+        "correct_count": 0,
+        "total_questions": 2,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "50",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 2,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "51",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 2,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 44,
+      "weakest_topic": {
+        "topic_id": "34",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0.3333333333333333,
+        "score": 3.33,
+        "correct_count": 1,
+        "total_questions": 3,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "34",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "35",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "37",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 0.6666666666666666,
+          "score": 6.67,
+          "correct_count": 2,
+          "total_questions": 3,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 52,
+      "weakest_topic": {
+        "topic_id": "32",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0.5,
+        "score": 5,
+        "correct_count": 1,
+        "total_questions": 2,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "32",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.5,
+          "score": 5,
+          "correct_count": 1,
+          "total_questions": 2,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 25,
+      "weakest_topic": {
+        "topic_id": "34",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0.3333333333333333,
+        "score": 3.33,
+        "correct_count": 1,
+        "total_questions": 3,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "34",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "35",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "37",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 0.6666666666666666,
+          "score": 6.67,
+          "correct_count": 2,
+          "total_questions": 3,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 13,
+      "weakest_topic": {
+        "topic_id": "43",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0,
+        "score": 0,
+        "correct_count": 0,
+        "total_questions": 2,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "43",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 2,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 15,
+      "weakest_topic": {
+        "topic_id": "50",
+        "prob_weak": 2.1943985113566172e-7,
+        "accuracy": 1,
+        "score": 10,
+        "correct_count": 2,
+        "total_questions": 2,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "50",
+          "prob_weak": 2.1943985113566172e-7,
+          "accuracy": 1,
+          "score": 10,
+          "correct_count": 2,
+          "total_questions": 2,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 17,
+      "weakest_topic": {
+        "topic_id": "1",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0,
+        "score": 0,
+        "correct_count": 0,
+        "total_questions": 6,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "1",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 6,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "2",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 9,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 19,
+      "weakest_topic": {
+        "topic_id": "15",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0.2,
+        "score": 2,
+        "correct_count": 1,
+        "total_questions": 5,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "15",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.2,
+          "score": 2,
+          "correct_count": 1,
+          "total_questions": 5,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "16",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.4,
+          "score": 4,
+          "correct_count": 2,
+          "total_questions": 5,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "17",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 23,
+      "weakest_topic": {
+        "topic_id": "23",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0,
+        "score": 0,
+        "correct_count": 0,
+        "total_questions": 3,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "23",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 3,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 18,
+      "weakest_topic": {
+        "topic_id": "20",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0.3333333333333333,
+        "score": 3.33,
+        "correct_count": 1,
+        "total_questions": 3,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "20",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 1
+        },
+        {
+          "topic_id": "21",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 50,
+      "weakest_topic": {
+        "topic_id": "1",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0.3333333333333333,
+        "score": 3.33,
+        "correct_count": 2,
+        "total_questions": 6,
+        "attempt_number": 1
+      },
+      "weak_topics": [
+        {
+          "topic_id": "1",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 2,
+          "total_questions": 6,
+          "attempt_number": 1
+        }
+      ]
+    },
+    {
+      "user_id": 53,
+      "weakest_topic": {
+        "topic_id": "16",
+        "prob_weak": 0.9999999219282653,
+        "accuracy": 0.2,
+        "score": 2,
+        "correct_count": 1,
+        "total_questions": 5,
+        "attempt_number": 3
+      },
+      "weak_topics": [
+        {
+          "topic_id": "16",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.2,
+          "score": 2,
+          "correct_count": 1,
+          "total_questions": 5,
+          "attempt_number": 3
+        },
+        {
+          "topic_id": "17",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 5
+        },
+        {
+          "topic_id": "18",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0.3333333333333333,
+          "score": 3.33,
+          "correct_count": 1,
+          "total_questions": 3,
+          "attempt_number": 2
+        },
+        {
+          "topic_id": "19",
+          "prob_weak": 0.9999999219282653,
+          "accuracy": 0,
+          "score": 0,
+          "correct_count": 0,
+          "total_questions": 3,
+          "attempt_number": 3
+        }
+      ]
+    }
+  ],
+  "updated_at": "2025-12-06T07:37:53.379Z"
+}

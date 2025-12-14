@@ -249,6 +249,7 @@ const handleTransactionSuccess = async (req, res) => {
           price: item.Course.price,
           quantity: item.quantity,
         });
+        await item.destroy();
       }
       
       await Promise.all(

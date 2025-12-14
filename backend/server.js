@@ -37,7 +37,7 @@ const {
   GetCourseTeacherRejectController,
   GetCoursesPurchasedByTeacher,
   GetStudentsTeacherController,
-  GetTopicProgressController
+  GetTopicProgressController,
 } = require("./controllers/TeacherController");
 const VerifyToken = require("./middleware/VerifyToken");
 const {
@@ -102,8 +102,8 @@ const {
   GetCommentByCourseIdController,
   AddCommentPost,
   GetCommentByPostId,
-  AddCommentForumTopic, 
-  GetCommentsForumTopic
+  AddCommentForumTopic,
+  GetCommentsForumTopic,
 } = require("./controllers/CommentController");
 const {
   AddPost,
@@ -123,11 +123,28 @@ const {
   calculationSimilarityContentForum,
   calculationSimilarityBehaviorForum,
   finalSimilarity,
-  extractKeywordsLLM
+  extractKeywordsLLM,
+  exportQuizDataset,
+  GetWeakTopicsRecommendation,
+  generateContentSuggestionTopicWeak,
 } = require("./controllers/GetDatasetController");
-const { AddForum, JoinForum, GetForumDetail, GetPostForum, JoinedForum, QuitForum} = require("./controllers/ForumController");
-const {generateChatbotResponse} = require("./controllers/ChatbotController")
-const {getRecommendedForums} = require("./controllers/RecommendationController");
+const {
+  AddForum,
+  JoinForum,
+  GetForumDetail,
+  GetPostForum,
+  JoinedForum,
+  QuitForum,
+} = require("./controllers/ForumController");
+const {
+  SendMessage,
+  GetMessageByUserId,
+} = require("./controllers/MessageController");
+const { generateChatbotResponse } = require("./controllers/ChatbotController");
+const {
+  getRecommendedForums,
+  getTopicWeak,
+} = require("./controllers/RecommendationController");
 app.post(
   "/api/webhook",
   express.raw({ type: "application/json" }),
@@ -191,8 +208,6 @@ io.use((socket, next) => {
 });
 
 io.on("connection", (socket) => {
-  console.log("Socket connected:", socket.id);
-
   socket.on("new_comment", (data) => {
     console.log("New comment data received:", data);
     AddCommentController(io, socket, data);
@@ -210,8 +225,18 @@ io.on("connection", (socket) => {
 
   socket.on("joinForumRoom", (room) => {
     socket.join(room);
-    console.log(`socket forum ${socket.id} joined room: ${room}`)
-  })
+    console.log(`socket forum ${socket.id} joined room: ${room}`);
+  });
+
+  socket.on("JoinChat", (room) => {
+    socket.join(`user-${socket.user.id}`);
+    console.log(`user tham gia ${socket.user.id}`)
+  });
+
+  socket.on("sendMessage", (data) => {
+    console.log("Joining room:", `user-${socket.user.id}`);
+    SendMessage(io, socket, data);
+  });
 
   socket.on("newCommentForum", (data) => {
     console.log("New comment data received:", data);
@@ -327,7 +352,10 @@ app.get("/api/forum", JoinedForum);
 app.delete("/api/forum/:id", QuitForum);
 app.get("/api/topic_progress", GetTopicProgressController);
 app.post("/api/chatbot", generateChatbotResponse);
-app.get("/api/comment_forumtopic/:id", GetCommentsForumTopic)
+app.get("/api/comment_forumtopic/:id", GetCommentsForumTopic);
+app.get("/api/topic_weak", getTopicWeak);
+app.get("/api/topic_weak/:id", generateContentSuggestionTopicWeak);
+app.get("/api/messages/:id", GetMessageByUserId)
 // FakeUserReactionPosts()
 // FakePostForUser()
 // GetContentDataset();
@@ -342,6 +370,7 @@ app.get("/api/comment_forumtopic/:id", GetCommentsForumTopic)
 // calculationSimilarityContentForum()
 // calculationSimilarityBehaviorForum()
 // finalSimilarity()
+// exportQuizDataset();
 
 server.listen(5000, "0.0.0.0", () => {
   console.log("Server is running on port 5000");

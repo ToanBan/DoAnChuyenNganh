@@ -1,4 +1,11 @@
-const { Post, User, sequelize, Course, PostReaction, CommentPost} = require("../models");
+const {
+  Post,
+  User,
+  sequelize,
+  Course,
+  PostReaction,
+  CommentPost,
+} = require("../models");
 const bcrypt = require("bcrypt");
 const redisClient = require("../lib/redis");
 const jwt = require("jsonwebtoken");
@@ -6,7 +13,7 @@ const { where, fn, col } = require("sequelize");
 const path = require("path");
 const fs = require("fs");
 const { faker } = require("@faker-js/faker");
-const {updateContentDataset} = require("./GetDatasetController")
+const { updateContentDataset } = require("./GetDatasetController");
 const AddPost = async (req, res) => {
   try {
     const token = req.cookies.token;
@@ -28,7 +35,7 @@ const AddPost = async (req, res) => {
       }
     );
 
-    const { post_title, forumId} = req.body;
+    const { post_title, forumId } = req.body;
 
     const filePath = req.file;
     let typeFile;
@@ -41,8 +48,6 @@ const AddPost = async (req, res) => {
       typeFile = "none";
     }
 
-    
-
     const post = await Post.create({
       userId: decoded.id,
       post_url: fileName,
@@ -51,13 +56,12 @@ const AddPost = async (req, res) => {
       type: typeFile,
     });
 
-    if(post){
+    if (post) {
       await updateContentDataset(post.id);
+      return res.status(200).json({
+        message: "Add Successfully",
+      });
     }
-
-    return res.status(200).json({
-      message: "Add Successfully",
-    });
   } catch (error) {
     console.error(error);
     return res.status(500).json({
@@ -81,8 +85,8 @@ const GetPost = async (req, res) => {
     }
 
     const posts = await Post.findAll({
-      where:{
-        forumId:null
+      where: {
+        forumId: null,
       },
       include: [
         {
@@ -92,7 +96,7 @@ const GetPost = async (req, res) => {
         },
         {
           model: PostReaction,
-          as: "reactions", 
+          as: "reactions",
           attributes: ["id", "userId", "reactionType"],
         },
       ],
@@ -334,7 +338,7 @@ const FakeUserReactionPosts = async () => {
 
     for (const post of posts) {
       const reactionCount = Math.floor(Math.random() * 50);
-      const usedUserIds = new Set(); 
+      const usedUserIds = new Set();
       for (let i = 0; i < reactionCount; i++) {
         const randomUser = users[Math.floor(Math.random() * users.length)];
         if (randomUser.id === post.userId || usedUserIds.has(randomUser.id)) {
@@ -353,7 +357,6 @@ const FakeUserReactionPosts = async () => {
     console.error("Lỗi fake reaction:", error);
   }
 };
-
 
 const FakeUserCommentPost = async () => {
   try {
@@ -375,11 +378,11 @@ const FakeUserCommentPost = async () => {
       "Quan điểm rất hay.",
       "Bài viết có tâm ghê 👍",
       "Nội dung sâu sắc.",
-      "Rất ý nghĩa!"
+      "Rất ý nghĩa!",
     ];
 
     for (const post of posts) {
-      const commentCount = Math.floor(Math.random() * 30); 
+      const commentCount = Math.floor(Math.random() * 30);
       for (let i = 0; i < commentCount; i++) {
         const randomUser = users[Math.floor(Math.random() * users.length)];
         const randomContent =
@@ -399,7 +402,6 @@ const FakeUserCommentPost = async () => {
   }
 };
 
-
 module.exports = {
   AddPost,
   GetPost,
@@ -407,6 +409,6 @@ module.exports = {
   GetCountLikeForPost,
   CheckDisplayReaction,
   FakePostForUser,
-  FakeUserReactionPosts, 
-  FakeUserCommentPost
+  FakeUserReactionPosts,
+  FakeUserCommentPost,
 };

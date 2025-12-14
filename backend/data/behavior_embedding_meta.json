@@ -1,0 +1,334 @@
+{
+  "3_9": {
+    "startDate": "2025-08-13T07:42:03.000Z",
+    "percentProgress": 100.0
+  },
+  "7_3": {
+    "startDate": "2025-08-19T12:37:54.000Z",
+    "percentProgress": 100.0
+  },
+  "3_1": {
+    "startDate": "2025-09-28T08:54:48.000Z",
+    "percentProgress": 100.0
+  },
+  "3_2": {
+    "startDate": "2025-09-28T09:25:03.000Z",
+    "percentProgress": 0.0
+  },
+  "8_3": {
+    "startDate": "2025-10-02T14:40:42.000Z",
+    "percentProgress": 0.0
+  },
+  "9_29": {
+    "startDate": "2025-10-03T15:41:09.000Z",
+    "percentProgress": 100.0
+  },
+  "9_16": {
+    "startDate": "2025-10-03T15:41:09.000Z",
+    "percentProgress": 0.0
+  },
+  "11_29": {
+    "startDate": "2025-10-03T15:42:19.000Z",
+    "percentProgress": 0.0
+  },
+  "11_13": {
+    "startDate": "2025-10-03T15:42:19.000Z",
+    "percentProgress": 0.0
+  },
+  "11_16": {
+    "startDate": "2025-10-03T15:42:19.000Z",
+    "percentProgress": 0.0
+  },
+  "13_27": {
+    "startDate": "2025-10-03T15:43:19.000Z",
+    "percentProgress": 100.0
+  },
+  "13_26": {
+    "startDate": "2025-10-03T15:43:19.000Z",
+    "percentProgress": 0.0
+  },
+  "15_25": {
+    "startDate": "2025-10-03T15:44:25.000Z",
+    "percentProgress": 50.0
+  },
+  "15_19": {
+    "startDate": "2025-10-03T15:44:25.000Z",
+    "percentProgress": 0.0
+  },
+  "15_27": {
+    "startDate": "2025-10-03T15:44:25.000Z",
+    "percentProgress": 0.0
+  },
+  "17_20": {
+    "startDate": "2025-10-03T15:45:42.000Z",
+    "percentProgress": 0.0
+  },
+  "17_3": {
+    "startDate": "2025-10-03T15:45:42.000Z",
+    "percentProgress": 50.0
+  },
+  "19_29": {
+    "startDate": "2025-10-03T15:47:02.000Z",
+    "percentProgress": 60.0
+  },
+  "19_13": {
+    "startDate": "2025-10-03T15:47:02.000Z",
+    "percentProgress": 0.0
+  },
+  "19_12": {
+    "startDate": "2025-10-03T15:47:02.000Z",
+    "percentProgress": 0.0
+  },
+  "21_29": {
+    "startDate": "2025-10-03T15:48:14.000Z",
+    "percentProgress": 100.0
+  },
+  "21_11": {
+    "startDate": "2025-10-03T15:48:14.000Z",
+    "percentProgress": 50.0
+  },
+  "23_11": {
+    "startDate": "2025-10-03T15:49:16.000Z",
+    "percentProgress": 0.0
+  },
+  "23_9": {
+    "startDate": "2025-10-03T15:49:16.000Z",
+    "percentProgress": 33.33333333333333
+  },
+  "23_13": {
+    "startDate": "2025-10-03T15:49:16.000Z",
+    "percentProgress": 0.0
+  },
+  "25_18": {
+    "startDate": "2025-10-03T15:50:33.000Z",
+    "percentProgress": 0.0
+  },
+  "25_8": {
+    "startDate": "2025-10-03T15:50:33.000Z",
+    "percentProgress": 50.0
+  },
+  "25_6": {
+    "startDate": "2025-10-03T15:50:33.000Z",
+    "percentProgress": 100.0
+  },
+  "27_25": {
+    "startDate": "2025-10-03T15:51:39.000Z",
+    "percentProgress": 100.0
+  },
+  "27_19": {
+    "startDate": "2025-10-03T15:51:39.000Z",
+    "percentProgress": 0.0
+  },
+  "27_5": {
+    "startDate": "2025-10-03T15:51:39.000Z",
+    "percentProgress": 0.0
+  },
+  "38_1": {
+    "startDate": "2025-10-06T12:04:22.000Z",
+    "percentProgress": 100.0
+  },
+  "38_5": {
+    "startDate": "2025-10-06T12:04:22.000Z",
+    "percentProgress": 0.0
+  },
+  "40_2": {
+    "startDate": "2025-10-06T12:05:24.000Z",
+    "percentProgress": 100.0
+  },
+  "40_7": {
+    "startDate": "2025-10-06T12:05:24.000Z",
+    "percentProgress": 0.0
+  },
+  "42_18": {
+    "startDate": "2025-10-06T12:06:34.000Z",
+    "percentProgress": 0.0
+  },
+  "42_17": {
+    "startDate": "2025-10-06T12:06:34.000Z",
+    "percentProgress": 50.0
+  },
+  "42_10": {
+    "startDate": "2025-10-06T12:06:34.000Z",
+    "percentProgress": 0.0
+  },
+  "44_8": {
+    "startDate": "2025-10-06T12:07:30.000Z",
+    "percentProgress": 50.0
+  },
+  "44_6": {
+    "startDate": "2025-10-06T12:07:30.000Z",
+    "percentProgress": 100.0
+  },
+  "44_10": {
+    "startDate": "2025-10-06T12:07:30.000Z",
+    "percentProgress": 0.0
+  },
+  "46_19": {
+    "startDate": "2025-10-06T12:08:33.000Z",
+    "percentProgress": 50.0
+  },
+  "46_25": {
+    "startDate": "2025-10-06T12:08:33.000Z",
+    "percentProgress": 0.0
+  },
+  "48_12": {
+    "startDate": "2025-10-06T12:09:28.000Z",
+    "percentProgress": 0.0
+  },
+  "48_13": {
+    "startDate": "2025-10-06T12:09:28.000Z",
+    "percentProgress": 0.0
+  },
+  "48_16": {
+    "startDate": "2025-10-06T12:09:28.000Z",
+    "percentProgress": 0.0
+  },
+  "50_20": {
+    "startDate": "2025-10-06T12:10:28.000Z",
+    "percentProgress": 0.0
+  },
+  "50_3": {
+    "startDate": "2025-10-06T12:10:28.000Z",
+    "percentProgress": 25.0
+  },
+  "52_5": {
+    "startDate": "2025-10-06T12:12:31.000Z",
+    "percentProgress": 100.0
+  },
+  "52_6": {
+    "startDate": "2025-10-06T12:12:31.000Z",
+    "percentProgress": 0.0
+  },
+  "52_7": {
+    "startDate": "2025-10-06T12:12:31.000Z",
+    "percentProgress": 0.0
+  },
+  "18_10": {
+    "startDate": "2025-10-06T12:15:02.000Z",
+    "percentProgress": 66.66666666666666
+  },
+  "18_26": {
+    "startDate": "2025-10-06T12:15:02.000Z",
+    "percentProgress": 0.0
+  },
+  "18_6": {
+    "startDate": "2025-10-06T12:15:02.000Z",
+    "percentProgress": 0.0
+  },
+  "20_2": {
+    "startDate": "2025-10-06T12:15:55.000Z",
+    "percentProgress": 50.0
+  },
+  "20_7": {
+    "startDate": "2025-10-06T12:15:55.000Z",
+    "percentProgress": 0.0
+  },
+  "53_29": {
+    "startDate": "2025-10-28T11:52:48.000Z",
+    "percentProgress": 100.0
+  },
+  "8_29": {
+    "startDate": "2025-10-29T07:11:14.000Z",
+    "percentProgress": 0.0
+  },
+  "54_29": {
+    "startDate": "2025-12-06T08:40:43.000Z",
+    "percentProgress": 0.0
+  },
+  "53_18": {
+    "startDate": "2025-12-08T09:22:10.000Z",
+    "percentProgress": 0.0
+  },
+  "53_14": {
+    "startDate": "2025-12-08T09:22:10.000Z",
+    "percentProgress": 0.0
+  },
+  "58_20": {
+    "startDate": "2025-12-11T10:40:50.000Z",
+    "percentProgress": 50.0
+  },
+  "59_27": {
+    "startDate": "2025-12-11T10:55:45.000Z",
+    "percentProgress": 50.0
+  },
+  "61_29": {
+    "startDate": "2025-12-11T11:05:53.000Z",
+    "percentProgress": 80.0
+  },
+  "61_20": {
+    "startDate": "2025-12-11T11:05:53.000Z",
+    "percentProgress": 100.0
+  },
+  "62_29": {
+    "startDate": "2025-12-11T11:23:36.000Z",
+    "percentProgress": 60.0
+  },
+  "62_16": {
+    "startDate": "2025-12-11T11:28:44.000Z",
+    "percentProgress": 80.0
+  },
+  "65_29": {
+    "startDate": "2025-12-11T11:48:10.000Z",
+    "percentProgress": 0.0
+  },
+  "65_13": {
+    "startDate": "2025-12-11T11:48:10.000Z",
+    "percentProgress": 75.0
+  },
+  "65_12": {
+    "startDate": "2025-12-11T11:48:10.000Z",
+    "percentProgress": 50.0
+  },
+  "70_26": {
+    "startDate": "2025-12-11T12:23:29.000Z",
+    "percentProgress": 100.0
+  },
+  "71_19": {
+    "startDate": "2025-12-11T12:47:22.562Z",
+    "percentProgress": 100.0
+  },
+  "73_27": {
+    "startDate": "2025-12-12T06:55:46.710Z",
+    "percentProgress": 100.0
+  },
+  "74_27": {
+    "startDate": "2025-12-12T07:11:08.427Z",
+    "percentProgress": 100.0
+  },
+  "76_25": {
+    "startDate": "2025-12-12T07:17:46.531Z",
+    "percentProgress": 100.0
+  },
+  "77_27": {
+    "startDate": "2025-12-12T07:22:08.968Z",
+    "percentProgress": 100.0
+  },
+  "78_27": {
+    "startDate": "2025-12-12T07:35:32.134Z",
+    "percentProgress": 50.0
+  },
+  "84_27": {
+    "startDate": "2025-12-12T10:27:41.554Z",
+    "percentProgress": 50.0
+  },
+  "85_27": {
+    "startDate": "2025-12-12T10:33:06.520Z",
+    "percentProgress": 50.0
+  },
+  "87_29": {
+    "startDate": "2025-12-12T10:39:24.281Z",
+    "percentProgress": 20.0
+  },
+  "87_20": {
+    "startDate": "2025-12-12T10:39:43.683Z",
+    "percentProgress": 100.0
+  },
+  "88_26": {
+    "startDate": "2025-12-12T10:42:45.802Z",
+    "percentProgress": 100.0
+  },
+  "88_27": {
+    "startDate": "2025-12-12T10:43:33.278Z",
+    "percentProgress": 50.0
+  }
+}

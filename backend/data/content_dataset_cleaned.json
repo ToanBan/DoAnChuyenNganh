@@ -17943,5 +17943,721 @@
       "animation",
       "khác nhau"
     ]
+  },
+  {
+    "id": 1009,
+    "userId": 53,
+    "caption": "các bạn hãy giúp tôi so sánh 2 framword hỗ trợ CSS là bootstrap5 với tailwind với",
+    "createdAt": "2025-11-18T14:22:17.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "so sánh",
+      "framework",
+      "CSS",
+      "bootstrap5",
+      "tailwind"
+    ]
+  },
+  {
+    "id": 1010,
+    "userId": 53,
+    "caption": "tôi đã học xong các khóa html, css hết rồi, tôi muốn tìm kiếm một framwork nào đó để code backend, các bạn cho mình khảm thảo với",
+    "createdAt": "2025-12-08T09:01:50.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "khóa học",
+      "html",
+      "css",
+      "backend",
+      "framework"
+    ]
+  },
+  {
+    "id": 1012,
+    "userId": 53,
+    "caption": "em nên học mysql hay sql server ạ",
+    "createdAt": "2025-12-08T09:27:46.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "mysql",
+      "sql server",
+      "học"
+    ]
+  },
+  {
+    "id": 1013,
+    "userId": 56,
+    "caption": "Tôi muốn học lập trình web thì nên học những gì trước",
+    "createdAt": "2025-12-11T10:33:10.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "học lập trình web",
+      "học những gì trước"
+    ]
+  },
+  {
+    "id": 1014,
+    "userId": 56,
+    "caption": "xin chào các bạn",
+    "createdAt": "2025-12-11T10:37:02.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "xin chào",
+      "các bạn"
+    ]
+  },
+  {
+    "id": 1015,
+    "userId": 58,
+    "caption": "tôi muốn học lập trình web thì nên bắt đầu từ đâu",
+    "createdAt": "2025-12-11T10:39:24.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "học lập trình web",
+      "bắt đầu"
+    ]
+  },
+  {
+    "id": 1016,
+    "userId": 58,
+    "caption": "Nên học frontend trước hay là backend trước",
+    "createdAt": "2025-12-11T10:39:54.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "frontend",
+      "backend",
+      "học trước"
+    ]
+  },
+  {
+    "id": 1017,
+    "userId": 59,
+    "caption": "Machine Learning là gì?",
+    "createdAt": "2025-12-11T10:54:50.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Machine Learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1018,
+    "userId": 59,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-11T10:55:01.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1019,
+    "userId": 60,
+    "caption": "Nếu tôi muốn học lập trình web thì nên bắt đầu từ đâu",
+    "createdAt": "2025-12-11T10:59:07.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "học lập trình web",
+      "bắt đầu"
+    ]
+  },
+  {
+    "id": 1020,
+    "userId": 60,
+    "caption": "Nên học ReactJS hay là NextJS",
+    "createdAt": "2025-12-11T10:59:19.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "ReactJS",
+      "NextJS"
+    ]
+  },
+  {
+    "id": 1021,
+    "userId": 63,
+    "caption": "machine learning là gì",
+    "createdAt": "2025-12-11T11:32:55.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "machine learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1022,
+    "userId": 63,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-11T11:33:03.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Học Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1023,
+    "userId": 65,
+    "caption": "Machine Learning là gì",
+    "createdAt": "2025-12-11T11:50:07.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Machine Learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1024,
+    "userId": 66,
+    "caption": "Tôi muốn học lập trình web thì nên băt đầu từ đầu",
+    "createdAt": "2025-12-11T11:55:54.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "học lập trình web",
+      "bắt đầu từ đầu"
+    ]
+  },
+  {
+    "id": 1025,
+    "userId": 66,
+    "caption": "Nên chọn nextjs hay reactjs",
+    "createdAt": "2025-12-11T11:56:11.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "nextjs",
+      "reactjs"
+    ]
+  },
+  {
+    "id": 1026,
+    "userId": 67,
+    "caption": "Machine Learning là gì",
+    "createdAt": "2025-12-11T11:59:51.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Machine Learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1027,
+    "userId": 67,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-11T12:00:03.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Học Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1028,
+    "userId": 69,
+    "caption": "Muốn học lập trình web nên bắt đầu từ đầu",
+    "createdAt": "2025-12-11T12:07:16.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "học lập trình web",
+      "bắt đầu từ đầu"
+    ]
+  },
+  {
+    "id": 1029,
+    "userId": 70,
+    "caption": "Nếu muốn học lập trình web thì nên bắt đầu từ đâu",
+    "createdAt": "2025-12-11T12:22:45.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "học lập trình web",
+      "bắt đầu từ đâu"
+    ]
+  },
+  {
+    "id": 1030,
+    "userId": 72,
+    "caption": "Machine Learning là gì?",
+    "createdAt": "2025-12-11T12:53:32.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Machine Learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1031,
+    "userId": 72,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-11T12:53:44.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1032,
+    "userId": 71,
+    "caption": "hdashdasjdhashdkas",
+    "createdAt": "2025-12-11T13:10:03.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1033,
+    "userId": 71,
+    "caption": "xiin chào các bạn nha",
+    "createdAt": "2025-12-11T13:11:27.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1034,
+    "userId": 71,
+    "caption": "halloooo",
+    "createdAt": "2025-12-11T13:16:26.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "halloooo"
+    ]
+  },
+  {
+    "id": 1035,
+    "userId": 71,
+    "caption": "hallo các bạn",
+    "createdAt": "2025-12-11T13:19:32.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "hallo",
+      "bạn"
+    ]
+  },
+  {
+    "id": 1036,
+    "userId": 71,
+    "caption": "halloooooo",
+    "createdAt": "2025-12-11T13:24:03.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "halloooooo"
+    ]
+  },
+  {
+    "id": 1037,
+    "userId": 71,
+    "caption": "cái gì đó",
+    "createdAt": "2025-12-11T13:25:43.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1038,
+    "userId": 71,
+    "caption": "xin chào các bạn",
+    "createdAt": "2025-12-11T13:26:57.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1039,
+    "userId": 71,
+    "caption": "helloooo các bạn",
+    "createdAt": "2025-12-11T13:32:08.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1040,
+    "userId": 71,
+    "caption": "xin chào các bạn nhaaaa",
+    "createdAt": "2025-12-11T13:37:32.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1041,
+    "userId": 71,
+    "caption": "hdajsdhashdjkas",
+    "createdAt": "2025-12-11T13:38:06.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1042,
+    "userId": 71,
+    "caption": "hallllllll",
+    "createdAt": "2025-12-11T13:38:57.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1043,
+    "userId": 73,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-12T06:54:13.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1044,
+    "userId": 73,
+    "caption": "Machine Learning là gì?",
+    "createdAt": "2025-12-12T06:54:30.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1045,
+    "userId": 74,
+    "caption": "Machine Learning là gì?",
+    "createdAt": "2025-12-12T07:09:37.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Machine Learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1046,
+    "userId": 74,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-12T07:09:53.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1047,
+    "userId": 75,
+    "caption": "Tôi muốn học lập trình web thì nên bắt đầu từ đâu",
+    "createdAt": "2025-12-12T07:14:12.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1048,
+    "userId": 75,
+    "caption": "Nên chọn học ReactJS hay NextJs",
+    "createdAt": "2025-12-12T07:14:24.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1049,
+    "userId": 77,
+    "caption": "Tôi muốn học lập trình web nên bắt đầu từ đâu",
+    "createdAt": "2025-12-12T07:20:56.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1050,
+    "userId": 77,
+    "caption": "nên học bootstrap hay tailwind",
+    "createdAt": "2025-12-12T07:21:09.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1051,
+    "userId": 78,
+    "caption": "Tôi muốn học lập trình web nên bắt đầu từ đâu",
+    "createdAt": "2025-12-12T07:34:28.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": []
+  },
+  {
+    "id": 1052,
+    "userId": 79,
+    "caption": "Học Python Cho AI",
+    "createdAt": "2025-12-12T08:13:57.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1053,
+    "userId": 79,
+    "caption": "Machine Learning là gì?",
+    "createdAt": "2025-12-12T08:14:19.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Machine Learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1054,
+    "userId": 80,
+    "caption": "Tôi muốn học lập trình web thì nên bắt đầu từ đâu",
+    "createdAt": "2025-12-12T08:20:39.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "học lập trình web",
+      "bắt đầu"
+    ]
+  },
+  {
+    "id": 1055,
+    "userId": 80,
+    "caption": "nên học ReactJS không các bạn",
+    "createdAt": "2025-12-12T08:20:55.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "học",
+      "ReactJS",
+      "các bạn"
+    ]
+  },
+  {
+    "id": 1056,
+    "userId": 80,
+    "caption": "nên học HTML trước hay CSS trước các bạn",
+    "createdAt": "2025-12-12T08:25:43.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "id": 1057,
+    "userId": 81,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-12T10:17:55.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Học Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1058,
+    "userId": 83,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-12T10:23:55.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Học Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1059,
+    "userId": 83,
+    "caption": "Machine Learning là gì?",
+    "createdAt": "2025-12-12T10:24:13.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Machine Learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1060,
+    "userId": 84,
+    "caption": "Machine Learning là gì?",
+    "createdAt": "2025-12-12T10:25:59.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Machine Learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1061,
+    "userId": 84,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-12T10:26:14.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Học Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1062,
+    "userId": 85,
+    "caption": "Học Python cho AI",
+    "createdAt": "2025-12-12T10:33:20.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Học Python",
+      "AI"
+    ]
+  },
+  {
+    "id": 1063,
+    "userId": 85,
+    "caption": "Machine Learning là gì?",
+    "createdAt": "2025-12-12T10:33:36.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Machine Learning",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1064,
+    "userId": 86,
+    "caption": "Muốn học lập trình web thì nên bắt đầu từ đâu",
+    "createdAt": "2025-12-12T10:36:32.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "học lập trình web",
+      "bắt đầu"
+    ]
+  },
+  {
+    "id": 1065,
+    "userId": 86,
+    "caption": "Nên chọn Học ReactJS hay NextJS",
+    "createdAt": "2025-12-12T10:36:48.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "Học ReactJS",
+      "NextJS"
+    ]
+  },
+  {
+    "id": 1066,
+    "userId": 88,
+    "caption": "Lập trình web là gì",
+    "createdAt": "2025-12-12T10:41:27.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "lập trình web",
+      "là gì"
+    ]
+  },
+  {
+    "id": 1067,
+    "userId": 88,
+    "caption": "Lập trình mạng là gì",
+    "createdAt": "2025-12-12T10:41:36.000Z",
+    "countReactionPost": 0,
+    "countCommentPost": 0,
+    "top_comment": null,
+    "keywords": [
+      "lập trình mạng",
+      "gì"
+    ]
   }
 ]

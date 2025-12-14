@@ -12,6 +12,7 @@ import {
   faUser,
   faSignOutAlt,
   faBars,
+  faMessage,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Image from "next/image";
@@ -74,6 +75,17 @@ const SiderbarTeacher = () => {
                 style={{ color: "cornflowerblue" }}
               />
               Progress
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link href={"/teacher/message"} className="nav-link text-dark">
+              <FontAwesomeIcon
+                icon={faMessage}
+                className="me-2"
+                style={{ color: "cornflowerblue" }}
+              />
+              Message
             </Link>
           </li>
 

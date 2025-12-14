@@ -69,7 +69,7 @@ const ForumPage = () => {
           width: "50rem",
         }}
       >
-        <PostCreator />
+        <PostCreator onPostAdded={fetchPosts} forumId=""/>
 
         <div
           className="container-fluid d-flex"

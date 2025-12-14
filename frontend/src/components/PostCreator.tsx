@@ -4,30 +4,46 @@ import Image from "next/image";
 import { Video, Image as ImageIcon, Smile, X } from "lucide-react";
 import AlertSuccess from "@/app/components/share/alert_success";
 import AlertError from "@/app/components/share/alert_error";
-const PostCreator = ({forumId}:{forumId?:string}) => {
+
+interface PostCreatorProps {
+  forumId?: string;
+  onPostAdded?: () => Promise<void>;
+}
+
+const PostCreator = ({ forumId, onPostAdded }: PostCreatorProps) => {
   const [showModal, setShowModal] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
   const AddPost = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget)
-    if(forumId){
-      formData.append("forumId", forumId)
+    const formData = new FormData(e.currentTarget);
+    if (forumId) {
+      formData.append("forumId", forumId);
     }
     try {
       const res = await fetch("http://localhost:5000/api/posts", {
         method: "POST",
         credentials: "include",
-        body:formData
+        body: formData,
       });
-  
 
       if (res.ok) {
         setSuccess(true);
+        setShowModal(false);
         setTimeout(() => {
           setSuccess(false);
         }, 3000);
+        setTimeout(async () => {
+          if (onPostAdded) {
+            try {
+              await onPostAdded();
+              console.log("Refresh done after delay!");
+            } catch (err) {
+              console.error("Delayed refresh failed:", err);
+            }
+          }
+        }, 3000); 
       } else {
         setError(true);
         setTimeout(() => {

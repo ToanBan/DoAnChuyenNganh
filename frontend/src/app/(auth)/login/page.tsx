@@ -19,6 +19,7 @@ const LoginPage = () => {
       const data = await res.json();
       const role = data.message;
       localStorage.setItem("token", data.token);
+      localStorage.setItem("userId", data.userId);
       if (role === "admin") {
         window.location.href = "/admin/dashboard";
       } else if (role === "teacher") {
